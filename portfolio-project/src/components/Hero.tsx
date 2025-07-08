@@ -21,7 +21,7 @@ const Hero = () => {
           <button>Projects</button>
         </div>
       </div>
-      <Intro/>
+      <Intro />
     </>
   );
 };

@@ -13,3 +13,10 @@ Bachelor of Science - International Business, Temple University Japan Campus
 Tokyo, Japan
 
 */
+
+const Education = () => {
+    return (
+        <><h1>Education Section</h1></>
+    )
+}
+export default Education;
