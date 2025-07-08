@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Intro from "./AboutMe/Intro";
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
           <button>Projects</button>
         </div>
       </div>
+      <Intro/>
     </>
   );
 };
