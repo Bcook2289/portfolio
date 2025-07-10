@@ -5,14 +5,14 @@ const Hero = () => {
   return (
     <>
       <div className="flex justify-center w-full p-4 m-4">
-        <div className="relative w-40 h-40 p-2">
-          <Image 
-            src="/images/ProfilePic.jpg" 
-            alt="profile" 
+        <div className="relative p-2">
+          <Image
+            src="/images/BrandonCook.jpg"
+            alt="profile"
             width={200}
-            height={200}
-            className="rounded-full">
-          </Image>
+            height={600}
+            className="rounded-full"
+          ></Image>
         </div>
         <div className="p-4">
           <h1>Hello.</h1>
@@ -21,7 +21,7 @@ const Hero = () => {
           <button>Projects</button>
         </div>
       </div>
-      <Intro />
+      <Intro pageFlag="brief" />
     </>
   );
 };

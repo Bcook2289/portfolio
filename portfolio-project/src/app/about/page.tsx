@@ -5,15 +5,15 @@ import Experience from "../../components/AboutMe/Experience";
 import Projects from "../../components/AboutMe/Projects";
 import NavBar from "../../components/NavBar";
 
-export default function AboutPage(){
-    return (
-        <>
-        <NavBar />
-            <Intro />
-            <Experience />
-            <Education />
-            <Projects />
-            <Skills />
-        </>
-    )
+export default function AboutPage() {
+  return (
+    <>
+      <NavBar />
+      <Intro pageFlag="detailed" />
+      <Experience />
+      <Education />
+      <Projects />
+      <Skills />
+    </>
+  );
 }
