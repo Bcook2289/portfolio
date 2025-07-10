@@ -2,7 +2,7 @@
 const Projects = () => {
     return (
         <>
-            <h1>Projects Section</h1>
+            <h1>Projects</h1>
             <h2>Freelance Band Page</h2>
             <h3>Front-end Engineer/Project Lead</h3>
             <p>A freelance responsive, mobile-first homepage built for a local musical act in the Tokyo area.</p>
