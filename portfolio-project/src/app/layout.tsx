@@ -1,23 +1,27 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { JetBrains_Mono } from "next/font/google"; 
+import { JetBrains_Mono, Sora } from "next/font/google"; 
 import "./globals.css";
 import React from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 const jetBrains = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400"],
   display: "swap",
+})
+const sora = Sora({
+  variable: "--font-sora",
+  subsets: ["latin"],
 })
 
 export const metadata = {
@@ -30,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     <>
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} ${jetBrains.variable} antialiased`}
+          className={` ${sora.variable} ${jetBrains.variable} antialiased`}
           >
           {children}
         </body>

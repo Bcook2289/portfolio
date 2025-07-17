@@ -22,7 +22,7 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
       </p>
       <p>
         I&apos;m also passionate about building intuitive, scalable web
-        applications. The site you're currently on was built by me utilizing
+        applications. The site you&apos;re currently on was built by me utilizing
         TypeScript, Next.js and Tailwind! I combine my background in technical
         consulting and client support with a focus on modern full-stack
         development. I enjoy solving problems at the intersection of business
@@ -33,8 +33,8 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
 
   const brief = (
     <>
-      <p>
-        I'm a Solutions Consultant and Full-Stack Developer with 5+ years of
+      <p className="font-sora">
+        I&apos;m a Solutions Consultant and Full-Stack Developer with 5+ years of
         experience supporting SaaS platforms in the US and Japan. I specialize
         in bridging business needs and technical solutions through strong
         communication, project management, and hands-on development using React,
