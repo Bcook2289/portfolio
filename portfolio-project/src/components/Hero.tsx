@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Intro from "./AboutMe/Intro";
+import TypingHeader from "./TypingHeader";
+
 
 const Hero = () => {
   return (
@@ -14,12 +16,12 @@ const Hero = () => {
             className="rounded-full"
           ></Image>
         </div>
-        <div className="p-4">
+        {/* <div className="p-4">
           <h1>Hello.</h1>
           <h2>My name is Brandon</h2>
           <h2>I&apos;m a Software Developer</h2>
-          <button>Projects</button>
-        </div>
+        </div> */}
+        <TypingHeader/>
       </div>
       <Intro pageFlag="brief" />
     </>
