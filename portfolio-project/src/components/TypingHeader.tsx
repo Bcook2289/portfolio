@@ -20,7 +20,7 @@ const TypingHeader = () => {
 
     return (
         <>
-            <div className="space-y-4 p-4 w-100">
+            <div className="space-y-4 p-4 w-150 font-jetbrains">
                 <h1 className="text-4xl font-bold text-black dark:text-white">
                     {showH1 && 
                         <TypeAnimation
