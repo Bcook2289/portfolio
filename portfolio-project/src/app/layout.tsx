@@ -34,7 +34,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
     <>
       <html lang="en">
         <body
-          className={` ${sora.variable} ${jetBrains.variable} antialiased`}
+          className={`${sora.variable} ${jetBrains.variable} antialiased`}
           >
           {children}
         </body>

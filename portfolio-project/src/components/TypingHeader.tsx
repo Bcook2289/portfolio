@@ -43,7 +43,7 @@ const TypingHeader = () => {
                     {showFinalH2 &&
                         <TypeAnimation 
                             className=""
-                            sequence={[1000, "I'm a Software Developer"]}
+                            sequence={[1000, "I'm a Full-Stack Developer"]}
                             wrapper="span"
                             speed={40}
                         />}
