@@ -74,15 +74,20 @@ export default function ProjectsPage() {
     return (
         <>
             <NavBar/>
-            <div>
+            <div className="flex justify-center">
                 {projectData.map((project, index) => (
-                    <div key={index}>
-                        <h2>{ project.title }</h2>
+                    <div 
+                        key={index} 
+                        className="rounded-2xl shadow-lg overflow-hidden font-sora bg-gray-300 text-black dark:bg-white p-4 m-4 w-70"
+                    >
+                        <div className="flex flex-col justify-center">
+                            <Link href={project.link}>{project.title}</Link>
+                            <Image alt= {project.title} src={project.image} width={200} height={200}/>
+                        </div>
                         <p>{ project.desc }</p>
-                        <Image alt= {project.title} src={project.image} width={50} height={50}/>
                         <div>
                             <h3>Tech Stack:</h3>
-                            <ul>
+                            <ul className="flex gap-2 flex-wrap items-center">
                                 {project.tech.map((techItem : string, techIndex) => (
                                     <li key={techIndex}>
                                         <Image alt={techItem} src={techIcons[techItem]} title={techItem} width={24} height={24}/>
@@ -90,7 +95,6 @@ export default function ProjectsPage() {
                                 ))}
                             </ul>
                         </div>
-                        <Link href={project.link}>{project.title}</Link>
                     </div>
                 ))}
             </div>
