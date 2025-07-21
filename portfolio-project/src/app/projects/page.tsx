@@ -42,7 +42,7 @@ const projectData = [
         title: "Portfolio Site",
         desc: "A portfolio showcasing my work",
         tech: ["Next.js", "Node.js", "Tailwind", "TypeScript", "Vercel"],
-        image: "/project-captures/Bandpage.JPG",
+        image: "/project-captures/Portfolio.JPG",
         link: "https://github.com/Bcook2289/portfolio"
     },
 
