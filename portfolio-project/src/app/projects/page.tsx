@@ -1,8 +1,6 @@
-import { m } from "framer-motion";
+import { motion } from "framer-motion";
 import NavBar from "../../components/NavBar";
 import Card from "../../components/Card";
-import Image from "next/image";
-import Link from "next/link";
 
 // data structure
 // project title
@@ -28,22 +26,22 @@ const projectData = [
     },
     {
         title: "VitaeAggregate",
-        desc: "A community app designed around critiquing and building ATS friendly resumes",
+        desc: "A community app designed around building ATS friendly resumes",
         tech: ["Cypress", "Node.js", "Svelte.js", "Django", "PostgreSQL", "Python", "TypeScript", "Pytest", "Docker", "Vercel"],
         image: "/project-captures/VitaeAggregate.JPG",
         link: "https://github.com/vitaeaggregate"
     },
     {
-        title: "Freelance Landing Site",
-        desc: "A freelance responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
-        tech: ["Next.js", "Tailwind", "TypeScript", "Vercel"],
+        title: "Landing Site",
+        desc: "A responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
+        tech: ["Next.js", "Node.js", "Tailwind", "TypeScript", "Vercel"],
         image: "/project-captures/Bandpage.JPG",
         link: "https://github.com/sentient-band-site"
     },
     {
         title: "Portfolio Site",
         desc: "A portfolio showcasing my work",
-        tech: ["Next.js", "Tailwind", "TypeScript", "Vercel"],
+        tech: ["Next.js", "Node.js", "Tailwind", "TypeScript", "Vercel"],
         image: "/project-captures/Bandpage.JPG",
         link: "https://github.com/Bcook2289/portfolio"
     },
@@ -75,11 +73,11 @@ export default function ProjectsPage() {
     return (
         <>
             <NavBar/>
-            <div className="flex justify-center">
+            <div className="flex justify-center items-center h-screen">
                 {projectData.map((project, index) => (
                     <div 
                         key={index} 
-                        className="rounded-2xl shadow-lg overflow-hidden font-sora bg-gray-300 text-black dark:bg-white p-4 m-4 w-70"
+                        className="rounded-2xl h-2/3 shadow-lg overflow-hidden font-sora bg-gray-300 text-black dark:bg-white p-4 m-4 w-80"
                     >
                         <Card 
                             title={project.title} 
@@ -89,21 +87,6 @@ export default function ProjectsPage() {
                             tech={project.tech}
                             techIcons={techIcons}
                         />
-                        {/* <div className="flex flex-col justify-center">
-                            <Link href={project.link}>{project.title}</Link>
-                            <Image alt= {project.title} src={project.image} width={200} height={200}/>
-                        </div>
-                        <p>{ project.desc }</p>
-                        <div>
-                            <h3>Tech Stack:</h3>
-                            <ul className="flex gap-2 flex-wrap items-center">
-                                {project.tech.map((techItem : string, techIndex) => (
-                                    <li key={techIndex}>
-                                        <Image alt={techItem} src={techIcons[techItem]} title={techItem} width={24} height={24}/>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div> */}
                     </div>
                 ))}
             </div>
