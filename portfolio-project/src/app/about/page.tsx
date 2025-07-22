@@ -9,11 +9,13 @@ export default function AboutPage() {
   return (
     <>
       <NavBar />
-      <Intro pageFlag="detailed" />
-      <Experience />
-      <Education />
-      <Projects />
-      <Skills />
+      <main className="min-h-screen px-8 py-16">
+        <Intro pageFlag="detailed" />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+      </main>
     </>
   );
 }

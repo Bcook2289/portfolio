@@ -45,26 +45,3 @@ const Skills = () => {
     )
 } 
 export default Skills;
-
-/*
-Languages: JavaScript, TypeScript, Python, Java
-
-Frontend: React, Svelte, Next.js, Django
-
-Backend: Express.js, Node.js, Prisma, Django REST, Flask
-
-Deployment & Testing: Render, Vercel, Heroku, Chai & Mocha, Playwright
-
-SQL: Postgres
-
-CSS: Bootstrap, Tailwind
-
-Git and Dev: GitHub, Docker
-
-Project Tracking / Management: Jira, Trello, Notion, Agile
-
-English: Native
-
-Japanese: Conversational
-
-*/
