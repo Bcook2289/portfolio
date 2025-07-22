@@ -1,11 +1,26 @@
+import { projectData, projectKeyPoints } from "../utils/projectData";
+
+type projectProps = {
+    title: string,
+    desc: string,
+    link: string,
+    image:string,
+    keyPoints: Array<string>,
+    role: string,
+    tech: Array<string>,
+}
 
 const Projects = () => {
     return (
         <>
-            <h1>Projects</h1>
-            <h2>Freelance Band Page</h2>
+            <section>
+                <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+                <div>
+                </div>
+            </section>
+            <h2>Band Page</h2>
             <h3>Front-end Engineer/Project Lead</h3>
-            <p>A freelance responsive, mobile-first homepage built for a local musical act in the Tokyo area.</p>
+            <p>A responsive, mobile-first homepage built for a local musical act in the Tokyo area.</p>
             <ul>
                 <li>Built using Next.js, Typescript, and Tailwind</li>
                 <li>Deployed utilizing Vercel</li>
@@ -21,12 +36,10 @@ const Projects = () => {
                 <li>Managed project schedule, project backlog, and led daily standups in an agile development environment.</li>
             </ul>
             <h2>Dokushojo</h2>
-            <h3>Project Manager (Group Project)</h3>
+            <h3>Project Manager/Full-stack Engineer</h3>
             <p>A language learning support app focusing on listening comprehension and recognition. Users can create decks of flashcards with flashcards which are then read by the user utilizing machine text-to-speech functionality.</p>
             <ul>
-                <li>
-                    Frontend built utilizing TypeScript, React.js, Vite and Bootstrap
-                </li>
+                <li>Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.</li>
                 <li>
                     Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js
                 </li>
