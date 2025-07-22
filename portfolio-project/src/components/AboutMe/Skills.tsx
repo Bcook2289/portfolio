@@ -1,7 +1,12 @@
+import { techIcons } from "../utils/techIcons";
+import { projectData } from "../utils/projectData";
+
+
+
 const Skills = () => {
     return (
         <>
-            <h1>
+            {/* <h1>
                 Skills Section
             </h1>
             <h2>
@@ -40,7 +45,7 @@ const Skills = () => {
                 Spoken Lanaguages
             </h2>
             <p>English - Native</p>
-            <p>Japanese - Limited Business</p>
+            <p>Japanese - Limited Business</p> */}
         </>
     )
 } 
