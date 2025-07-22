@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <NavBar />
-      <main className="min-h-screen px-8 py-16">
+      <main className="min-h-screen px-8 py-16 font-sora">
         <Intro pageFlag="detailed" />
         <Skills />
         <Projects />
