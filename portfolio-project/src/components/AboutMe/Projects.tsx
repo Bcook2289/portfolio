@@ -1,24 +1,29 @@
 import { projectData, projectKeyPoints } from "../utils/projectData";
 
-type projectProps = {
-    title: string,
-    desc: string,
-    link: string,
-    image:string,
-    keyPoints: Array<string>,
-    role: string,
-    tech: Array<string>,
-}
-
 const Projects = () => {
     return (
         <>
             <section>
                 <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-                <div>
-                </div>
+                    {
+                        projectData.map((project, index) => {
+                            return (
+                                <div className="" key={index}>
+                                    <h3>{project.title}</h3>
+                                    <p>{project.desc}</p>
+                                    <ul>
+                                        {project.keyPoints.map((point, index) => {
+                                            return (
+                                                <li key={index}>{point}</li>
+                                            );
+                                        })}
+                                    </ul>
+                                </div>
+                            )
+                        })
+                    }
             </section>
-            <h2>Band Page</h2>
+            {/* <h2>Band Page</h2>
             <h3>Front-end Engineer/Project Lead</h3>
             <p>A responsive, mobile-first homepage built for a local musical act in the Tokyo area.</p>
             <ul>
@@ -46,7 +51,7 @@ const Projects = () => {
                 <li>
                     Managed project backlog and maintained project schedule in a team of 4
                 </li>
-            </ul>
+            </ul> */}
         </>
     )
 } 
