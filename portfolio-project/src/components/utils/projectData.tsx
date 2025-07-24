@@ -106,31 +106,3 @@ export const projectData = [
     },
 
 ];
-
-export const projectKeyPoints = {
-    "Hato": [
-        "Frontend built utilizing Typescript, React, and CSS",
-        "Backend built utilizing Node.js",
-        "Developed as a fullstack developer among a group of 4 in an agile environment",
-    ],
-    "Dokushojo" : [
-        "Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.",
-        "Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js.",
-        "Managed project backlog and maintained project schedule in a team of 4",
-    ],
-    "VitaeAggregate": [
-        "Frontend built utilizing TypeScript, Svelte, Tailwind, Firebase for authentication, and Puppeteer.",
-        "Backend built utilizing Python, Django REST, and PostgreSQL.",
-        "Version control with Git and containerization with Docker",
-        "Managed project schedule, project backlog, and led daily standups in an agile development environment.",
-    ],
-    "Band Page" : [
-        "Built using Next.js, Typescript, and Tailwind",
-        "Deployed utilizing Vercel",
-        "Animations utilizing framer-motion",
-    ],
-    "Portfolio Site": [
-        "Built using Next.js, Typescript, and Tailwind",
-        "Deployed utilizing Vercel",
-    ],
-}

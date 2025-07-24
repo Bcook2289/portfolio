@@ -1,4 +1,5 @@
 import { projectData } from "../utils/projectData";
+import Image from "next/image";
 
 const Projects = () => {
     return (
@@ -13,8 +14,9 @@ const Projects = () => {
                                         <div className="flex"> 
                                             <h3 className="text-lg font-semibold mr-2">{project.title}</h3>
                                             <h4 className="text-lg italic">
-                                                <a href={project.link}>
-                                                    {project.role}
+                                                <a href={project.link} className="flex">
+                                                    {project.role} 
+                                                    <Image alt="link" src={"/svg-icons/link-light.svg"} width={10} height={10} className="ml-2"/>
                                                 </a>
                                             </h4>
                                         </div>

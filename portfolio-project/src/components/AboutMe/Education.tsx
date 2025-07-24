@@ -2,7 +2,7 @@ import { educationData } from "../utils/educationData";
 const Education = () => {
     return (
         <>
-            <section className="py-8">
+            <section>
                 <h2 className="text-2xl font-semibold mb-4 bg-gray-100 text-center">Educational Background</h2>
                     {educationData.map((edu, index) => {
                         return (
