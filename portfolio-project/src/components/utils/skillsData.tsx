@@ -7,5 +7,6 @@ export const skillsData = {
     "CSS":["Bootstrap", "Tailwind"],
     "Git and Dev":["GitHub", "Docker"],
     "Project Tracting & Management":["Agile", "Waterfall", "Notion", "Jira", "Trello"],
-    "Spoken Languages":["English - Native", "Japanese - Limited Business"],
+    "English":["Native"],
+    "Japanese":["Limited Business"],
 }
