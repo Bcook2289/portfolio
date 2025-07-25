@@ -9,12 +9,14 @@ export default function AboutPage() {
   return (
     <>
       <NavBar />
-      <main className="min-h-screen max-w-1/2 px-8 py-8 font-sora text-xs mx-auto">
-        <Intro pageFlag="detailed" />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Education />
+      <main className="min-h-screen font-sora text-xs">
+        <div className="max-w-1/2 px-8 py-8 bg-white text-black mx-auto">
+          <Intro pageFlag="detailed" />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Education />
+        </div>
       </main>
     </>
   );

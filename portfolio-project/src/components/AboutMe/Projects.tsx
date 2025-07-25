@@ -8,7 +8,7 @@ const Projects = () => {
                 <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">Projects</h2>
                     <div className="grid grid-cols-1">
                         {
-                            projectData.slice().reverse().map((project, index) => {
+                            projectData.slice().reverse().slice(0, 3).map((project, index) => {
                                 return (
                                     <div key={index} className="mb-2">
                                         <div className="flex"> 
