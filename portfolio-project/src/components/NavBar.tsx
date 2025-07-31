@@ -45,18 +45,22 @@ const NavBar = () => {
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg py-2"
+                    className="absolute left-0 mt-2 w-28 bg-white shadow-lg rounded-lg py-2"
                   >
                     {projectsLinks.map((project) => (
-                      <li key={project.href}>
+                      <motion.li 
+                        key={project.href}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
                         <Link
                           href={project.href}
                           className="inline-block relative px-4 py-2 font-semibold text-sm text-black hover:text-gray-400 group"
                         >
                           {project.label}
-                          <span className="absolute left-0 ml-3 bottom-0 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-[80%]"></span>
+                          <span className="absolute left-0 ml-3 bottom-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-[80%]"></span>
                         </Link>
-                      </li>
+                      </motion.li>
                     ))}
                   </motion.ul>
                 )}
