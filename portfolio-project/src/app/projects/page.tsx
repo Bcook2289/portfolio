@@ -6,13 +6,14 @@ import { projectData } from "../../components/utils/projectData";
 
 export default function ProjectsPage() {
     return (
-        <>
+        <div className="text-black dark:text-white bg-white dark:bg-black flex flex-col h-screen">
+
             <NavBar/>
-            <div className="flex justify-center items-center h-screen">
+            <main className="flex flex-wrap justify-center items-center py-24 flex-grow">
                 {projectData.map((project, index) => (
                     <div 
-                        key={index} 
-                        className="rounded-2xl h-2/3 shadow-lg overflow-hidden font-sora bg-gray-300 text-black dark:bg-white p-4 m-4 w-80"
+                    key={index} 
+                    className="rounded-2xl h-10/12 shadow-lg overflow-hidden font-sora bg-gray-300 text-black p-4 m-4 w-80"
                     >
                         <Card 
                             title={project.title} 
@@ -21,10 +22,11 @@ export default function ProjectsPage() {
                             image={project.image}
                             tech={project.tech}
                             techIcons={techIcons}
-                        />
+                            />
                     </div>
                 ))}
-            </div>
-        </>
+            </main>
+        </div>
+        
     )
 }

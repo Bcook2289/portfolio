@@ -7,13 +7,13 @@ import NavBar from "../../components/NavBar";
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="dark:text-white text-black bg-white dark:bg-black">
       <NavBar />
-      <main className="min-h-screen font-sora m-8 pb-8 rounded-2xl dark:text-white text-black bg-white dark:bg-black">
-        <div className="h-screen m-auto max-w-1/2 flex flex-col justify-center items-center px-8 text-center text-lg">
+      <main className="min-h-screen font-sora m-8 pb-8">
+        <div className="h-screen m-auto max-w-1/2 flex flex-col mt-24 items-center px-8 text-center text-lg">
           <Intro pageFlag="detailed" />
         </div>
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce dark:text-gray-200 text-black flex flex-col items-center">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce dark:text-gray-200 flex flex-col items-center">
           <h2>scroll down for more!</h2>
           <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -26,6 +26,6 @@ export default function AboutPage() {
           <Education />
         </div>
       </main>
-    </>
+    </div>
   );
 }
