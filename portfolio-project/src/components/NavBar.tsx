@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full p-4">
+      <nav className="w-full p-4 text-black dark:text-white bg-white dark:bg-black">
         <ul className="flex justify-center space-x-8">
           {navItems.map((link) =>
             link.label === "Projects" ? (
@@ -57,10 +57,10 @@ const NavBar = () => {
                         >
                           <Link
                             href={project.href}
-                            className="inline-block relative px-4 py-2 font-semibold text-sm text-black hover:text-gray-400 group"
+                            className="inline-block relative px-4 py-2 font-semibold text-sm text-black  hover:text-gray-400 group"
                           >
                             {project.label}
-                            <span className="absolute left-0 ml-3 bottom-0 h-[2px] w-0 bg-black transition-all duration-300 group-hover:w-[80%]"></span>
+                            <span className="absolute left-0 ml-3 bottom-0 h-[2px] w-0 bg-black dark:text-white transition-all duration-300 group-hover:w-[80%]"></span>
                           </Link>
                         </motion.li>
                       ))}
@@ -86,8 +86,8 @@ const NavBar = () => {
             )
           )}
         </ul>
+        <ThemeSwitcher/>
       </nav>
-      <ThemeSwitcher/>
     </>
   );
 };

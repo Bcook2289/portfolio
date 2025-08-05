@@ -9,7 +9,7 @@ export default function AboutPage() {
   return (
     <>
       <NavBar />
-      <main className="min-h-screen font-sora mx-8 dark:text-white text-black">
+      <main className="min-h-screen font-sora m-8 pb-8 rounded-2xl dark:text-white text-black bg-white dark:bg-black">
         <div className="h-screen m-auto max-w-1/2 flex flex-col justify-center items-center px-8 text-center text-lg">
           <Intro pageFlag="detailed" />
         </div>
