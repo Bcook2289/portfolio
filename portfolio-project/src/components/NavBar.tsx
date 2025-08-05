@@ -86,7 +86,9 @@ const NavBar = () => {
             )
           )}
         </ul>
-        <ThemeSwitcher/>
+        <div className="flex justify-center items-center my-2">
+          <ThemeSwitcher/>
+        </div>
       </nav>
     </>
   );
