@@ -26,12 +26,12 @@ const Hero = () => {
         <Button 
           label="Projects" 
           href="/projects" 
-          className="px-4 py-2 w-35 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors duration-500 cursor-pointer"
+          className="px-4 py-2 w-35 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
         />
         <Button 
           label="Contact Me" 
           href="/" 
-          className="px-4 py-2 w-35 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors duration-500 cursor-pointer"
+          className="px-4 py-2 w-35 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
         />
       </div>
     </div>
