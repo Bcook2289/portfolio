@@ -14,7 +14,7 @@ type cardProps = {
 const Card:React.FC<cardProps> = ({title, desc, link, image, tech, techIcons}) => {
     return (
         <>
-            <div className="flex flex-col items-center justify-between gap-4 p-4 bg-white h-full rounded-2xl">
+            <div className="flex flex-col items-center justify-between gap-4 p-4 bg-white sm:h-full rounded-2xl">
                 <Link href={link} className="text-xl font-semibold">{title}</Link>
                 <div>
                     <Image alt={title} src={image} width={400} height={200}/>

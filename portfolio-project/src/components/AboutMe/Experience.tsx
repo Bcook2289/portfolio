@@ -10,10 +10,10 @@ const Experience = () => {
                         return (
                             <div key={index} className="mb-2">
                                 <div className="flex">
-                                    <h3 className="text-lg font-semibold mr-2">{exp.role}, {exp.company}</h3>
-                                    <h4 className="text-lg">{exp.date}</h4>
+                                    <h3 className="sm:text-lg font-semibold mr-2 whitespace-nowrap">{exp.role}, {exp.company}</h3>
+                                    <h4 className="sm:text-lg whitespace-nowrap">{exp.date}</h4>
                                 </div>
-                                <ul className="list-disc space-y-1 pl-4">
+                                <ul className="text-xs sm:text-md list-disc space-y-1 pl-4">
                                     {
                                         exp.roleKeyPoints.map((keyPoint, keyPointIndex) => {
                                             return (

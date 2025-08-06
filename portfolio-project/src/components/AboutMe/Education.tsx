@@ -6,7 +6,7 @@ const Education = () => {
                 <h2 className="text-2xl font-semibold mb-4 bg-gray-100 text-center">Educational Background</h2>
                     {educationData.map((edu, index) => {
                         return (
-                            <div key={index} className="flex mb-4">
+                            <div key={index} className="flex mb-4 justify-between">
                                 <h3>{edu.edu}, {edu.school}</h3>
                                 <h4 className="ml-8">{edu.date}, {edu.location}</h4>
                             </div>
