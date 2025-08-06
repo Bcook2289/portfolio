@@ -25,7 +25,7 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
     <>
       <html lang="en" suppressHydrationWarning>
         <body
-          className={`${sora.variable} ${jetBrains.variable} antialiased`}
+          className={`${sora.variable} ${jetBrains.variable} overflow-x-hidden antialiased`}
           >
             <ThemeProviderWrapper>
               {children}
