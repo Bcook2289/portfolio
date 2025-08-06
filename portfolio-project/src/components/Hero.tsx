@@ -7,7 +7,7 @@ import Button from "./Button";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center px-4 py-8 space-y-8 w-full">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+      <div className="flex flex-col sm:flex-row justify-center items-center sm:w-3xl gap-4">
         <div className="relative">
           <Image
             src="/images/ProfilePic.jpg"
