@@ -7,10 +7,10 @@ import NavBar from "../../components/NavBar";
 
 export default function AboutPage() {
   return (
-    <div className="dark:text-white text-black bg-white dark:bg-black">
+    <div className="dark:text-white text-black bg-white dark:bg-black w-full">
       <NavBar />
-      <main className="min-h-screen font-sora m-8 pb-8">
-        <div className="h-screen m-auto max-w-1/2 flex flex-col mt-24 items-center px-8 text-center text-lg">
+      <main className="min-h-screen font-sora m-4 sm:m-8 sm:pb-8">
+        <div className="h-screen m-auto sm:max-w-1/2 flex flex-col sm:mt-24 items-center px-8 text-center text-sm sm:text-lg leading-relaxed">
           <Intro pageFlag="detailed" />
         </div>
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce dark:text-gray-200 flex flex-col items-center">
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </div>
-        <div className="max-w-1/2 text-xs px-8 py-8 bg-white text-black rounded-xl shadow-xl mx-auto">
+        <div className="sm:max-w-1/2 text-xs px-8 py-8 bg-white text-black rounded-xl shadow-xl mx-auto">
           <Skills />
           <Projects />
           <Experience />

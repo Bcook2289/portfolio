@@ -23,7 +23,7 @@ export const projectData = [
     {
         title: "Dokushojo",
         desc: "A Language Learning app focusing on listening comprehension",
-        role: "Full-stack Engineer/Project Manager",
+        role: "Full-stack/Project Manager",
         keyPoints: [
             "Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.",
             "Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js.",
@@ -45,7 +45,7 @@ export const projectData = [
     {
         title: "VitaeAggregate",
         desc: "A community app designed around building ATS friendly resumes",     
-        role: "Full-stack Engineer/Project Manager",
+        role: "Full-stack/Project Manager",
         keyPoints: [
             "Frontend built utilizing TypeScript, Svelte, Tailwind, Firebase for authentication, and Puppeteer.",
             "Backend built utilizing Python, Django REST, and PostgreSQL.",
@@ -70,7 +70,7 @@ export const projectData = [
     {
         title: "Landing Site",
         desc: "A responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
-        role: "Front-end Engineer/Project Lead",
+        role: "Front-end/Project Lead",
         keyPoints: [
             "Built using Next.js, Typescript, and Tailwind",
             "Deployed utilizing Vercel",
@@ -89,7 +89,7 @@ export const projectData = [
     {
         title: "Portfolio Site",
         desc: "A portfolio showcasing my work",
-        role: "Front-end Engineer/Project Lead",
+        role: "Front-end/Project Lead",
         keyPoints: [
             "Built using Next.js, Typescript, and Tailwind",
             "Deployed utilizing Vercel",

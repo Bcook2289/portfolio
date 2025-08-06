@@ -12,16 +12,16 @@ const Projects = () => {
                                 return (
                                     <div key={index} className="mb-2">
                                         <div className="flex"> 
-                                            <h3 className="text-lg font-semibold mr-2">{project.title}</h3>
-                                            <h4 className="text-lg italic">
-                                                <a href={project.link} className="flex">
+                                            <h3 className="text-md sm:text-lg font-semibold mr-2">{project.title}</h3>
+                                            <h4 className="text-md sm:text-lg italic">
+                                                <a href={project.link} className="flex justify-between">
                                                     {project.role} 
                                                     <Image alt="link" src={"/svg-icons/link-light.svg"} width={10} height={10} className="ml-2"/>
                                                 </a>
                                             </h4>
                                         </div>
-                                        <p className="">{project.desc}</p>
-                                        <ul className="list-disc list-inside space-y-1 pl-4">
+                                        <p className="text-xs sm:text-md">{project.desc}</p>
+                                        <ul className="text-xs smtext-md list-disc list-inside space-y-1 pl-4">
                                             {project.keyPoints.map((point, index) => {
                                                 return (
                                                     <li key={index} className="">{point}</li>
