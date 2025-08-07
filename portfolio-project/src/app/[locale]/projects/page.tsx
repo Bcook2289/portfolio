@@ -1,7 +1,7 @@
-import NavBar from "../../components/NavBar";
-import Card from "../../components/Card";
-import { techIcons } from "../../components/utils/techIcons";
-import { projectData } from "../../components/utils/projectData";
+import NavBar from "../../../components/NavBar";
+import Card from "../../../components/Card";
+import { techIcons } from "../../../components/utils/techIcons";
+import { projectData } from "../../../components/utils/projectData";
 
 export default function ProjectsPage() {
     return (
