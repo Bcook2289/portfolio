@@ -1,11 +1,14 @@
 "use client";
-import {motion} from "framer-motion";
+import {motion} from "framer-motion"; 
+import { useTranslations } from "next-intl";
 
 type summaryProp = {
   pageFlag?: "brief" | "detailed";
 };
 
 const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
+  const t = useTranslations("hero");
+
   const detailed = (
     <>
       <motion.p 
@@ -44,14 +47,15 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
   const brief = (
     <>
       <p className="font-sora">
-        I&apos;m a Solutions Consultant and Full-Stack Developer with 5+ years of
+        {t("description")}
+        {/* I&apos;m a Solutions Consultant and Full-Stack Developer with 5+ years of
         experience supporting SaaS platforms in the US and Japan. I specialize
         in bridging business needs and technical solutions through strong
         communication, project management, and hands-on development using React,
         Next.js, TypeScript, Tailwind CSS, and Python/Django. This site was
         built by me, and reflects my passion for building scalable,
         user-friendly web applications that combine client support experience
-        with modern full-stack engineering.
+        with modern full-stack engineering. */}
       </p>
     </>
   );

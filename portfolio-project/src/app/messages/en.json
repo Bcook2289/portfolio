@@ -1,0 +1,18 @@
+{
+    "navbar" : {
+        "home" : "Home",
+        "about" : "About Me",
+        "projects" : "Projects",
+        "contact" : "Contact Me",
+        "inProgress": "In Progress",
+        "roadmaps": "Roadmaps"
+    },
+    "hero": {
+        "title" : "Hello",
+        "subtitle" : "My name is Brandon",
+        "finaltitle" : " I'm a Full-Stack Developer",
+        "projectsButton" : "Projects",
+        "contactMeButton" : "Contact Me",
+        "description" : "I'm a Solutions Consultant and Full-Stack Developer with 5+ years of experience supporting SaaS platforms in the US and Japan. I specialize in bridging business needs and technical solutions through strong communication, project management, and hands-on development using React, Next.js, TypeScript, Tailwind CSS, and Python/Django. This site was built by me, and reflects my passion for building scalable, user-friendly web applications that combine client support experience with modern full-stack engineering."
+    }
+}

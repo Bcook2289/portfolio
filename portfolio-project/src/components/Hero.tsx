@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Intro from "./AboutMe/Intro";
 import TypingHeader from "./TypingHeader";
 import Button from "./Button";
+import { useTranslations } from "next-intl";
 
 
 const Hero = () => {
+  const t = useTranslations("hero");
+  
   return (
     <div className="flex flex-col items-center px-4 py-8 space-y-8 w-full">
       <div className="flex flex-col sm:flex-row justify-center items-center sm:w-3xl gap-4">
@@ -15,18 +20,18 @@ const Hero = () => {
             width={200}
             height={200}
             className="rounded-full"
-          ></Image>
+          />
         </div>
         <TypingHeader/>
       </div>
      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
         <Button 
-          label="Projects" 
+          label={t("projectsButton")} 
           href="/projects" 
           className="px-4 py-2 w-full sm:w-40 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
         />
         <Button 
-          label="Contact Me" 
+          label={t("contactMeButton")} 
           href="/" 
           className="px-4 py-2 w-full sm:w-40 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
         />

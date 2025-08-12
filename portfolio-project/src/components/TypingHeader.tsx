@@ -2,8 +2,13 @@
 
 import { TypeAnimation } from "react-type-animation";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const TypingHeader = () => {
+
+    const t = useTranslations("hero");
+
+    const translationsObject = [t("title"), t("subtitle"), t("finaltitle")];
 
     const [ showH1, setShowH1 ] = useState(false);
     const [ showH2, setShowH2 ] = useState(false);
@@ -25,7 +30,7 @@ const TypingHeader = () => {
                     {showH1 && 
                         <TypeAnimation
                             className="TypeAnimation" 
-                            sequence={['Hello.', 1000]}
+                            sequence={[translationsObject[0], 1000]}
                             wrapper="span"
                             speed={40}
                     />}
@@ -34,7 +39,7 @@ const TypingHeader = () => {
                     {showH2 &&
                         <TypeAnimation 
                             className="TypeAnimation"
-                            sequence={[1000, 'My name is Brandon']}
+                            sequence={[1000, translationsObject[1]]}
                             wrapper="span"
                             speed={40}
                         />}
@@ -43,7 +48,7 @@ const TypingHeader = () => {
                     {showFinalH2 &&
                         <TypeAnimation 
                             className=""
-                            sequence={[1000, "I'm a Full-Stack Developer"]}
+                            sequence={[1000, translationsObject[2]]}
                             wrapper="span"
                             speed={40}
                         />}
