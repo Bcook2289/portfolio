@@ -43,7 +43,7 @@ const NavBar = () => {
                   </Link>
                 </motion.li>
 
-                <AnimatePresence>
+                {/* <AnimatePresence>
                   {isHovered && (
                     <motion.ul
                       initial={{ opacity: 0, y: -10 }}
@@ -68,7 +68,7 @@ const NavBar = () => {
                       ))}
                     </motion.ul>
                   )}
-                </AnimatePresence>
+                </AnimatePresence> */}
               </div>
             ) : (
               <motion.li
