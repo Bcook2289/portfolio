@@ -197,5 +197,9 @@
         "Japanese": "Japanese",
         "Native" : "Native",
         "Limited Business" : "Limited Business"
+    },
+    "themeSwitch" : {
+        "lightMode" : "☀️ Switch to Light Mode",
+        "darkMode" : "🌘 Switch to Dark Mode"
     }
 }

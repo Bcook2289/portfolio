@@ -21,13 +21,13 @@ const Card:React.FC<cardProps> = ({title, desc, link, image, tech, techIcons, in
             initial={{ opacity: 0, y: index % 2 === 0 ? -100 : 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="rounded-2xl shadow-lg overflow-hidden font-sora bg-gray-300 text-black p-4 m-4 w-80"
+            className="rounded-2xl shadow-lg overflow-hidden font-sora bg-gray-300 text-black p-4 m-4 w-80 sm:h-[500]"
             >
             <div className="flex flex-col items-center justify-between gap-4 p-4 bg-white sm:h-full rounded-2xl">
                 <Link href={link} className="text-xl font-semibold">{title}</Link>
                 <div>
                     <Image alt={title} src={image} width={400} height={200}/>
-                    <p className="py-4">{desc}</p>
+                    <p className="pt-4">{desc}</p>
                 </div>
                 <div className="w-full mx-8">
                     <div className="w-full h-px bg-gradient-to-r from-gray-300 via-gray-400 to-gray-300 my-6" />
