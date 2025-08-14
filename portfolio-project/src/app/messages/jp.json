@@ -165,25 +165,25 @@
             "PMOおよびSDチームと協力して早期要件収集を行い、クライアントのニーズを反映"
             ]
         }],
-    "education" : [
-        {
-            "edu": "Full-stack Engineering with Agile Methodologies",
-            "school": "Code Chrysalis",
-            "date": "06/2024 – 09/2024",
-            "location": "Tokyo, Japan"
-        },
-        {
-            "edu": "Japanese",
-            "school": "Akamonkai Language School",
-            "date": "10/2023 – 04/2024",
-            "location": "Tokyo, Japan"
-        },
-        {
-            "edu": "Bachelor of Science - International Business",
-            "school": "Temple University",
-            "date": "09/2014 – 05/2018",
-            "location": "Tokyo, Japan"
-        }
+    "education": [
+    {
+        "edu": "フルスタックエンジニアリング（アジャイル手法）",
+        "school": "Code Chrysalis",
+        "date": "2024/06 – 2024/09",
+        "location": "東京都、日本"
+    },
+    {
+        "edu": "日本語",
+        "school": "赤門会日本語学校",
+        "date": "2023/10 – 2024/04",
+        "location": "東京都、日本"
+    },
+    {
+        "edu": "理学士 - 国際ビジネス",
+        "school": "テンプル大学",
+        "date": "2014/09 – 2018/05",
+        "location": "東京都、日本"
+    }
 ],
     "skills" : {
         "skill" : " スキル",
