@@ -21,7 +21,7 @@ const Card:React.FC<cardProps> = ({title, desc, link, image, tech, techIcons, in
             initial={{ opacity: 0, y: index % 2 === 0 ? -100 : 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            className="rounded-2xl sm:h-10/12 shadow-lg overflow-hidden font-sora bg-gray-300 text-black p-4 m-4 w-80"
+            className="rounded-2xl shadow-lg overflow-hidden font-sora bg-gray-300 text-black p-4 m-4 w-80"
             >
             <div className="flex flex-col items-center justify-between gap-4 p-4 bg-white sm:h-full rounded-2xl">
                 <Link href={link} className="text-xl font-semibold">{title}</Link>

@@ -14,6 +14,191 @@
         "projectsButton" : "プロジェクト",
         "contactMeButton" : "お問い合わせ",
         "description" : "私は、アメリカと日本でSaaSプラットフォームを5年以上サポートしてきたソリューションコンサルタント兼フルスタック開発者です。React、Next.js、TypeScript、Tailwind CSS、Python/Djangoを使用したハンズオン開発と、強力なコミュニケーションとプロジェクト管理によって、ビジネスニーズと技術的ソリューションの橋渡しを得意としています。このサイトは私自身が構築したもので、クライアントサポートの経験とモダンなフルスタックエンジニアリングを組み合わせた、スケーラブルでユーザーフレンドリーなWebアプリケーションを作ることへの情熱を反映しています。"
+    },
+    "intro" : {
+        "shortDescription" : "私は、アメリカと日本でSaaSプラットフォームを5年以上サポートしてきたソリューションコンサルタント兼フルスタック開発者です。React、Next.js、TypeScript、Tailwind CSS、Python/Djangoを使用したハンズオン開発と、強力なコミュニケーションとプロジェクト管理によって、ビジネスニーズと技術的ソリューションの橋渡しを得意としています。このサイトは私自身が構築したもので、クライアントサポートの経験とモダンなフルスタックエンジニアリングを組み合わせた、スケーラブルでユーザーフレンドリーなWebアプリケーションを作ることへの情熱を反映しています。",
+        "longDescriptionOne": "私は、細部へのこだわりと分析的な問題解決力を強みとするソリューションコンサルタント兼フルスタックエンジニアです。クライアント業務やチームでの技術提供を通じて、日本と米国のエネルギー業界におけるSaaSプラットフォームを5年以上支えてきました。React、Next.js、TypeScript、Tailwind CSS、Python/Django などの技術に精通し、アジャイル・ウォーターフォール両方の環境でプロジェクトをリードした経験があります。ステークホルダーとの円滑なコミュニケーション、プロジェクト進行管理、バックエンドとフロントエンドの統合設計まで幅広く対応できます。",
+        "longDescriptionTwo": "クリーンで直感的なWeb体験を作ることにも情熱を注いでおり、このサイトもその一例です。TypeScript、Next.js、Tailwind CSS を用いて、設計から開発まで手掛けました。ビジネスとエンジニアリングの境界にある課題を解決することが得意で、スケーラブルで使いやすく、細部まで配慮されたツールの開発を常に目指しています。技術コンサルタントとしての視点と現場での開発経験を活かし、実用性とデザイン性を両立させたソリューションを提供します。"
+    },
+    "about" : {
+        "scrollPrompt" : "もっと見る"
+    },
+    "projects":[{
+        "title": "Hato",
+        "desc": "A social media app designed around flashcards",
+        "role": "Full-stack Engineer",
+        "keyPoints": [
+            "Frontend built utilizing Typescript, React, and CSS",
+            "Backend built utilizing Node.js",
+            "Developed as a fullstack developer among a group of 4 in an agile environment"
+        ],
+        "tech": [
+            "Express.js", 
+            "Node.js", 
+            "React.js", 
+            "Knex.js", 
+            "PostgreSQL", 
+            "JavaScript", 
+            "TypeScript"
+        ],
+        "image": "/project-captures/Hato.JPG",
+        "link": "https://github.com/hato-app"
+    },
+    {
+        "title": "Dokushojo",
+        "desc": "A Language Learning app focusing on listening comprehension",
+        "role": "Full-stack/Project Manager",
+        "keyPoints": [
+            "Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.",
+            "Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js.",
+            "Managed project backlog and maintained project schedule in a team of 4"
+        ],
+        "tech": [
+            "Express.js", 
+            "Node.js", 
+            "React.js", 
+            "Knex.js", 
+            "Bootstrap CSS", 
+            "PostgreSQL", 
+            "Vite", 
+            "TypeScript"
+        ],
+        "image": "/project-captures/DSJ.JPG",
+        "link": "https://github.com/Planet-DokuShojo/"
+    },
+    {
+        "title": "VitaeAggregate",
+        "desc": "A community app designed around building ATS friendly resumes",     
+        "role": "Full-stack/Project Manager",
+        "keyPoints": [
+            "Frontend built utilizing TypeScript, Svelte, Tailwind, Firebase for authentication, and Puppeteer.",
+            "Backend built utilizing Python, Django REST, and PostgreSQL.",
+            "Version control with Git and containerization with Docker",
+            "Managed project schedule, project backlog, and led daily standups in an agile development environment."
+        ],
+        "tech": [
+            "Cypress", 
+            "Node.js", 
+            "Svelte.js", 
+            "Django", 
+            "PostgreSQL", 
+            "Python", 
+            "TypeScript", 
+            "Pytest", 
+            "Docker", 
+            "Vercel"
+        ],
+        "image": "/project-captures/VitaeAggregate.JPG",
+        "link": "https://github.com/vitaeaggregate"
+    },
+    {
+        "title": "Landing Site",
+        "desc": "A responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
+        "role": "Front-end/Project Lead",
+        "keyPoints": [
+            "Built using Next.js, Typescript, and Tailwind",
+            "Deployed utilizing Vercel",
+            "Animations utilizing framer-motion"
+        ],
+        "tech": [
+            "Next.js", 
+            "Node.js", 
+            "Tailwind", 
+            "TypeScript", 
+            "Vercel"
+        ],
+        "image": "/project-captures/Bandpage.JPG",
+        "link": "https://github.com/sentient-band-site"
+    },
+    {
+        "title": "Portfolio Site",
+        "desc": "A portfolio showcasing my work",
+        "role": "Front-end/Project Lead",
+        "keyPoints": [
+            "Built using Next.js, Typescript, and Tailwind",
+            "Deployed utilizing Vercel"
+        ],
+        "tech": [
+            "Next.js", 
+            "Node.js", 
+            "Tailwind", 
+            "TypeScript", 
+            "Vercel"
+        ],
+        "image": "/project-captures/Portfolio.JPG",
+        "link": "https://github.com/Bcook2289/portfolio"
+    }],
+    "experience" : [
+    {
+        "role": "Solutions Consultant",
+        "company": "ESG Global",
+        "date": "01/2025 - present",
+        "keyPoints": [
+            "Managing multiple strict test deadlines ensuring effective client adoption and onboarding into new energy markets",
+            "Responsible for ensuring proper file transmission, data flow, and database integrity to ensure effective communication between clients and utilities.",
+            "Owning and monitoring market requirements to ensure business rules are up-to-date"
+        ]
+    },
+    {
+        "role": "Applications Consultant",
+        "company": "ESG Global",
+        "date": "10/2021 - 07/2023",
+        "keyPoints": [
+            "Acted as the primary point of contact for technical issues developing technical proficiency with all proprietary solutions within the Japan team, establishing and maintaining strong relationships at all levels within our organization.",
+            "Performed regular API testing as part of our operations processes, managed server health, and conducted database querying and analysis utilizing SQL to ensure application stability.",
+            "Bridged communications among cross-functional teams within an Agile framework facilitating seamless collaboration and information sharing.",
+            "Headed the User Acceptance Testing (UAT) initiative for new releases in the Japanese market, ensuring smooth adoption by clients.",
+            "Led the testing process for multiple projects across clients, providing the PMO team with valuable system functionality and procedural insights.",
+            "Collaborated with PMO teams for backlog grooming and JIRA prioritization, contributing to efficient project management."
+        ]
+    },
+    {
+        "role": "Client Operations Analyst",
+        "company": "ESG Global",
+        "date": "08/2018 - 09/2021",
+        "keyPoints": [
+            "Established and maintained strong relationships with Japanese clients as primary point of contact, establishing and maintaining strong client relationships",
+            "Mentored and trained team members as team lead on software issue resolutions and responses",
+            "Advised clients on best practices for utilizing our platform including developing and sharing instructional documents",
+            "Collaborated with PMO and SD teams on early requirements gathering representing the client's needs."
+        ]
+    }],
+    "education" : [
+        {
+            "edu": "Full-stack Engineering with Agile Methodologies",
+            "school": "Code Chrysalis",
+            "date": "06/2024 – 09/2024",
+            "location": "Tokyo, Japan"
+        },
+        {
+            "edu": "Japanese",
+            "school": "Akamonkai Language School",
+            "date": "10/2023 – 04/2024",
+            "location": "Tokyo, Japan"
+        },
+        {
+            "edu": "Bachelor of Science - International Business",
+            "school": "Temple University",
+            "date": "09/2014 – 05/2018",
+            "location": "Tokyo, Japan"
+        }
+],
+    "skills" : {
+        "skill" : " スキル",
+        "Languages": "プログラミング言語",
+        "Frontend Frameworks": "フロントエンドフレームワーク",
+        "Backend Frameworks": "バックエンドフレームワーク",
+        "Deployment & Testing": "デプロイ・テスト",
+        "Database": "データベース",
+        "CSS": "CSS",
+        "Git and Dev": "Git・開発ツール",
+        "Project Tracking and Management": "プロジェクト管理",
+        "English": "英語",
+        "Japanese": "日本語",
+        "Agile": "アジャイル",
+        "Waterfall": "ウォーターフォール",
+        "Native" : "ネイティブ",
+        "Limited Business" : "ビジネス初級レベル"
     }
 }
 
