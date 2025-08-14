@@ -15,11 +15,12 @@ interface Project {
 const Projects = () => {
     const t = useTranslations();
     const projectDataRaw = t.raw("projects") as Project[];
+    const header = t("sectionHeader.projects")
 
     return (
         <>
             <section className="py-4">
-                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">Projects</h2>
+                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">{ header }</h2>
                     <div className="grid grid-cols-1">
                         {
                             projectDataRaw.slice().reverse().slice(0, 3).map((project, index) => {

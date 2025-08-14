@@ -12,10 +12,11 @@ interface education {
 const Education = () => {
     const t = useTranslations()
     const educationDataRaw = t.raw("education") as education[];
+    const header = t("sectionHeader.education")
     return (
         <>
             <section>
-                <h2 className="text-2xl font-semibold mb-4 bg-gray-100 text-center">Educational Background</h2>
+                <h2 className="text-2xl font-semibold mb-4 bg-gray-100 text-center">{ header }</h2>
                     {educationDataRaw.map((edu, index) => {
                         return (
                             <div key={index} className="flex mb-4 justify-between">

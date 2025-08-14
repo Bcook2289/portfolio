@@ -5,11 +5,12 @@ import { skillsData } from "../utils/skillsData";
 
 const Skills = () => {
     const t = useTranslations("skills");
+    const header = useTranslations("sectionHeader")
     
     return (
         <>
             <section>
-                <h2 className="text-xl font-semibold my-4 bg-gray-200 text-center">{t("skill")}</h2>
+                <h2 className="text-xl font-semibold my-4 bg-gray-200 text-center">{header("skills")}</h2>
                 <div className="flex flex-wrap gap-1">
                     {
                         Object.entries(skillsData).map(([category, skills]) => {

@@ -1,3 +1,5 @@
+"use client"
+
 import { useTranslations } from "next-intl";
 import { professionalExperienceData } from "../utils/professionalExperienceData";
 
@@ -11,11 +13,12 @@ interface professionalExperience {
 const Experience = () => {
     const t = useTranslations();
     const professionalExperienceDataRaw = t.raw("experience") as professionalExperience[];
+    const header = t("sectionHeader.experience")
 
     return (
         <>
             <section>
-                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">Professional Experience</h2>
+                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">{t(header)}</h2>
                 {
                     professionalExperienceDataRaw.map((exp, index) => {
                         return (

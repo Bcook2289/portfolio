@@ -184,7 +184,6 @@
         }
 ],
     "skills" : {
-        "skill" : " Skills",
         "Languages": "Languages",
         "Frontend Frameworks": "Frontend Frameworks",
         "Backend Frameworks": "Backend Frameworks",
@@ -201,5 +200,11 @@
     "themeSwitch" : {
         "lightMode" : "☀️ Switch to Light Mode",
         "darkMode" : "🌘 Switch to Dark Mode"
+    },
+    "sectionHeader": {
+        "education": "Educational Background",
+        "experience": "Professional Experience",
+        "projects": "Projects",
+        "skills": "Skills"
     }
 }
