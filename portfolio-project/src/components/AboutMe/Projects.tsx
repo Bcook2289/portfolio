@@ -1,14 +1,29 @@
+import { useTranslations } from "next-intl";
 import { projectData } from "../utils/projectData";
 import Image from "next/image";
 
+interface Project {
+    title: string,
+    desc: string,
+    role: string,
+    keyPoints: string[],
+    tech: string[],
+    image: string,
+    link: string
+}
+
 const Projects = () => {
+    const t = useTranslations();
+    const projectDataRaw = t.raw("projects") as Project[];
+    const header = t("sectionHeader.projects")
+
     return (
         <>
             <section className="py-4">
-                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">Projects</h2>
+                <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">{ header }</h2>
                     <div className="grid grid-cols-1">
                         {
-                            projectData.slice().reverse().slice(0, 3).map((project, index) => {
+                            projectDataRaw.slice().reverse().slice(0, 3).map((project, index) => {
                                 return (
                                     <div key={index} className="mb-2">
                                         <div className="flex"> 

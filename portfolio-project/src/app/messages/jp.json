@@ -1,0 +1,216 @@
+{
+    "navbar" : {
+        "home" : "ホーム",
+        "about" : "自己紹介",
+        "projects" : "プロジェクト",
+        "contact" : "お問い合わせ",
+        "inProgress": "進行中",
+        "roadmaps": "ロードマップ"
+    },
+    "hero": {
+        "title" : "こんにちは",
+        "subtitle" : "ブランドンです！",
+        "finaltitle" : " フルスタック開発者",
+        "projectsButton" : "プロジェクト",
+        "contactMeButton" : "お問い合わせ",
+        "description" : "私は、アメリカと日本でSaaSプラットフォームを5年以上サポートしてきたソリューションコンサルタント兼フルスタック開発者です。React、Next.js、TypeScript、Tailwind CSS、Python/Djangoを使用したハンズオン開発と、強力なコミュニケーションとプロジェクト管理によって、ビジネスニーズと技術的ソリューションの橋渡しを得意としています。このサイトは私自身が構築したもので、クライアントサポートの経験とモダンなフルスタックエンジニアリングを組み合わせた、スケーラブルでユーザーフレンドリーなWebアプリケーションを作ることへの情熱を反映しています。"
+    },
+    "intro" : {
+        "shortDescription" : "私は、アメリカと日本でSaaSプラットフォームを5年以上サポートしてきたソリューションコンサルタント兼フルスタック開発者です。React、Next.js、TypeScript、Tailwind CSS、Python/Djangoを使用したハンズオン開発と、強力なコミュニケーションとプロジェクト管理によって、ビジネスニーズと技術的ソリューションの橋渡しを得意としています。このサイトは私自身が構築したもので、クライアントサポートの経験とモダンなフルスタックエンジニアリングを組み合わせた、スケーラブルでユーザーフレンドリーなWebアプリケーションを作ることへの情熱を反映しています。",
+        "longDescriptionOne": "私は、細部へのこだわりと分析的な問題解決力を強みとするソリューションコンサルタント兼フルスタックエンジニアです。クライアント業務やチームでの技術提供を通じて、日本と米国のエネルギー業界におけるSaaSプラットフォームを5年以上支えてきました。React、Next.js、TypeScript、Tailwind CSS、Python/Django などの技術に精通し、アジャイル・ウォーターフォール両方の環境でプロジェクトをリードした経験があります。ステークホルダーとの円滑なコミュニケーション、プロジェクト進行管理、バックエンドとフロントエンドの統合設計まで幅広く対応できます。",
+        "longDescriptionTwo": "クリーンで直感的なWeb体験を作ることにも情熱を注いでおり、このサイトもその一例です。TypeScript、Next.js、Tailwind CSS を用いて、設計から開発まで手掛けました。ビジネスとエンジニアリングの境界にある課題を解決することが得意で、スケーラブルで使いやすく、細部まで配慮されたツールの開発を常に目指しています。技術コンサルタントとしての視点と現場での開発経験を活かし、実用性とデザイン性を両立させたソリューションを提供します。"
+    },
+    "about" : {
+        "scrollPrompt" : "もっと見る"
+    },
+    "projects": [
+        {
+        "title": "Hato",
+        "desc": "フラッシュカードを中心に設計されたソーシャルメディアアプリ",
+        "role": "フルスタックエンジニア",
+        "keyPoints": [
+            "フロントエンドは TypeScript、React、CSS を使用して構築",
+            "バックエンドは Node.js を使用して構築",
+            "アジャイル環境で 4 人チームのフルスタック開発者として開発"
+        ],
+        "tech": [
+            "Express.js", 
+            "Node.js", 
+            "React.js", 
+            "Knex.js", 
+            "PostgreSQL", 
+            "JavaScript", 
+            "TypeScript"
+        ],
+        "image": "/project-captures/Hato.JPG",
+        "link": "https://github.com/hato-app"
+        },
+        {
+        "title": "Dokushojo",
+        "desc": "リスニング力に焦点を当てた語学学習アプリ",
+        "role": "フルスタック／プロジェクトマネージャー",
+        "keyPoints": [
+            "フロントエンドは TypeScript、React.js、Vite、Bootstrap を使用して構築",
+            "バックエンドは Node.js、Knex.js、PostgreSQL、Express.js を使用して構築",
+            "4 人チームでプロジェクトバックログを管理し、スケジュールを維持"
+        ],
+        "tech": [
+            "Express.js", 
+            "Node.js", 
+            "React.js", 
+            "Knex.js", 
+            "Bootstrap CSS", 
+            "PostgreSQL", 
+            "Vite", 
+            "TypeScript"
+        ],
+        "image": "/project-captures/DSJ.JPG",
+        "link": "https://github.com/Planet-DokuShojo/"
+        },
+        {
+        "title": "VitaeAggregate",
+        "desc": "ATS フレンドリーな履歴書作成を支援するコミュニティアプリ",
+        "role": "フルスタック／プロジェクトマネージャー",
+        "keyPoints": [
+            "フロントエンドは TypeScript、Svelte、Tailwind、Firebase 認証、Puppeteer を使用して構築",
+            "バックエンドは Python、Django REST、PostgreSQL を使用して構築",
+            "Git によるバージョン管理と Docker によるコンテナ管理",
+            "アジャイル環境でプロジェクトスケジュールとバックログを管理し、デイリースタンドアップをリード"
+        ],
+        "tech": [
+            "Cypress", 
+            "Node.js", 
+            "Svelte.js", 
+            "Django", 
+            "PostgreSQL", 
+            "Python", 
+            "TypeScript", 
+            "Pytest", 
+            "Docker", 
+            "Vercel"
+        ],
+        "image": "/project-captures/VitaeAggregate.JPG",
+        "link": "https://github.com/vitaeaggregate"
+        },
+        {
+        "title": "Landing Site",
+        "desc": "東京エリアのローカル音楽ユニットのレスポンシブでモバイルファーストなホームページ",
+        "role": "フロントエンド／プロジェクトリード",
+        "keyPoints": [
+            "Next.js、TypeScript、Tailwind を使用して構築",
+            "Vercel にデプロイ",
+            "framer-motion を使用してアニメーションを実装"
+        ],
+        "tech": [
+            "Next.js", 
+            "Node.js", 
+            "Tailwind", 
+            "TypeScript", 
+            "Vercel"
+        ],
+        "image": "/project-captures/Bandpage.JPG",
+        "link": "https://github.com/sentient-band-site"
+        },
+        {
+        "title": "Portfolio Site",
+        "desc": "自身の作品を紹介するポートフォリオサイト",
+        "role": "フロントエンド／プロジェクトリード",
+        "keyPoints": [
+            "Next.js、TypeScript、Tailwind を使用して構築",
+            "Vercel にデプロイ"
+        ],
+        "tech": [
+            "Next.js", 
+            "Node.js", 
+            "Tailwind", 
+            "TypeScript", 
+            "Vercel"
+        ],
+        "image": "/project-captures/Portfolio.JPG",
+        "link": "https://github.com/Bcook2289/portfolio"
+        }
+    ],
+    "experience": [
+        {
+            "role": "ソリューションコンサルタント",
+            "company": "ESG Global",
+            "date": "2025/01 - 現在",
+            "keyPoints": [
+            "複数の厳格なテスト期限を管理し、新規エネルギー市場へのクライアント導入とオンボーディングを円滑に実施",
+            "クライアントとユーティリティ間の効果的な通信を確保するため、ファイル転送、データフロー、データベースの整合性を管理",
+            "業務ルールが最新であることを確認するため、市場要件を監視・管理"
+            ]
+        },
+        {
+            "role": "アプリケーションコンサルタント",
+            "company": "ESG Global",
+            "date": "2021/10 - 2023/07",
+            "keyPoints": [
+            "日本チームにおける技術課題の窓口として活動し、全ての社内システムに対する技術的知見を深め、組織内の各レベルと良好な関係を維持",
+            "運用プロセスの一環として定期的なAPIテストを実施し、サーバーの健全性を管理、SQLを用いたデータベースクエリと分析を実施してアプリケーションの安定性を確保",
+            "アジャイル環境でのクロスファンクショナルチーム間のコミュニケーションを橋渡しし、円滑な協力と情報共有を促進",
+            "日本市場向け新リリースのユーザー受け入れテスト（UAT）を主導し、クライアントによるスムーズな導入を確保",
+            "複数プロジェクトのテストプロセスをリードし、PMOチームにシステム機能や手順に関する有益な知見を提供",
+            "PMOチームと協力してバックログの整理やJIRAの優先順位付けを行い、効率的なプロジェクト管理に貢献"
+            ]
+        },
+        {
+            "role": "クライアントオペレーションアナリスト",
+            "company": "ESG Global",
+            "date": "2018/08 - 2021/09",
+            "keyPoints": [
+            "日本のクライアントとの強固な関係を築き、主要な窓口として対応",
+            "チームリーダーとしてメンバーのソフトウェア課題解決や対応に関する指導・トレーニングを実施",
+            "プラットフォーム利用に関するベストプラクティスをクライアントに助言し、指導資料を作成・共有",
+            "PMOおよびSDチームと協力して早期要件収集を行い、クライアントのニーズを反映"
+            ]
+        }],
+    "education": [
+        {
+            "edu": "フルスタックエンジニアリング（アジャイル手法）",
+            "school": "Code Chrysalis",
+            "date": "2024/06 – 2024/09",
+            "location": "東京都、日本"
+        },
+        {
+            "edu": "日本語",
+            "school": "赤門会日本語学校",
+            "date": "2023/10 – 2024/04",
+            "location": "東京都、日本"
+        },
+        {
+            "edu": "理学士 - 国際ビジネス",
+            "school": "テンプル大学",
+            "date": "2014/09 – 2018/05",
+            "location": "東京都、日本"
+        }
+],
+    "skills" : {
+        "Languages": "プログラミング言語",
+        "Frontend Frameworks": "フロントエンドフレームワーク",
+        "Backend Frameworks": "バックエンドフレームワーク",
+        "Deployment & Testing": "デプロイ・テスト",
+        "Database": "データベース",
+        "CSS": "CSS",
+        "Git and Dev": "Git・開発ツール",
+        "Project Tracking and Management": "プロジェクト管理",
+        "English": "英語",
+        "Japanese": "日本語",
+        "Agile": "アジャイル",
+        "Waterfall": "ウォーターフォール",
+        "Native" : "ネイティブ",
+        "Limited Business" : "ビジネス初級レベル"
+    },
+    "themeSwitch" : {
+        "lightMode" : "☀️ ライトモード",
+        "darkMode" : "🌘 ダークモード"
+    },
+    "sectionHeader": { 
+        "education": "学歴",
+        "experience": "職務経験",
+        "projects": "プロジェクト",
+        "skills": "スキル"
+}
+
+}
+

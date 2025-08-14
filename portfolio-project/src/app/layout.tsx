@@ -2,7 +2,6 @@ import "./globals.css";
 import { JetBrains_Mono, Sora } from "next/font/google"; 
 import ThemeProviderWrapper from "../components/Theme/ThemeProvider";
 import React from "react";
-import type { ReactNode } from "react";
 
 const jetBrains = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
