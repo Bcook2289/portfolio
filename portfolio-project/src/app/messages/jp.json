@@ -23,14 +23,15 @@
     "about" : {
         "scrollPrompt" : "もっと見る"
     },
-    "projects":[{
+    "projects": [
+        {
         "title": "Hato",
-        "desc": "A social media app designed around flashcards",
-        "role": "Full-stack Engineer",
+        "desc": "フラッシュカードを中心に設計されたソーシャルメディアアプリ",
+        "role": "フルスタックエンジニア",
         "keyPoints": [
-            "Frontend built utilizing Typescript, React, and CSS",
-            "Backend built utilizing Node.js",
-            "Developed as a fullstack developer among a group of 4 in an agile environment"
+            "フロントエンドは TypeScript、React、CSS を使用して構築",
+            "バックエンドは Node.js を使用して構築",
+            "アジャイル環境で 4 人チームのフルスタック開発者として開発"
         ],
         "tech": [
             "Express.js", 
@@ -43,15 +44,15 @@
         ],
         "image": "/project-captures/Hato.JPG",
         "link": "https://github.com/hato-app"
-    },
-    {
+        },
+        {
         "title": "Dokushojo",
-        "desc": "A Language Learning app focusing on listening comprehension",
-        "role": "Full-stack/Project Manager",
+        "desc": "リスニング力に焦点を当てた語学学習アプリ",
+        "role": "フルスタック／プロジェクトマネージャー",
         "keyPoints": [
-            "Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.",
-            "Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js.",
-            "Managed project backlog and maintained project schedule in a team of 4"
+            "フロントエンドは TypeScript、React.js、Vite、Bootstrap を使用して構築",
+            "バックエンドは Node.js、Knex.js、PostgreSQL、Express.js を使用して構築",
+            "4 人チームでプロジェクトバックログを管理し、スケジュールを維持"
         ],
         "tech": [
             "Express.js", 
@@ -65,16 +66,16 @@
         ],
         "image": "/project-captures/DSJ.JPG",
         "link": "https://github.com/Planet-DokuShojo/"
-    },
-    {
+        },
+        {
         "title": "VitaeAggregate",
-        "desc": "A community app designed around building ATS friendly resumes",     
-        "role": "Full-stack/Project Manager",
+        "desc": "ATS フレンドリーな履歴書作成を支援するコミュニティアプリ",
+        "role": "フルスタック／プロジェクトマネージャー",
         "keyPoints": [
-            "Frontend built utilizing TypeScript, Svelte, Tailwind, Firebase for authentication, and Puppeteer.",
-            "Backend built utilizing Python, Django REST, and PostgreSQL.",
-            "Version control with Git and containerization with Docker",
-            "Managed project schedule, project backlog, and led daily standups in an agile development environment."
+            "フロントエンドは TypeScript、Svelte、Tailwind、Firebase 認証、Puppeteer を使用して構築",
+            "バックエンドは Python、Django REST、PostgreSQL を使用して構築",
+            "Git によるバージョン管理と Docker によるコンテナ管理",
+            "アジャイル環境でプロジェクトスケジュールとバックログを管理し、デイリースタンドアップをリード"
         ],
         "tech": [
             "Cypress", 
@@ -90,15 +91,15 @@
         ],
         "image": "/project-captures/VitaeAggregate.JPG",
         "link": "https://github.com/vitaeaggregate"
-    },
-    {
+        },
+        {
         "title": "Landing Site",
-        "desc": "A responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
-        "role": "Front-end/Project Lead",
+        "desc": "東京エリアのローカル音楽ユニットのレスポンシブでモバイルファーストなホームページ",
+        "role": "フロントエンド／プロジェクトリード",
         "keyPoints": [
-            "Built using Next.js, Typescript, and Tailwind",
-            "Deployed utilizing Vercel",
-            "Animations utilizing framer-motion"
+            "Next.js、TypeScript、Tailwind を使用して構築",
+            "Vercel にデプロイ",
+            "framer-motion を使用してアニメーションを実装"
         ],
         "tech": [
             "Next.js", 
@@ -109,14 +110,14 @@
         ],
         "image": "/project-captures/Bandpage.JPG",
         "link": "https://github.com/sentient-band-site"
-    },
-    {
+        },
+        {
         "title": "Portfolio Site",
-        "desc": "A portfolio showcasing my work",
-        "role": "Front-end/Project Lead",
+        "desc": "自身の作品を紹介するポートフォリオサイト",
+        "role": "フロントエンド／プロジェクトリード",
         "keyPoints": [
-            "Built using Next.js, Typescript, and Tailwind",
-            "Deployed utilizing Vercel"
+            "Next.js、TypeScript、Tailwind を使用して構築",
+            "Vercel にデプロイ"
         ],
         "tech": [
             "Next.js", 
@@ -127,42 +128,43 @@
         ],
         "image": "/project-captures/Portfolio.JPG",
         "link": "https://github.com/Bcook2289/portfolio"
-    }],
-    "experience" : [
-    {
-        "role": "Solutions Consultant",
-        "company": "ESG Global",
-        "date": "01/2025 - present",
-        "keyPoints": [
-            "Managing multiple strict test deadlines ensuring effective client adoption and onboarding into new energy markets",
-            "Responsible for ensuring proper file transmission, data flow, and database integrity to ensure effective communication between clients and utilities.",
-            "Owning and monitoring market requirements to ensure business rules are up-to-date"
-        ]
-    },
-    {
-        "role": "Applications Consultant",
-        "company": "ESG Global",
-        "date": "10/2021 - 07/2023",
-        "keyPoints": [
-            "Acted as the primary point of contact for technical issues developing technical proficiency with all proprietary solutions within the Japan team, establishing and maintaining strong relationships at all levels within our organization.",
-            "Performed regular API testing as part of our operations processes, managed server health, and conducted database querying and analysis utilizing SQL to ensure application stability.",
-            "Bridged communications among cross-functional teams within an Agile framework facilitating seamless collaboration and information sharing.",
-            "Headed the User Acceptance Testing (UAT) initiative for new releases in the Japanese market, ensuring smooth adoption by clients.",
-            "Led the testing process for multiple projects across clients, providing the PMO team with valuable system functionality and procedural insights.",
-            "Collaborated with PMO teams for backlog grooming and JIRA prioritization, contributing to efficient project management."
-        ]
-    },
-    {
-        "role": "Client Operations Analyst",
-        "company": "ESG Global",
-        "date": "08/2018 - 09/2021",
-        "keyPoints": [
-            "Established and maintained strong relationships with Japanese clients as primary point of contact, establishing and maintaining strong client relationships",
-            "Mentored and trained team members as team lead on software issue resolutions and responses",
-            "Advised clients on best practices for utilizing our platform including developing and sharing instructional documents",
-            "Collaborated with PMO and SD teams on early requirements gathering representing the client's needs."
-        ]
-    }],
+        }
+    ],
+    "experience": [
+        {
+            "role": "ソリューションコンサルタント",
+            "company": "ESG Global",
+            "date": "2025/01 - 現在",
+            "keyPoints": [
+            "複数の厳格なテスト期限を管理し、新規エネルギー市場へのクライアント導入とオンボーディングを円滑に実施",
+            "クライアントとユーティリティ間の効果的な通信を確保するため、ファイル転送、データフロー、データベースの整合性を管理",
+            "業務ルールが最新であることを確認するため、市場要件を監視・管理"
+            ]
+        },
+        {
+            "role": "アプリケーションコンサルタント",
+            "company": "ESG Global",
+            "date": "2021/10 - 2023/07",
+            "keyPoints": [
+            "日本チームにおける技術課題の窓口として活動し、全ての社内システムに対する技術的知見を深め、組織内の各レベルと良好な関係を維持",
+            "運用プロセスの一環として定期的なAPIテストを実施し、サーバーの健全性を管理、SQLを用いたデータベースクエリと分析を実施してアプリケーションの安定性を確保",
+            "アジャイル環境でのクロスファンクショナルチーム間のコミュニケーションを橋渡しし、円滑な協力と情報共有を促進",
+            "日本市場向け新リリースのユーザー受け入れテスト（UAT）を主導し、クライアントによるスムーズな導入を確保",
+            "複数プロジェクトのテストプロセスをリードし、PMOチームにシステム機能や手順に関する有益な知見を提供",
+            "PMOチームと協力してバックログの整理やJIRAの優先順位付けを行い、効率的なプロジェクト管理に貢献"
+            ]
+        },
+        {
+            "role": "クライアントオペレーションアナリスト",
+            "company": "ESG Global",
+            "date": "2018/08 - 2021/09",
+            "keyPoints": [
+            "日本のクライアントとの強固な関係を築き、主要な窓口として対応",
+            "チームリーダーとしてメンバーのソフトウェア課題解決や対応に関する指導・トレーニングを実施",
+            "プラットフォーム利用に関するベストプラクティスをクライアントに助言し、指導資料を作成・共有",
+            "PMOおよびSDチームと協力して早期要件収集を行い、クライアントのニーズを反映"
+            ]
+        }],
     "education" : [
         {
             "edu": "Full-stack Engineering with Agile Methodologies",

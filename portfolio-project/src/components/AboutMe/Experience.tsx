@@ -1,12 +1,23 @@
+import { useTranslations } from "next-intl";
 import { professionalExperienceData } from "../utils/professionalExperienceData";
 
+interface professionalExperience {
+    role: string,
+    company: string,
+    date: string,
+    keyPoints: string[]
+}
+
 const Experience = () => {
+    const t = useTranslations();
+    const professionalExperienceDataRaw = t.raw("experience") as professionalExperience[];
+
     return (
         <>
             <section>
                 <h2 className="text-xl font-semibold mb-4 bg-gray-100 text-center">Professional Experience</h2>
                 {
-                    professionalExperienceData.map((exp, index) => {
+                    professionalExperienceDataRaw.map((exp, index) => {
                         return (
                             <div key={index} className="mb-2">
                                 <div className="flex">
@@ -15,7 +26,7 @@ const Experience = () => {
                                 </div>
                                 <ul className="text-xs sm:text-md list-disc space-y-1 pl-4">
                                     {
-                                        exp.roleKeyPoints.map((keyPoint, keyPointIndex) => {
+                                        exp.keyPoints.map((keyPoint, keyPointIndex) => {
                                             return (
                                                 <li key={keyPointIndex}>{ keyPoint }</li>
                                             );
