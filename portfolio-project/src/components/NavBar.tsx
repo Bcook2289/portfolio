@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import ThemeSwitcher from "./Theme/ThemeSwitcher";
 import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 const navItems = [
   { label: "home", href: "/" },
@@ -88,8 +89,9 @@ const NavBar = () => {
             )
           )}
         </ul>
-        <div className="flex justify-center items-center my-2">
+        <div className="flex flex-col justify-center items-center my-2 space-y-2">
           <ThemeSwitcher/>
+          <LocaleSwitcher/>
         </div>
       </nav>
     </>

@@ -8,14 +8,3 @@ export default createMiddleware({
 export const config = {
     matcher: [`/((?!_next|.*\\..*).*)`]
 }
-
-// import type { NextRequest } from 'next/server';
-// import { NextResponse } from 'next/server';
-
-// export function middleware() {
-//     return new NextResponse("MIDDLEWARE FIRED!", {status: 200})
-// }
-
-// export const config = {
-//   matcher: ['/:path*'],
-// };
