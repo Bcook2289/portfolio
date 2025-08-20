@@ -210,7 +210,16 @@
         "experience": "職務経験",
         "projects": "プロジェクト",
         "skills": "スキル"
-}
+    },
+    "contact": {
+        "contactMe" : "お問い合わせ",
+        "emailAddress" : "メールアドレス",
+        "message" : "メッセージ",
+        "send" : "送信",
+        "sending" : "送信しています",
+        "thankYou": "ありがとうございました。",
+        "tryAgain": "エラーが発生しました、もう一度お試しください。"
+        } 
 
 }
 
