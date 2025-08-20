@@ -3,7 +3,6 @@
 import NavBar from "../../../components/NavBar";
 import Card from "../../../components/Card";
 import { techIcons } from "../../../components/utils/techIcons";
-import { projectData } from "../../../components/utils/projectData";
 import { useTranslations } from "next-intl";
 
 interface Project {

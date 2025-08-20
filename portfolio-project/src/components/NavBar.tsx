@@ -89,7 +89,7 @@ const NavBar = () => {
             )
           )}
         </ul>
-        <div className="flex flex-col justify-center items-center my-2 space-y-2">
+        <div className="flex flex-col justify-center items-center my-2 space-y-4">
           <ThemeSwitcher/>
           <LocaleSwitcher/>
         </div>

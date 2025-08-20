@@ -206,5 +206,14 @@
         "experience": "Professional Experience",
         "projects": "Projects",
         "skills": "Skills"
-    }
+    },
+     "contact": {
+        "contactMe" : "Contact Me",
+        "emailAddress" : "Email Address",
+        "message" : "Message",
+        "send" : "Send",
+        "sending" : "Sending",
+        "thankYou": "Thank you!",
+        "tryAgain": "Something went wrong, please try again."
+        } 
 }

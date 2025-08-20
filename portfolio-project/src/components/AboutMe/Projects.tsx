@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { projectData } from "../utils/projectData";
 import Image from "next/image";
 
 interface Project {
