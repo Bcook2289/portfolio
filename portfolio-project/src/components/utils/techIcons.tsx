@@ -17,4 +17,6 @@ export const techIcons: { [key: string] : string } = {
     "Vite" : "/svg-icons/vite.svg",
     "Tailwind" : "/svg-icons/tailwindcss.svg",
     "Vercel" : "/svg-icons/vercel-dark.svg",
+    "LinkedIn" : "/svg-icons/linkedin.svg",
+    "GitHub" : "/svg-icons/github.svg",
 }

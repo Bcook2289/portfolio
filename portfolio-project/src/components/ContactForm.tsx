@@ -1,6 +1,9 @@
 "use client";
 
 import React, {useState} from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import {motion} from 'framer-motion';
 
 const ContactForm = () => {
     const [ contactFormStatus, setContactFormStatus ] = useState<string | null>(null);
@@ -45,8 +48,29 @@ const ContactForm = () => {
                 <p>Thanks!</p>
                 ) : (
                     <div className="bg-white rounded-2xl m-2 font-bold">
-                        <h1 className="font-bold mb-4 p-4 text-center">Contact Me</h1>
-                        <form onSubmit={submitRequest} className= "flex flex-col m-4">
+                        <div>
+                            <h1 className="font-bold p-4 text-center">Contact Me</h1>
+                            <div className='flex justify-center'>
+                                <Link href="https://github.com/Bcook2289" target='_blank'>
+                                    <motion.div
+                                        whileHover={{scale: 1.2}}
+                                        whileTap={{scale: 0.9}}
+                                        className='cursor-pointer mx-2'
+                                    >
+                                        <Image alt="link" src={"/svg-icons/github.svg"} width={40} height={40} className="bg-white object-cover rounded-full"/>
+                                    </motion.div>
+                                </Link>
+                                <Link href="https://www.linkedin.com/in/bcook2289" target='_blank'>
+                                    <motion.div
+                                        whileHover={{scale: 1.2}}
+                                        whileTap={{scale: 0.9}}
+                                        className='cursor-pointer mx-2'>
+                                            <Image alt="link" src={"/svg-icons/linkedin.svg"} width={40} height={40} className="bg-white rounded"/>
+                                        </motion.div>
+                                </Link>
+                            </div>
+                        </div>
+                        <form onSubmit={submitRequest} className= "flex flex-col mt-4 mx-4">
                             <label htmlFor='email' className='font-medium py-2'>
                                 Email Address
                             </label>
