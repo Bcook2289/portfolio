@@ -28,12 +28,12 @@ const Hero = () => {
         <Button 
           label={t("projectsButton")} 
           href="/projects" 
-          className="px-4 py-2 w-full sm:w-40 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
+          className=""
         />
         <Button 
           label={t("contactMeButton")} 
           href="/" 
-          className="px-4 py-2 w-full sm:w-40 rounded bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white transition-colors border duration-500 cursor-pointer"
+          className=""
         />
       </div>
       <div className="max-w-prose text-center mx-4 sm:mx-auto text-md sm:text-lg leading-relaxed">

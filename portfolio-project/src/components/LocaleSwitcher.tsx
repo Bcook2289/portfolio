@@ -15,7 +15,7 @@ const LocaleSwitcher = () => {
     return (
         <Button 
             label={locale === "en" ? "日本語" : "English"} 
-            className="rounded border px-4 py-2 bg-white text-black dark:bg-black dark:text-white hover:bg-black hover:text-white cursor-pointer transition-colors duration-500" 
+            className="" 
             href={targetPath}
             />
     )
