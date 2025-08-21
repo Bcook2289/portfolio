@@ -207,7 +207,7 @@
     },
     "sectionHeader": { 
         "education": "学歴",
-        "experience": "職務経験",
+        "professionalExperience": "職務経験",
         "projects": "プロジェクト",
         "skills": "スキル"
     },

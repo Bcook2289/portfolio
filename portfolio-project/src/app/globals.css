@@ -1,25 +1,25 @@
 @import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* --color-background: var(--background);
+  --color-foreground: var(--foreground); */
   --font-jetbrains: var(--font-jetbrains-mono);
   --font-sora: var(--font-sora);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 .TypeAnimation::after {
   content: none !important;
@@ -27,7 +27,47 @@
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sora), Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .page-container {
+    @apply min-h-screen flex flex-col bg-white text-black dark:bg-black dark:text-white;
+  }
+  .main-container {
+    @apply flex-grow flex items-center justify-center  
+  }
+  .nav-container {
+    @apply w-full p-4;
+  }
+  .list-container {
+    @apply flex justify-center space-x-4 sm:space-x-8 font-bold text-xs sm:text-base md:text-lg;
+  }
+  .hover-logic {
+    @apply hover:text-gray-400 transition-colors duration-200;
+  }
+  .span-design {
+    @apply absolute left-0 right-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full;
+  }
+  .div-container {
+    @apply flex flex-col justify-center items-center my-4;
+  }
+  .button-container {
+    @apply rounded px-4 py-2 border my-2 text-xs sm:text-sm md:text-lg font-bold transition-colors cursor-pointer;
+  }
+  .heading-primary {
+    @apply text-xl sm:text-3xl md:text-4xl font-bold font-jetbrains;
+  }
+  .heading-secondary {
+    @apply text-base sm:text-2xl md:text-3xl font-medium font-jetbrains;
+  }
+  .about-header {
+    @apply text-base sm:text-lg md:text-xl font-semibold my-4 bg-gray-200 text-center;
+  }
+  .font-sora {
+    font-family: var(--font-sora), sans-serif;
+  }
+  .font-jetbrains {
+    font-family: var(--font-jetbrains), monospace;
+  }
 }

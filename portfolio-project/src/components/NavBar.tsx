@@ -25,8 +25,8 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full p-4 text-black dark:text-white bg-white dark:bg-black">
-        <ul className="flex justify-center space-x-8">
+      <nav className="nav-container">
+        <ul className="list-container">
           {navItems.map((link) =>
             link.label === "Projects" ? (
               <div
@@ -38,7 +38,7 @@ const NavBar = () => {
                 <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer">
                   <Link
                     href={link.href}
-                    className="text-lg font-semibold hover:text-gray-400 transition-colors duration-200"
+                    className="hover-logic"
                   >
                     {t(link.label)}
                   </Link>
@@ -80,16 +80,16 @@ const NavBar = () => {
               >
                 <Link
                   href={link.href}
-                  className="text-lg font-semibold hover:text-gray-400 transition-colors duration-200"
+                  className="hover-logic"
                 >
                   {t(link.label)}
-                  <span className="absolute left-0 right-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+                  <span className="span-design"></span>
                 </Link>
               </motion.li>
             )
           )}
         </ul>
-        <div className="flex flex-col justify-center items-center my-2 space-y-4">
+        <div className="div-container">
           <ThemeSwitcher/>
           <LocaleSwitcher/>
         </div>

@@ -11,20 +11,20 @@ const Hero = () => {
   const t = useTranslations("hero");
   
   return (
-    <div className="flex flex-col items-center px-4 py-8 space-y-8 w-full">
-      <div className="flex flex-col sm:flex-row justify-center items-center sm:w-3xl gap-4">
-        <div className="relative">
+    <div className="div-container">
+      <div className="flex flex-col sm:flex-row justify-center items-center max-w-3xl gap-4">
+        <div className="relative w-32 h-32 sm:w-48 sm:h-48 aspect-square">
           <Image
             src="/images/ProfilePic.jpg"
             alt="profile"
-            width={200}
-            height={200}
-            className="rounded-full"
+            fill
+            className="rounded-full object-cover"
+            sizes="(max-width: 640px) 128px 192px"
           />
         </div>
         <TypingHeader/>
       </div>
-     <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
+     <div className="flex flex-col sm:flex-row sm:gap-8">
         <Button 
           label={t("projectsButton")} 
           href="/projects" 
@@ -32,11 +32,11 @@ const Hero = () => {
         />
         <Button 
           label={t("contactMeButton")} 
-          href="/" 
+          href="/contact" 
           className=""
         />
       </div>
-      <div className="max-w-prose text-center mx-4 sm:mx-auto text-md sm:text-lg leading-relaxed">
+      <div className="max-w-prose tracking-wide text-center mx-4 my-4 sm:mx-auto md:mx-8 text-xs sm:text-base md:text-lg leading-relaxed">
         <Intro pageFlag="brief" />
       </div>
     </div>

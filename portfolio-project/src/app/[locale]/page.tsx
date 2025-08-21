@@ -3,9 +3,9 @@ import Hero from "../../components/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="page-container">
       <NavBar />
-      <main className="flex-grow flex items-center justify-center text-black dark:text-white bg-white dark:bg-black">
+      <main className="main-container">
         <Hero />
       </main>
     </div>

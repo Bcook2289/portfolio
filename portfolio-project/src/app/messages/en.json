@@ -203,7 +203,7 @@
     },
     "sectionHeader": {
         "education": "Educational Background",
-        "experience": "Professional Experience",
+        "professionalExperience": "Professional Experience",
         "projects": "Projects",
         "skills": "Skills"
     },
