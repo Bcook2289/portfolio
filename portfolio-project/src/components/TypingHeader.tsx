@@ -25,8 +25,8 @@ const TypingHeader = () => {
 
     return (
         <>
-            <div className="space-y-4 py-4 px-8 w-full sm:h-44 font-jetbrains my-auto">
-                <h1 className="text-2xl sm:text-4xl font-bold text-black dark:text-white">
+            <div className="space-y-4 py-4 px-4 h-36 sm:h-48 my-auto">
+                <h1 className="heading-primary">
                     {showH1 && 
                         <TypeAnimation
                             className="TypeAnimation" 
@@ -35,7 +35,7 @@ const TypingHeader = () => {
                             speed={40}
                     />}
                 </h1>
-                <h2 className="text-xl sm:text-3xl font-medium text-black dark:text-white">
+                <h2 className="heading-secondary">
                     {showH2 &&
                         <TypeAnimation 
                             className="TypeAnimation"
@@ -44,7 +44,7 @@ const TypingHeader = () => {
                             speed={40}
                         />}
                 </h2>
-                <h2 className="text-xl sm:text-3xl font-medium text-black dark:text-white">
+                <h2 className="heading-secondary">
                     {showFinalH2 &&
                         <TypeAnimation 
                             className=""

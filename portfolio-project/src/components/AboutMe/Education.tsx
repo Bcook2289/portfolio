@@ -16,12 +16,18 @@ const Education = () => {
     return (
         <>
             <section>
-                <h2 className="text-2xl font-semibold mb-4 bg-gray-100 text-center">{ header }</h2>
+                <h2 className="about-header">{ header }</h2>
                     {educationDataRaw.map((edu, index) => {
                         return (
-                            <div key={index} className="flex mb-4 justify-between">
-                                <h3>{edu.edu}, {edu.school}</h3>
-                                <h4 className="ml-8">{edu.date}, {edu.location}</h4>
+                            <div key={index} className="grid grid-cols-2 gap-x-4 text-xs sm:text-lg mb-4 items-start">
+                                <div>
+                                    <h3 className="font-semibold">{edu.edu}</h3>
+                                    <h3>{edu.school}</h3>
+                                </div>
+                                <div className="text-right">
+                                    <h4 className="sm:ml-8">{edu.date}</h4>
+                                    <h4 className="sm:ml-8">{edu.location}</h4>
+                                </div>
                             </div>
                         );
                     })}

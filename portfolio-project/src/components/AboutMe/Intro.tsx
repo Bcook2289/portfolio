@@ -12,7 +12,7 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
   const detailed = (
     <>
       <motion.p 
-        className="sm:-translate-x-36"
+        className="lg:-translate-x-36"
         initial={{ x: -200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 50, delay: 0.2 }}
@@ -20,7 +20,7 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
         {t("longDescriptionOne")}          
       </motion.p>
       <motion.p 
-        className="pt-8 sm:pt-24 sm:translate-x-36"
+        className="pt-8 sm:pt-24 lg:translate-x-36"
         initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 50, delay: 0.2 }}

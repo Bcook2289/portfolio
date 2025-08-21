@@ -20,7 +20,7 @@ const ThemeSwitcher = () => {
     return (
         <button
             onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-            className="rounded px-4 py-2 border text-sm font-bold transition-color bg-black dark:bg-white text-white dark:text-black cursor-pointer"
+            className="button-container bg-black dark:bg-white text-white dark:text-black"
         >
             {resolvedTheme === 'dark' ? t("lightMode") : t("darkMode")}
         </button>
