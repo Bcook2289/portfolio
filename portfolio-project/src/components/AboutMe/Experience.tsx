@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl";
-import { professionalExperienceData } from "../utils/professionalExperienceData";
+import { professionalExperienceData } from "../../utils/professionalExperienceData";
 
 interface professionalExperience {
     role: string,

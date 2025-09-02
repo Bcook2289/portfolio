@@ -39,7 +39,7 @@ body {
     @apply flex flex-col justify-center items-center my-4;
   }
   .button-container {
-    @apply rounded px-4 py-2 border my-2 text-xs sm:text-sm md:text-lg font-bold transition-colors cursor-pointer;
+    @apply rounded px-2 py-2 border my-2 text-xs sm:text-sm font-bold transition-colors cursor-pointer;
   }
   .heading-primary {
     @apply text-xl sm:text-3xl md:text-4xl font-bold font-jetbrains;

@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { skillsData } from "../utils/skillsData";
+import { skillsData } from "../../utils/skillsData";
 
 const Skills = () => {
     const t = useTranslations("skills");

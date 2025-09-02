@@ -198,8 +198,8 @@
         "Limited Business" : "Limited Business"
     },
     "themeSwitch" : {
-        "lightMode" : "☀️ Switch to Light Mode",
-        "darkMode" : "🌘 Switch to Dark Mode"
+        "lightMode" : "☀️ Light Mode",
+        "darkMode" : "🌘 Dark Mode"
     },
     "sectionHeader": {
         "education": "Educational Background",

@@ -5,7 +5,7 @@ import Education from "../../../components/AboutMe/Education";
 import Skills from "../../../components/AboutMe/Skills";
 import Experience from "../../../components/AboutMe/Experience";
 import Projects from "../../../components/AboutMe/Projects";
-import NavBar from "../../../components/NavBar";
+import NavBar from "../../../components/UI/NavBar";
 import { useTranslations } from "next-intl";
 
 export default function AboutPage() {

@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import ThemeSwitcher from "./Theme/ThemeSwitcher";
+import ThemeSwitcher from "../Theme/ThemeSwitcher";
 import { useTranslations } from "next-intl";
 import LocaleSwitcher from "./LocaleSwitcher";
 
