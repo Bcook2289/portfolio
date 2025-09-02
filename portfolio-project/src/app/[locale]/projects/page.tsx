@@ -1,8 +1,8 @@
 "use client";
 
-import NavBar from "../../../components/NavBar";
-import Card from "../../../components/Card";
-import { techIcons } from "../../../components/utils/techIcons";
+import NavBar from "../../../components/UI/NavBar";
+import Card from "../../../components/UI/Card";
+import { techIcons } from "../../../utils/techIcons";
 import { useTranslations } from "next-intl";
 
 interface Project {

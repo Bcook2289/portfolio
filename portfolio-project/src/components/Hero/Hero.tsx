@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Intro from "./AboutMe/Intro";
-import TypingHeader from "./TypingHeader";
-import Button from "./Button";
+import Intro from "../AboutMe/Intro";
+import TypingHeader from "../Hero/TypingHeader";
+import Button from "../UI/Button";
 import { useTranslations } from "next-intl";
 
 

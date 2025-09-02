@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl";
-import { educationData } from "../utils/educationData";
+import { educationData } from "../../utils/educationData";
 
 interface education {
     edu: string,

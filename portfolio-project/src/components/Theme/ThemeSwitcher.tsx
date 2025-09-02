@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Button from "../UI/Button";
 
 const ThemeSwitcher = () => {
     const { resolvedTheme, setTheme } = useTheme();
@@ -18,12 +19,11 @@ const ThemeSwitcher = () => {
     }
 
     return (
-        <button
-            onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-            className="button-container bg-black dark:bg-white text-white dark:text-black"
-        >
-            {resolvedTheme === 'dark' ? t("lightMode") : t("darkMode")}
-        </button>
+            <Button
+                onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+                label={resolvedTheme === 'dark' ? t("lightMode") : t("darkMode")}
+                className=""
+            />
     )
 }
 
