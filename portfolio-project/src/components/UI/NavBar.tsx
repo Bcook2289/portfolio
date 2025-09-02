@@ -43,33 +43,6 @@ const NavBar = () => {
                     {t(link.label)}
                   </Link>
                 </motion.li>
-
-                {/* <AnimatePresence>
-                  {isHovered && (
-                    <motion.ul
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -10 }}
-                      className="absolute left-0 mt-2 w-28 bg-white shadow-lg rounded-lg py-2"
-                    >
-                      {projectsLinks.map((project) => (
-                        <motion.li 
-                          key={project.href}
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.95 }}
-                        >
-                          <Link
-                            href={project.href}
-                            className="inline-block relative px-4 py-2 font-semibold text-sm text-black  hover:text-gray-400 group"
-                          >
-                            {t(project.label)}
-                            <span className="absolute left-0 ml-3 bottom-0 h-[2px] w-0 bg-black dark:text-white transition-all duration-300 group-hover:w-[80%]"></span>
-                          </Link>
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  )}
-                </AnimatePresence> */}
               </div>
             ) : (
               <motion.li
