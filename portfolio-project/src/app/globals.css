@@ -36,7 +36,7 @@ body {
     @apply absolute left-0 right-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full;
   }
   .div-container {
-    @apply flex flex-col justify-center items-center my-4;
+    @apply  flex flex-row sm:flex-col justify-between sm:justify-center items-center my-4;
   }
   .button-container {
     @apply rounded px-2 py-2 border my-2 text-xs sm:text-sm font-bold transition-colors cursor-pointer;

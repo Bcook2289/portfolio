@@ -13,7 +13,7 @@ const Button:React.FC<props> = ({ label, href, className, onClick}) => {
 
         return (
             <Link href={href} className="font-sora font-bold">
-                <button className = {`${className} button-container sm:w-40 w-full bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}>
+                <button className = {`${className} button-container w-40 bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}>
                     {label}
                 </button>
             </Link>
@@ -21,7 +21,7 @@ const Button:React.FC<props> = ({ label, href, className, onClick}) => {
     }
     return (
         <button 
-            className = {`${className} button-container sm:w-40 w-full bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}
+            className = {`${className} button-container w-40 bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}
             onClick={onClick}
         >
             {label}

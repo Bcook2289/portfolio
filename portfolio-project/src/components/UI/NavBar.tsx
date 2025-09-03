@@ -62,7 +62,7 @@ const NavBar = () => {
             )
           )}
         </ul>
-        <div className="div-container">
+        <div className="div-container flex flex-row sm:flex-col">
           <ThemeSwitcher/>
           <LocaleSwitcher/>
         </div>
