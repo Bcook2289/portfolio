@@ -11,7 +11,6 @@
   content: none !important;
 }
 
-
 body {
   font-family: var(--font-sora), Arial, Helvetica, sans-serif;
 }
@@ -21,7 +20,7 @@ body {
     @apply min-h-screen flex flex-col bg-white text-black dark:bg-black dark:text-white;
   }
   .main-container {
-    @apply flex-grow flex items-center justify-center  
+    @apply flex-grow flex items-center justify-center;
   }
   .nav-container {
     @apply w-full p-4;
@@ -36,7 +35,7 @@ body {
     @apply absolute left-0 right-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full;
   }
   .div-container {
-    @apply  flex flex-row sm:flex-col justify-between sm:justify-center items-center my-4;
+    @apply flex flex-col justify-between sm:justify-center items-center m-4;
   }
   .button-container {
     @apply rounded px-2 py-2 border my-2 text-xs sm:text-sm font-bold transition-colors cursor-pointer;
