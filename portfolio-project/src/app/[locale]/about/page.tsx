@@ -15,7 +15,7 @@ export default function AboutPage() {
     <div className="page-container">
       <NavBar />
       <main className="min-h-screen font-sora m-4 sm:m-8 sm:pb-8">
-        <div className="min-h-screen m-auto lg:max-w-1/2 flex flex-col lg:mt-24 items-center px-8 text-center text-xs sm:text-base lg:text-lg leading-relaxed">
+        <div className="h-screen m-auto lg:max-w-3xl flex flex-col items-center px-8 text-center text-xs sm:text-base leading-relaxed">
           <Intro pageFlag="detailed" />
         </div>
         <div className="flex md:hidden animate-bounce dark:text-gray-200 absolute bottom-2 right-4">
