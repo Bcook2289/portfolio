@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 type props = {
-    label: string;
+    label: string
     href?: string;
     className?: string;
     onClick?: () => void;
@@ -13,7 +13,8 @@ const Button:React.FC<props> = ({
     label, 
     href, 
     className = "", 
-    onClick
+    onClick,
+    variant
 }) => {
     const buttonClasses = `
         group relative inline-flex items-center
@@ -40,7 +41,7 @@ const Button:React.FC<props> = ({
             </span>
 
             <span>
-                {label} →
+                {variant === "utility" ?  label : `${label} →` }
             </span>
             
             <span

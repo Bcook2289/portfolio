@@ -26,8 +26,9 @@ const NavBar = () => {
         >
           Brandon Cook
         </Link>
-        {/* NAVIGATION */}
+        {/* RIGHT SIDE */}
         <div className="ml-auto flex items-center gap-8">
+          {/* NAVIGATION */}
           <ul className="flex items-center gap-4 font-sora text-xs font-semibold sm:gap-6 sm:text-sm">
             {navItems.map((link) => (
               <motion.li

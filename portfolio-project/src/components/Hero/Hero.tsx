@@ -5,7 +5,7 @@ import Intro from "../AboutMe/Intro";
 import TypingHeader from "../Hero/TypingHeader";
 import Button from "../UI/Button";
 import { useTranslations } from "next-intl";
-import ScrollAnimation from "../UI/Scroll";
+import ScrollAnimation from "../UI/ScrollAnimation";
 
 const Hero = () => {
   const t = useTranslations("hero");
@@ -42,7 +42,7 @@ const Hero = () => {
               Brandon Cook
             </h1>
 
-            <div className="mt-3 font-jetbrains text-sm font-medium tracking-wide sm:text-base lg:text-lg">
+            <div className="mt-3 text-sm font-medium sm:text-base lg:text-lg">
               <TypingHeader />
             </div>
             

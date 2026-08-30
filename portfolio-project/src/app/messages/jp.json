@@ -8,15 +8,13 @@
         "roadmaps": "ロードマップ"
     },
     "hero": {
-        "title" : "こんにちは",
-        "subtitle" : "ブランドンです！",
-        "finaltitle" : " フルスタック開発者です",
+        "role" : "フルスタックソフトウェアエンジニア",
         "projectsButton" : "プロジェクト",
         "contactMeButton" : "お問い合わせ",
         "description" : "私は、アメリカと日本でSaaSプラットフォームを5年以上サポートしてきたソリューションコンサルタント兼フルスタック開発者です。React、Next.js、TypeScript、Tailwind CSS、Python/Djangoを使用したハンズオン開発と、強力なコミュニケーションとプロジェクト管理によって、ビジネスニーズと技術的ソリューションの橋渡しを得意としています。このサイトは私自身が構築したもので、クライアントサポートの経験とモダンなフルスタックエンジニアリングを組み合わせた、スケーラブルでユーザーフレンドリーなWebアプリケーションを作ることへの情熱を反映しています。"
     },
     "intro" : {
-        "shortDescription" : "クリーンなアーキテクチャ設計、認証フローの構築、スケーラブルなデータモデリングを重視し、API駆動型のWebアプリケーションを設計・開発しています。主な技術スタックは TypeScript、React（Next.js）、Node.js、PostgreSQL です。米国および日本のSaaS環境での経験を活かし、リモート環境でも主体性を持って、構造的かつ明確なコミュニケーションで開発に取り組みます。",
+        "shortDescription" : "エンタープライズSaaSおよび本番環境で稼働するソフトウェアに5年以上携わってきたフルスタックソフトウェアエンジニアです。近年は実際のソフトウェア開発に注力し、技術面とビジネス面のニーズをつなぎながら、Webアプリケーションやクロスプラットフォームアプリケーションの開発に取り組んでいます。",
         "longDescriptionOne": "私は、細部へのこだわりと分析的な問題解決力を強みとするソリューションコンサルタント兼フルスタックエンジニアです。クライアント業務やチームでの技術提供を通じて、日本と米国のエネルギー業界におけるSaaSプラットフォームを5年以上支えてきました。React、Next.js、TypeScript、Tailwind CSS、Python/Django などの技術に精通し、アジャイル・ウォーターフォール両方の環境でプロジェクトをリードした経験があります。ステークホルダーとの円滑なコミュニケーション、プロジェクト進行管理、バックエンドとフロントエンドの統合設計まで幅広く対応できます。",
         "longDescriptionTwo": "クリーンで直感的なWeb体験を作ることにも情熱を注いでおり、このサイトもその一例です。TypeScript、Next.js、Tailwind CSS を用いて、設計から開発まで手掛けました。ビジネスとエンジニアリングの境界にある課題を解決することが得意で、スケーラブルで使いやすく、細部まで配慮されたツールの開発を常に目指しています。技術コンサルタントとしての視点と現場での開発経験を活かし、実用性とデザイン性を両立させたソリューションを提供します。"
     },
@@ -202,8 +200,8 @@
         "Limited Business" : "ビジネス初級レベル"
     },
     "themeSwitch" : {
-        "lightMode" : "☀️ ライトモード",
-        "darkMode" : "🌘 ダークモード"
+        "lightMode" : "☼",
+        "darkMode" : "☾"
     },
     "sectionHeader": { 
         "education": "学歴",
@@ -219,7 +217,16 @@
         "sending" : "送信しています",
         "thankYou": "ありがとうございました。",
         "tryAgain": "エラーが発生しました、もう一度お試しください。"
-        } 
-
+    },
+    "buildAreas": {
+        "webApplications": "WEB APPLICATIONS",
+        "webApplicationsDescription": "Interfaces and systems built for real users.",
+        "crossPlatform": "CROSS PLATFORM",
+        "crossPlatformDescription": "Applications designed beyond the browser.",
+        "systemsAndArchitecture": "SYSTEMS & ARCHITECTURE",
+        "systemsAndArchitectureDescription": "Structured solutions designed to remain maintainable.",
+        "technicalDelivery": "TECHNICAL DELIVERY",
+        "technicalDeliveryDescription": "Turning ambiguous needs into practical solutions."
+    }  
 }
 

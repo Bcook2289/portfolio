@@ -1,5 +1,6 @@
 import NavBar from "../../components/UI/NavBar";
 import Hero from "../../components/Hero/Hero";
+import WhatIBuild from "../../components/WhatIBuild/WhatIBuild";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <NavBar />
       <main>
         <Hero />
+        <WhatIBuild/>
       </main>
     </div>
   );

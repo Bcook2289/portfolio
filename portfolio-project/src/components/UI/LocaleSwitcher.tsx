@@ -14,7 +14,7 @@ const LocaleSwitcher = () => {
 
     return (
         <Button 
-            label={locale === "en" ? "日本語" : "English"} 
+            label={locale === "en" ? "JP" : "EN"} 
             className="" 
             href={targetPath}
             variant="utility"

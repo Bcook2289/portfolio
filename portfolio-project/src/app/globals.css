@@ -7,8 +7,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-.TypeAnimation::after {
-  content: none !important;
+.typing-role {
+  font-family: var(--font-jetbrains-mono);
+  letter-spacing: 0.04em;
 }
 
 body {
