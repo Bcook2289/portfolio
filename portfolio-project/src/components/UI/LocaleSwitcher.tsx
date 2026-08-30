@@ -9,14 +9,15 @@ const LocaleSwitcher = () => {
     const locale = useLocale();
     const pathname = usePathname();
 
-    const swtichLocale = locale === "en" ? "jp" : "en";
-    const targetPath = `/${swtichLocale + pathname.replace(/^\/(en|jp)/, "")}`;
+    const switchLocale = locale === "en" ? "jp" : "en";
+    const targetPath = `/${switchLocale + pathname.replace(/^\/(en|jp)/, "")}`;
 
     return (
         <Button 
             label={locale === "en" ? "日本語" : "English"} 
             className="" 
             href={targetPath}
+            variant="utility"
             />
     )
 }

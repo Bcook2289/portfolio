@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="page-container">
       <NavBar />
-      <main className="main-container">
+      <main>
         <Hero />
       </main>
     </div>

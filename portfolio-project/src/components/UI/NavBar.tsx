@@ -1,11 +1,9 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
-// import {Link} from "@/navigation";
-import { useState } from "react";
-import ThemeSwitcher from "../Theme/ThemeSwitcher";
 import { useTranslations } from "next-intl";
+import ThemeSwitcher from "../Theme/ThemeSwitcher";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 const navItems = [
@@ -15,60 +13,47 @@ const navItems = [
   { label: "contact", href: "/contact" },
 ];
 
-const projectsLinks = [
-  { label: "inProgress", href: "/projects/progress" },
-  { label: "roadmaps", href: "/projects/roadmap" },
-];
-
 const NavBar = () => {
-  const [isHovered, setIsHovered] = useState(false);
   const t = useTranslations("navbar");
 
   return (
-    <>
-      <nav className="nav-container">
-        <ul className="list-container">
-          {navItems.map((link) =>
-            link.label === "Projects" ? (
-              <div
-                key={link.href}
-                className="relative"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+    <nav className="nav-container">
+      <div className="mx-auto flex w-full max-w-6xl items-center">
+        {/* SITE IDENTITY */}
+        <Link
+          href="/"
+          className="font-sora text-sm font-semibold tracking-tight sm:text-base"
+        >
+          Brandon Cook
+        </Link>
+        {/* NAVIGATION */}
+        <div className="ml-auto flex items-center gap-8">
+          <ul className="flex items-center gap-4 font-sora text-xs font-semibold sm:gap-6 sm:text-sm">
+            {navItems.map((link) => (
+              <motion.li
+              key={link.href}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative"
               >
-                <motion.li whileHover={{ scale: 1.1 }} className="cursor-pointer">
                   <Link
                     href={link.href}
                     className="hover-logic"
-                  >
+                    >
                     {t(link.label)}
+                    <span className="span-design"></span>
                   </Link>
                 </motion.li>
-              </div>
-            ) : (
-              <motion.li
-                key={link.href}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                className="group relative"
-              >
-                <Link
-                  href={link.href}
-                  className="hover-logic"
-                >
-                  {t(link.label)}
-                  <span className="span-design"></span>
-                </Link>
-              </motion.li>
-            )
-          )}
-        </ul>
-        <div className="div-container flex flex-row sm:flex-col">
-          <ThemeSwitcher/>
-          <LocaleSwitcher/>
+              ))}
+          </ul>
+          {/* UTILITY CONTROLS */}
+          <div className="flex items-center gap-2">
+            <ThemeSwitcher/>
+            <LocaleSwitcher/>
+          </div>
         </div>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 export default NavBar;

@@ -23,6 +23,7 @@ const ThemeSwitcher = () => {
                 onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
                 label={resolvedTheme === 'dark' ? t("lightMode") : t("darkMode")}
                 className=""
+                variant="utility"
             />
     )
 }

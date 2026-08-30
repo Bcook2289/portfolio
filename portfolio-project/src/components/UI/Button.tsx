@@ -2,30 +2,80 @@ import Link from "next/link";
 import React from "react";
 
 type props = {
-    label: string,
-    href?: string,
-    className: string,
-    onClick ?: () => void,
+    label: string;
+    href?: string;
+    className?: string;
+    onClick?: () => void;
+    variant?: "action" | "utility";
 }
 
-const Button:React.FC<props> = ({ label, href, className, onClick}) => {
-    if(href) {
+const Button:React.FC<props> = ({ 
+    label, 
+    href, 
+    className = "", 
+    onClick
+}) => {
+    const buttonClasses = `
+        group relative inline-flex items-center
+        px-4 py-2 
+        font-sora text-sm font-semibold
+        transition-colors duration-300
+        ${className}
+    `;
 
+    const content = (
+        <>
+            <span
+                aria-hidden="true"
+                className="
+                    mr-2
+                    -translate-x-2
+                    opacity-0
+                    transition-all duration-300
+                    group-hover:translate-x-0
+                    group-hover:opacity-100
+                " 
+            >
+                [
+            </span>
+
+            <span>
+                {label} →
+            </span>
+            
+            <span
+                aria-hidden="true"
+                className="
+                    ml-2
+                    translate-x-2
+                    opacity-0
+                    transition-all duration-300
+                    group-hover:translate-x-0
+                    group-hover:opacity-100
+                "
+            >
+                ]
+            </span>
+        </>
+    );
+
+    if(href) {
         return (
-            <Link href={href} className="font-sora font-bold">
-                <button className = {`${className} button-container w-40 bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}>
-                    {label}
-                </button>
+            <Link href={href} className={buttonClasses}>
+                {content}
             </Link>
         );
     }
+
     return (
         <button 
-            className = {`${className} button-container w-40 bg-gray-200 text-black hover:bg-black hover:text-white dark:text-black dark:bg-white duration-500`}
+            type="button"
+            className = {buttonClasses}
             onClick={onClick}
         >
-            {label}
+            {content}
         </button>
-    )
-}
+    );
+};
+
 export default Button;
