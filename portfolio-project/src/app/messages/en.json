@@ -207,6 +207,7 @@
     },
      "contact": {
         "contactMe" : "Contact Me",
+        "question" : "Have a question, an opportunity, or just want to connect? Feel free to get in touch.",
         "emailAddress" : "Email Address",
         "message" : "Message",
         "send" : "Send",

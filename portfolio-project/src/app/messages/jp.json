@@ -211,6 +211,7 @@
     },
     "contact": {
         "contactMe" : "お問い合わせ",
+        "question" : "Have a question, an opportunity, or just want to connect? Feel free to get in touch.",
         "emailAddress" : "メールアドレス",
         "message" : "メッセージ",
         "send" : "送信",
