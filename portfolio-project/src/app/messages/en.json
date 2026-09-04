@@ -217,11 +217,22 @@
     "buildAreas": {
         "webApplications": "WEB APPLICATIONS",
         "webApplicationsDescription": "Interfaces and systems built for real users.",
-        "crossPlatform": "CROSS PLATFORM",
+        "webApplicationsDetails": "I build web applications across the frontend and backend, from interface development through APIs, data persistence, authentication, and deployment.",
+        "webApplicationsEvidence": "Portfolio · CMS Platform · MyVirtualFridge",
+
+        "crossPlatform": "CROSS-PLATFORM APPLICATIONS",
         "crossPlatformDescription": "Applications designed beyond the browser.",
+        "crossPlatformDetails": "I develop applications that extend beyond traditional web environments, working across shared codebases, platform constraints, and mobile user experiences.",
+        "crossPlatformEvidence": "Calm Anchor · MyVirtualFridge",
+
         "systemsAndArchitecture": "SYSTEMS & ARCHITECTURE",
         "systemsAndArchitectureDescription": "Structured solutions designed to remain maintainable.",
+        "systemsAndArchitectureDetails": "I think about how application components fit together—from frontend state and APIs to databases, authentication, deployment, and the boundaries between them.",
+        "systemsAndArchitectureEvidence": "Calm Anchor · MyVirtualFridge",
+
         "technicalDelivery": "TECHNICAL DELIVERY",
-        "technicalDeliveryDescription": "Turning ambiguous needs into practical solutions."
+        "technicalDeliveryDescription": "Turning ambiguous needs into practical solutions.",
+        "technicalDeliveryDetails": "I work between technical and business requirements, translating ambiguous needs into implementable solutions and helping move them from planning to delivery.",
+        "technicalDeliveryEvidence": "Enterprise SaaS · Technical Project Delivery · Software Development"
     } 
 }

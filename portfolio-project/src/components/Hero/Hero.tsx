@@ -58,7 +58,7 @@ const Hero = () => {
               />
               <Button 
                 label={t("contactMeButton")} 
-                href="/contact" 
+                href="#contact" 
                 className="" 
               />
             </div>
