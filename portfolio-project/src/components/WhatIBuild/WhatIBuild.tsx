@@ -58,7 +58,14 @@ const WhatIBuild = () => {
                             <motion.div 
                                 key={area.number}
                                 layout
-                                className="border-t border-black dark:border-white"
+                                className={`
+                                    border-t 
+                                    border-black 
+                                    dark:border-white
+                                    transition-colors
+                                    duration-300
+                                    ${ isExpanded ? "bg-black text-white dark:bg-white dark:text-black" : "" }
+                                `}
                             >
                                 <button
                                     type="button"
@@ -67,9 +74,19 @@ const WhatIBuild = () => {
                                             isExpanded ? null : area.number
                                         )
                                     }
-                                    className="group w-full text-left"
+                                    className="
+                                        group 
+                                        w-full 
+                                        text-left
+                                        transition-colors
+                                        duration-300
+                                        hover:bg-black
+                                        hover:text-white
+                                        dark:hover:bg-white
+                                        dark:hover:text-black
+                                    "
                                 >
-                                    <div className="grid grid-cols-[3rem_1fr] gap-4 py-6 sm:grid-cols-[4rem_1fr] sm:gap-8 sm:py-8">
+                                    <div className="grid grid-cols-[3rem_1fr] gap-4 py-6 px-6 sm:grid-cols-[4rem_1fr] sm:gap-8 sm:py-8">
                                         {/* NUMBER */}
                                         <span className="font-jetbrains text-xs tracking-wider sm:text-sm">
                                             {area.number}

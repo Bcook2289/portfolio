@@ -2,7 +2,6 @@
 
 import React, {useState} from 'react';
 import Link from 'next/link';
-import {motion} from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 const ContactForm = () => {
@@ -68,27 +67,111 @@ const ContactForm = () => {
                                 href="https://github.com/Bcook2289" 
                                 target='_blank'
                                 rel="noopener noreferrer"
-                                className="group"
+                                className="
+                                    group
+                                    inline-flex
+                                    items-center
+                                    border
+                                    border-black
+                                    px-4 py-2
+                                    font-sora
+                                    text-sm
+                                    font-semibold
+                                    transition-colors
+                                    duration-300
+                                    hover:bg-black
+                                    hover:text-white
+                                    dark:border-white
+                                    dark:hover:bg-white
+                                    dark:hover:text-black
+                                "
                             >
-                                <motion.span
-                                    className='inline-block'
-                                    whileHover={{ x: 4 }}
+                                <span
+                                    aria-hidden="true"
+                                    className="
+                                        mr-2
+                                        inline-block
+                                        -translate-x-2
+                                        opacity-0
+                                        transition-all 
+                                        duration-300 
+                                        group-hover:translate-x-0
+                                        group-hover:opacity-100
+                                    " 
                                 >
-                                    [ GitHub ]
-                                </motion.span>
+                                    [
+                                </span>
+                                    GitHub
+                                <span
+                                    aria-hidden="true"
+                                    className="
+                                        ml-2
+                                        inline-block
+                                        translate-x-2
+                                        opacity-0
+                                        transition-all 
+                                        duration-300 
+                                        group-hover:translate-x-0
+                                        group-hover:opacity-100
+                                    "
+                                >
+                                    ]
+                                </span>
                             </Link>
                             <Link 
                                 href="https://www.linkedin.com/in/bcook2289" 
                                 target='_blank'
                                 rel="noopener noreferrer"
-                                className='group'
+                                className='
+                                    group
+                                    inline-flex
+                                    items-center
+                                    border
+                                    border-black
+                                    px-4 py-2
+                                    font-sora
+                                    text-sm
+                                    font-semibold
+                                    transition-colors
+                                    duration-300
+                                    hover:bg-black
+                                    hover:text-white
+                                    dark:border-white
+                                    dark:hover:bg-white
+                                    dark:hover:text-black
+                                '
                             >
-                                <motion.span
-                                    className='inline-block'
-                                    whileHover={{ x: 4 }}
+                                <span
+                                    aria-hidden="true"
+                                    className="
+                                        mr-2
+                                        inline-block
+                                        -translate-x-2
+                                        opacity-0
+                                        transition-all 
+                                        duration-300 
+                                        group-hover:translate-x-0
+                                        group-hover:opacity-100
+                                    " 
                                 >
-                                        [ LinkedIn ]
-                                </motion.span>
+                                    [
+                                </span>
+                                    LinkedIn
+                                <span
+                                    aria-hidden="true"
+                                    className="
+                                        ml-2
+                                        inline-block
+                                        translate-x-2
+                                        opacity-0
+                                        transition-all 
+                                        duration-300
+                                        group-hover:translate-x-0
+                                        group-hover:opacity-100
+                                    "
+                                >
+                                    ]
+                                </span>
                             </Link>
                         </div>
                     </div>
@@ -116,6 +199,7 @@ const ContactForm = () => {
                                         id='email' 
                                         type='email' 
                                         name='email' 
+                                        placeholder='your@email.com'
                                         required 
                                         className='
                                             mt-3 
@@ -123,15 +207,21 @@ const ContactForm = () => {
                                             border-b
                                             border-black
                                             bg-transparent
-                                            px-0
-                                            py-3
+                                            px-3 py-3
                                             font-sora
                                             text-sm
+                                            text-black
                                             outline-none
-                                            transition-colors
-                                            focus:border-gray-500
+                                            transition-all
+                                            duration-300
+                                            placeholder:text-gray-500
+                                            focus:border-black
                                             dark:border-white
-                                            dark:focus:border-gray-400
+                                            dark:text-white
+                                            dark:placeholder:text-gray-400
+                                            dark:focus:border-white
+                                            dark:focus:bg-white
+                                            dark:focus:text-black
                                         '
                                     />
                                     {/* MESSAGE */}
@@ -145,6 +235,7 @@ const ContactForm = () => {
                                         id='message' 
                                         name='message' 
                                         required rows={5} 
+                                        placeholder="Let's talk"
                                         className='
                                             mt-3
                                             w-full
@@ -152,15 +243,20 @@ const ContactForm = () => {
                                             border-b
                                             border-black
                                             bg-transparent
-                                            px-0
-                                            py-3
+                                            px-3 py-3
                                             font-sora
                                             text-sm
                                             outline-none
-                                            transition-colors
-                                            focus:border-gray-500
+                                            transition-all
+                                            duration-300
+                                            placeholder:text-gray-500
+                                            focus:border-black
                                             dark:border-white
-                                            dark:focus:border-gray-400
+                                            dark:text-white
+                                            dark:placeholder:text-gray-400
+                                            dark:focus:border-white
+                                            dark:focus:bg-white
+                                            dark:focus:text-black
                                         '/>
                                     {/* HONEYPOT */}
                                     <input 
@@ -174,18 +270,24 @@ const ContactForm = () => {
                                     <div className='mt-8 flex items-center justify-between'>
                                         <button 
                                             type='submit' 
-                                            disabled={
-                                                contactFormStatus === "submitting"
-                                            } 
+                                            disabled={ contactFormStatus === "submitting" } 
                                             className='
                                                 group
                                                 inline-flex
                                                 items-center
+                                                border
+                                                border-black
+                                                px-4 py-2
                                                 font-sora
                                                 text-sm
                                                 font-semibold
                                                 transition-colors
                                                 duration-300
+                                                hover:bg-black
+                                                hover:text-white
+                                                dark:border-white
+                                                dark:hover:bg-white
+                                                dark:hover:text-black
                                                 disabled:cursor-not-allowed
                                                 disabled:opacity-50
                                             '
@@ -223,21 +325,21 @@ const ContactForm = () => {
                                                     group-hover:opacity-100
                                                 '
                                             >
-                                               ]
+                                            ]
                                             </span>
                                         </button>
-                                        {contactFormStatus === "fail" && (
-                                            <p className="font-jetbrains text-xs text-red-600">
-                                                {t("tryAgain")}
-                                            </p>
-                                        )}
                                     </div>
+                                    {contactFormStatus === "fail" && (
+                                        <p className="font-jetbrains text-xs text-red-600">
+                                            {t("tryAgain")}
+                                        </p>
+                                    )}
                                 </form>
                             )}
                     </div>
                 </div>
                 {/* FOOTER */}
-                <footer className='mt-auto botder-t border-black pt-6 dark:border-white'>
+                <footer className='mt-auto border-t border-black pt-6 dark:border-white'>
                     <div className='flex flex-col justify-between gap-2 font-jetbrains text-xs tracking-wider sm:flex-row'>
                         <span>Brandon Cook</span>
                         <span>© {new Date().getFullYear()}</span>
