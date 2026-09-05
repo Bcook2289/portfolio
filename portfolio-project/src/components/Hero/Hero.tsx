@@ -11,7 +11,7 @@ const Hero = () => {
   const t = useTranslations("hero");
 
   return (
-    <section className="min-h-screen flex flex-col px-6 py-20 sm:px-10 lg:px-16">
+    <section className="flex min-h-screen flex-col px-6 py-20 sm:px-10 lg:px-16">
       <div className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center">
         {/* SECTION LABEL */}
         <div className="mb-10 flex items-center gap-4">
@@ -33,7 +33,7 @@ const Hero = () => {
                 className="object-cover"
                 sizes="(max-width: 640px) 160px, (max-width: 1024px) 192px, 224px"
                 priority
-                />
+              />
             </div>
           </div>
           {/* IDENTITY */}
@@ -46,20 +46,18 @@ const Hero = () => {
               <TypingHeader />
             </div>
             
-            <div className="mt-6 max-w-2xl text-sm leading-relaxed tracking-wide sm:text-base">
+            <div className="mt-6 max-w-2xl font-sora text-sm leading-relaxed sm:text-base">
               <Intro pageFlag="brief" />
             </div>
             {/* ACTIONS */}
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row md:items-start">
               <Button 
                 label={t("projectsButton")} 
-                href="/projects" 
-                className="" 
+                href="/projects"  
               />
               <Button 
                 label={t("contactMeButton")} 
-                href="#contact" 
-                className="" 
+                href="#contact"  
               />
             </div>
           </div>

@@ -42,7 +42,7 @@ const ContactForm = () => {
         }
     }
     return (
-        <section className='min-h-screen px-6 py-20 sm:px-10 lg:px-16'>
+        <section id="contact" className='min-h-screen px-6 py-20 sm:px-10 lg:px-16'>
             <div className='mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-6xl flex-col'>
                 {/* SECTION LABEL */}
                 <div className="mb-12 flex items-center gap-4">
@@ -52,7 +52,7 @@ const ContactForm = () => {
                     <span className="h-px flex-1 bg-black dark:bg-white" />
                 </div>
                 {/* CONTACT CONTENT */}
-                <div className='grid flex-1 items-center gap-16 md:grid-cols-[0.8fr_1.2fr] md-20'>
+                <div className='grid flex-1 items-center gap-16 md:grid-cols-[0.8fr_1.2fr] md:gap-20'>
                     {/* INTRO */}
                     <div>
                         <h2 className='font-sora text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl'>
@@ -338,13 +338,6 @@ const ContactForm = () => {
                             )}
                     </div>
                 </div>
-                {/* FOOTER */}
-                <footer className='mt-auto border-t border-black pt-6 dark:border-white'>
-                    <div className='flex flex-col justify-between gap-2 font-jetbrains text-xs tracking-wider sm:flex-row'>
-                        <span>Brandon Cook</span>
-                        <span>© {new Date().getFullYear()}</span>
-                    </div>
-                </footer>
             </div>
         </section>
     )
