@@ -3,6 +3,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import BracketHover from './BracketHover';
 
 const ContactForm = () => {
     const t = useTranslations("contact");
@@ -86,37 +87,9 @@ const ContactForm = () => {
                                     dark:hover:text-black
                                 "
                             >
-                                <span
-                                    aria-hidden="true"
-                                    className="
-                                        mr-2
-                                        inline-block
-                                        -translate-x-2
-                                        opacity-0
-                                        transition-all 
-                                        duration-300 
-                                        group-hover:translate-x-0
-                                        group-hover:opacity-100
-                                    " 
-                                >
-                                    [
-                                </span>
+                                <BracketHover>
                                     GitHub
-                                <span
-                                    aria-hidden="true"
-                                    className="
-                                        ml-2
-                                        inline-block
-                                        translate-x-2
-                                        opacity-0
-                                        transition-all 
-                                        duration-300 
-                                        group-hover:translate-x-0
-                                        group-hover:opacity-100
-                                    "
-                                >
-                                    ]
-                                </span>
+                                </BracketHover>
                             </Link>
                             <Link 
                                 href="https://www.linkedin.com/in/bcook2289" 
@@ -141,37 +114,9 @@ const ContactForm = () => {
                                     dark:hover:text-black
                                 '
                             >
-                                <span
-                                    aria-hidden="true"
-                                    className="
-                                        mr-2
-                                        inline-block
-                                        -translate-x-2
-                                        opacity-0
-                                        transition-all 
-                                        duration-300 
-                                        group-hover:translate-x-0
-                                        group-hover:opacity-100
-                                    " 
-                                >
-                                    [
-                                </span>
+                                <BracketHover>
                                     LinkedIn
-                                <span
-                                    aria-hidden="true"
-                                    className="
-                                        ml-2
-                                        inline-block
-                                        translate-x-2
-                                        opacity-0
-                                        transition-all 
-                                        duration-300
-                                        group-hover:translate-x-0
-                                        group-hover:opacity-100
-                                    "
-                                >
-                                    ]
-                                </span>
+                                </BracketHover>
                             </Link>
                         </div>
                     </div>

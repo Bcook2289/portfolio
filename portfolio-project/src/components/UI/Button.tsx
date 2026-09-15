@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import BracketHover from "./BracketHover";
 
 type props = {
     label: string
@@ -26,37 +27,9 @@ const Button:React.FC<props> = ({
 
     const content = (
         <>
-            <span
-                aria-hidden="true"
-                className="
-                    mr-2
-                    -translate-x-2
-                    opacity-0
-                    transition-all duration-300
-                    group-hover:translate-x-0
-                    group-hover:opacity-100
-                " 
-            >
-                [
-            </span>
-
-            <span>
-                {variant === "utility" ?  label : `${label} →` }
-            </span>
-            
-            <span
-                aria-hidden="true"
-                className="
-                    ml-2
-                    translate-x-2
-                    opacity-0
-                    transition-all duration-300
-                    group-hover:translate-x-0
-                    group-hover:opacity-100
-                "
-            >
-                ]
-            </span>
+            <BracketHover>
+                    {variant === "utility" ?  label : `${label} →` }
+            </BracketHover>
         </>
     );
 

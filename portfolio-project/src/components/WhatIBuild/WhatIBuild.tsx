@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import ScrollAnimation from "../UI/ScrollAnimation";
 import { buildAreas } from "../../utils/buildAreasData";
+import BracketHover from "../UI/BracketHover";
 
 
 const WhatIBuild = () => {
@@ -67,35 +68,9 @@ const WhatIBuild = () => {
                                         {/* TITLE & DESCRIPTION */}
                                         <div className="grid gap-2 md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-12">
                                             <h2 className="font-sora text-xl font-semibold tracking-tight sm:text-2xl lg:text-3xl">
-                                                <span
-                                                    aria-hidden="true"
-                                                    className="
-                                                        mr-3
-                                                        inline-block
-                                                        -translate-x-4
-                                                        opacity-0
-                                                        transition-all duration-300 ease-out
-                                                        group-hover:translate-x-0
-                                                        group-hover:opacity-100
-                                                    " 
-                                                >
-                                                    [
-                                                </span>
+                                                <BracketHover>
                                                     {t(area.title)}
-                                                <span
-                                                    aria-hidden="true"
-                                                    className="
-                                                        ml-3
-                                                        inline-block
-                                                        translate-x-4
-                                                        opacity-0
-                                                        transition-all duration-300 ease-out
-                                                        group-hover:translate-x-0
-                                                        group-hover:opacity-100
-                                                    "
-                                                >
-                                                    ]
-                                                </span>
+                                                </BracketHover>
                                             </h2>
                                             <p className="max-w-md font-sora text-sm leading-relaxed sm:text-base">
                                                 {t(area.description)}
@@ -130,21 +105,9 @@ const WhatIBuild = () => {
                                                                         href={item.href}
                                                                         className="group inline-flex items-center font-sora text-sm font-semibold sm:text-base"
                                                                     >
-                                                                        <span
-                                                                            aria-hidden="true"
-                                                                            className="mr-2 -translate-x-2 opacity-0 transition-all duration-300 group-hover:opacity-100"
-                                                                        >
-                                                                            [
-                                                                        </span>
-                                                                            
+                                                                        <BracketHover>
                                                                             {tEvidence(item.label)}
-                                                                        
-                                                                        <span
-                                                                            aria-hidden="true"
-                                                                            className="mr-2 translate-x-2 opacity-0 transition-all duration-300 group-hover:opacity-100"
-                                                                        >
-                                                                            ]
-                                                                        </span>
+                                                                        </BracketHover>    
                                                                     </Link>
                                                                 ) : (
                                                                     <span
