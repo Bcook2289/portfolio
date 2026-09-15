@@ -1,43 +1,16 @@
 "use client"
+
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 import ScrollAnimation from "../UI/ScrollAnimation";
-
-const buildAreas = [
-        {
-            number: "01",
-            title: "webApplications",
-            description: "webApplicationsDescription",
-            details: "webApplicationsDetails",
-            evidence: "webApplicationsEvidence"
-        },
-        {
-            number: "02",
-            title: "crossPlatform",
-            description: "crossPlatformDescription",
-            details: "crossPlatformDetails",
-            evidence: "crossPlatformEvidence"
-        },
-        {
-            number: "03",
-            title: "systemsAndArchitecture",
-            description: "systemsAndArchitectureDescription",
-            details: "systemsAndArchitectureDetails",
-            evidence: "systemsAndArchitectureEvidence"
-        },
-        {
-            number: "04",
-            title: "technicalDelivery",
-            description: "technicalDeliveryDescription",
-            details: "technicalDeliveryDetails",
-            evidence: "technicalDeliveryEvidence"
-        },
-];
+import { buildAreas } from "../../utils/buildAreasData";
 
 
 const WhatIBuild = () => {
-    const t = useTranslations("buildAreas");
+    const t = useTranslations("buildAreas"); 
+    const tEvidence = useTranslations("evidence"); 
     const [expanded, setExpanded] = useState<string | null>(null);
 
     return (
@@ -131,7 +104,7 @@ const WhatIBuild = () => {
                                     </div>
                                 </button>
                                 <AnimatePresence initial={false}>
-                                    {isExpanded && (
+                                    { isExpanded && (
                                         <motion.div
                                             initial={{height: 0, opacity: 0}}
                                             animate={{height: "auto", opacity: 1}}
@@ -149,9 +122,40 @@ const WhatIBuild = () => {
                                                         <span className="font-jetbrains text-xs tracking-wider">
                                                             RELEVANT WORK
                                                         </span>
-                                                        <p className="mt-2 font-sora text-sm sm:text-base">
-                                                            {t(area.evidence)}
-                                                        </p>
+                                                        <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2">
+                                                            { area.evidence.map((item) => (
+                                                                item.href ? (
+                                                                    <Link
+                                                                        key={item.label}
+                                                                        href={item.href}
+                                                                        className="group inline-flex items-center font-sora text-sm font-semibold sm:text-base"
+                                                                    >
+                                                                        <span
+                                                                            aria-hidden="true"
+                                                                            className="mr-2 -translate-x-2 opacity-0 transition-all duration-300 group-hover:opacity-100"
+                                                                        >
+                                                                            [
+                                                                        </span>
+                                                                            
+                                                                            {tEvidence(item.label)}
+                                                                        
+                                                                        <span
+                                                                            aria-hidden="true"
+                                                                            className="mr-2 translate-x-2 opacity-0 transition-all duration-300 group-hover:opacity-100"
+                                                                        >
+                                                                            ]
+                                                                        </span>
+                                                                    </Link>
+                                                                ) : (
+                                                                    <span
+                                                                        key={item.label}
+                                                                        className="font-sora text-sm sm:text-base"
+                                                                    >
+                                                                        {tEvidence(item.label)} 
+                                                                    </span>
+                                                                )
+                                                            ))}
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
