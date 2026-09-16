@@ -6,12 +6,7 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import ThemeSwitcher from "../Theme/ThemeSwitcher";
 import LocaleSwitcher from "./LocaleSwitcher";
-import { li } from "framer-motion/client";
-
-type NavItem = {
-    label: string;
-    href: string;
-};
+import { NavItem } from "../../types/navigation";
 
 type MobileMenuProps = {
     navItems: NavItem[];
@@ -19,7 +14,9 @@ type MobileMenuProps = {
 
 const MobileMenu = ({ navItems }: MobileMenuProps) => {
     const t = useTranslations("navbar");
+    const tEvidence = useTranslations("evidence");
     const [ menuOpen, setMenuOpen ] = useState(false);
+    const [projectsOpen, setProjectsOpen] = useState(false);
 
     return (
         <div className="flex items-center gap-2">
@@ -55,18 +52,46 @@ const MobileMenu = ({ navItems }: MobileMenuProps) => {
                     className="absolute left-0 right-0 top-full mt-4 border-t border-black bg-white dark:border-white dark:bg-black"
                 >
                     <ul className="flex flex-col font-sora text-sm font-semibold">
-                        {navItems.map((link) => (
+                        {navItems.map((item) => (
                             <li
-                                key={link.href}
+                                key={item.href}
                                 className="border-b border-black dark:border-white"
                             >
-                                <Link
-                                    href={link.href}
-                                    onClick={() => setMenuOpen(false)}
-                                    className="block px-6 py-4 sm:px-10"
-                                >
-                                    {t(link.label)}
-                                </Link>
+                                {item.children ? (
+                                    <>
+                                        <button
+                                            type="button"
+                                            onClick={() => setProjectsOpen(!projectsOpen)}
+                                            className="block w-full px-6 py-4 text-left sm:px-10"
+                                        >
+                                            {t(item.label)}
+                                        </button>
+
+                                        {projectsOpen && (
+                                            <ul className="border-t border-black dark:border-white">
+                                                {item.children.map((project) => (
+                                                    <li key={project.href}>
+                                                        <Link
+                                                            href={project.href}
+                                                            onClick={() => setMenuOpen(false)}
+                                                            className="block px-10 py-3 sm:px-14"
+                                                            >
+                                                                {tEvidence(project.label)}
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                    </>
+                                ): (
+                                    <Link
+                                        href={item.href!}
+                                        onClick={() => setMenuOpen(false)}
+                                        className="block px-6 py-4 sm:px-10"
+                                        >
+                                            {t(item.label)}
+                                    </Link>
+                                )}
                             </li>
                         ))}
                     </ul>
