@@ -19,7 +19,93 @@
         "longDescriptionTwo" : "I'm also passionate about building clean, intuitive web experiences, and this site is one of them! I designed and developed it using TypeScript, Next.js, and Tailwind CSS. I love solving real-world problems where business and engineering meet, and I'm always looking to create tools that are scalable, user-friendly, and thoughtfully designed. With a foundation in technical consulting and hands-on dev experience, I bring a well-rounded, practical approach to every project I work on."
     },
     "about" : {
-        "scrollPrompt" : "scroll down for more!"
+        "scrollPrompt" : "scroll down for more!",
+        "timeline": [
+            {
+                "year": "2017",
+                "company": "ESG Global",
+                "role": "Client Operations Analyst",
+                "details": [
+                    "Enterprise SaaS",
+                    "Requirements Gathering",
+                    "JIRA",
+                    "Bug Triage",
+                    "Client-facing technical support"
+                ]
+            },
+            {
+                "year": "2021",
+                "company": "ESG Global",
+                "role": "Application Consultant (PMO)",
+                "details": [
+                    "Oracle SQL",
+                    "SOAP API testing",
+                    "XML data processing",
+                    "Requirements and UAT",
+                    "Release coordination",
+                    "Japan delivery"
+                ]
+            },
+            {
+                "year": "2023",
+                "company": "Code Chrysalis (Boot Camp)",
+                "role": "Software Engineering and Agile Methodologies",
+                "details": [
+                    "JavaScript",
+                    "React",
+                    "Algorithms",
+                    "Software Engineering Fundamentals"
+                ]
+            },
+            {
+                "year": "2023-2024",
+                "company": "VitaeAggregate",
+                "role": "Product Owner (PMO) / Full-stack Developer",
+                "details": [
+                    "MVP Deployment",
+                    "JavaScript",
+                    "SvelteKit",
+                    "Python",
+                    "Django",
+                    "PostgreSQL",
+                    "Project Delivery"
+                ]
+            },
+            {
+                "year": "2024-2025",
+                "company": "Sentient CMS",
+                "role": "Full-stack Developer",
+                "details": [
+                    "Next.js",
+                    "TypeScript",
+                    "Prisma",
+                    "Supabase / PostgreSQL"
+                ]
+            },
+            {
+                "year": "2025",
+                "company": "ESG Global",
+                "role": "Solutions Consultant",
+                "details": [
+                    "Client Onboarding",
+                    "Requirements gathering and configuration",
+                    "Go/No-go decisions",
+                    "UAT"
+                ]
+            },
+            {
+                "year": "2026-Today",
+                "company": "Calm Anchor",
+                "role": "Technical Lead / Software Engineer",
+                "details": [
+                    "React / Vite",
+                    "Capacitor",
+                    "Firebase",
+                    "Cross-platform Application Development",
+                    "Deployment and Production Readiness"
+                ]
+            }
+        ]
     },
     "projects":[{
         "title": "Hato",

@@ -19,7 +19,93 @@
         "longDescriptionTwo": "クリーンで直感的なWeb体験を作ることにも情熱を注いでおり、このサイトもその一例です。TypeScript、Next.js、Tailwind CSS を用いて、設計から開発まで手掛けました。ビジネスとエンジニアリングの境界にある課題を解決することが得意で、スケーラブルで使いやすく、細部まで配慮されたツールの開発を常に目指しています。技術コンサルタントとしての視点と現場での開発経験を活かし、実用性とデザイン性を両立させたソリューションを提供します。"
     },
     "about" : {
-        "scrollPrompt" : "もっと見る"
+        "scrollPrompt" : "もっと見る",
+        "timeline": [
+            {
+                "year": "2017年",
+                "company": "ESG Global",
+                "role": "クライアントオペレーションアナリスト",
+                "details": [
+                    "エンタプライズSaaS",
+                    "要件定義",
+                    "JIRA",
+                    "バグトリアージ",
+                    "クライアント向けテクニカルサポート"
+                ]
+            },
+            {
+                "year": "2021年",
+                "company": "ESG Global",
+                "role": "アプリケーションコンサルタント (PMO)",
+                "details": [
+                    "Oracle SQL",
+                    "SOAP APIテスト",
+                    "XMLデータ処理",
+                    "要件定義・UAT",
+                    "リリース調整",
+                    "日本向けデリバリー"
+                ]
+            },
+            {
+                "year": "2023年",
+                "company": "コードクリサリス (Boot Camp)",
+                "role": "ソフトウェアエンジニアリング・アジャイル開発手法",
+                "details": [
+                    "JavaScript",
+                    "React",
+                    "アルゴリズム",
+                    "ソフトウェアエンジニアリング基礎"
+                ]
+            },
+            {
+                "year": "2023年-2024年",
+                "company": "VitaeAggregate",
+                "role": "プロダクトオーナー (PMO)・フルスタック開発者",
+                "details": [
+                    "MVPデプロイ",
+                    "JavaScript",
+                    "SvelteKit",
+                    "Python",
+                    "Django",
+                    "PostgreSQL",
+                    "プロジェクトデリバリー"
+                ]
+            },
+            {
+                "year": "2024年-2025年",
+                "company": "Sentient CMS",
+                "role": "フルスタック開発者",
+                "details": [
+                    "Next.js",
+                    "TypeScript",
+                    "Prisma",
+                    "Supabase / PostgreSQL"
+                ]
+            },
+            {
+                "year": "2025年",
+                "company": "ESG Global",
+                "role": "ソリューションコンサルタント",
+                "details": [
+                    "クライアントオンボーディング",
+                    "要件定義・設定",
+                    "Go/No-go判断",
+                    "UAT"
+                ]
+            },
+            {
+                "year": "2026年-現在",
+                "company": "Calm Anchor",
+                "role": "テクニカルリード・ソフトウェアエンジニア",
+                "details": [
+                    "React / Vite",
+                    "Capacitor",
+                    "Firebase",
+                    "クロスプラットフォームアプリケーション開発",
+                    "デプロイ・本番環境対応"
+                ]
+            }
+        ]
     },
     "projects": [
         {
@@ -257,6 +343,7 @@
         "calmAnchor": "Calm Anchor",
         "cms": "CMS Platform",
         "myVirtualFridge": "MyVirtualFridge",
+        "vitaeAggregate": "VitaeAggregate",
         "enterpriseSaaS": "Enterprise SaaS",
         "technicalProjectDelivery": "Technical Project Delivery",
         "softwareDevelopment": "Software Development"
