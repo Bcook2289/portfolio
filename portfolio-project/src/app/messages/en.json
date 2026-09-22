@@ -113,7 +113,7 @@
             "title": "MyVirtualFridge",
             "role": "Technical Lead / Software Engineer",
             "period": "2026-present",
-            "description": "",
+            "description": "MyVirtualFridge is designed as a home inventory management app. The app is designed around integrating your grocery list with your pantry or fridge. As users mark items off on their list, the item will be added to your virtual inventory for future consumption. MVP currently in production.",
             "technologies":[
                 "TypeScript",
                 "React Native",
@@ -127,43 +127,68 @@
             "sections": [
                 {
                     "id": "context",
-                    "title": "Context",
-                    "content": []
+                    "title": "Context", 
+                    "content": [
+                        "MyVirtualFridge began with a simple problem at home: our family bought three heads of cabbage after forgetting that we had already bought the first two.",
+                        "That experience highlighted a broader problem with everyday food management. With daily life moving quickly, grocery purchases and existing food inventory can easily fall through the cracks.",
+                        "The project grew from a question: how could a food inventory system help people keep track of what they already have in their pantry or fridge without becoming intrusive or adding another chore to their daily routine?"
+                    ]
                 },
                 {
                     "id": "responsibilities",
                     "title": "Responsibilities",
-                    "content": []
+                    "content": [
+                        "I lead the project's engineering and technical direction while managing development through a phased roadmap rather than fixed sprint cycles.",
+                        "I maintain the project's GitHub issues, development plans, and roadmap while handling the application's engineering and implementation work."
+                    ]
                 },
                 {
                     "id": "technicalDirection",
                     "title": "Technical Direction",
-                    "content": []
+                    "content": [
+                        "MyVirtualFridge is being developed as a cross-platform mobile application using React Native with Expo and Expo Router, with NativeWind handling the styling.",
+                        "Supabase provides the current backend foundation, with Supabase Auth handling authentication and PostgreSQL providing the application's persistent data layer.",
+                        "Development is being organized around a four-phase, 16-epic roadmap managed through GitHub Projects. The application currently has its navigation shell, authentication flow, and initial database foundation in place, with development now focused on the core shopping-list functionality.",
+                        "The architecture is being developed incrementally alongside the MVP. Features such as household data, realtime functionality, server-side functions, AI inference, and subscription management are planned but are not yet treated as established parts of the production architecture."
+                    ]
                 },
                 {
                     "id": "challenges",
                     "title": "Challenges",
-                    "content": []
+                    "content": [
+                        "How should the application support multiple members interacting with the same shopping list, particularly when users may be performing actions at the same time?",
+                        "How should the transition from shopping list to inventory work as the application becomes more sophisticated, while keeping the relationship between purchased items and household inventory clear?",
+                        "How can the application help users maintain awareness of their food inventory without becoming another intrusive task in their daily routine?"
+                    ]
                 },
                 {
                     "id": "decisions",
                     "title": "Key Decisions",
-                    "content": []
-                },
-                {
-                    "id": "implementation",
-                    "title": "Implementation",
-                    "content": []
+                    "content": [
+                        "React Native with Expo was chosen to support both iOS and Android from a single codebase while keeping access to native mobile capabilities available for future development.",
+                        "Supabase was chosen as the backend platform primarily for its low cost and existing familiarity. Using managed authentication and PostgreSQL allows the project to establish a functional backend without the infrastructure overhead of maintaining a custom backend.",
+                        "PostgreSQL was chosen as the application's primary data store to support the relational nature of users, households, shopping lists, and inventory while also providing an opportunity to deepen my experience with PostgreSQL.",
+                        "The data model was designed around households and household members rather than individual users alone. This allows multiple users to collaborate on shared shopping lists and inventory while maintaining information about which user performed an action.",
+                        "Authentication was implemented as the first development epic so that user identity and ownership relationships could be established before building the application's core data and functionality."
+                    ]
                 },
                 {
                     "id": "production",
                     "title": "Production & Deployment",
-                    "content": []
+                    "content": [
+                        "MyVirtualFridge is being developed with mobile store deployment in mind rather than as a development-only application.",
+                        "The current application is being built incrementally, with authentication, navigation, and the initial database foundation established before moving into the core shopping-list functionality.",
+                        "Production deployment and store submission are being treated as later phases of the project, allowing the application architecture and MVP functionality to develop before finalizing the release process."
+                    ]
                 },
                 {
                     "id": "Reflection",
                     "title": "Reflection",
-                    "content": []
+                    "content": [
+                        "The project is still in active development, so there is not yet a finished product to evaluate. At this stage, the most valuable part of the process has been establishing a technical foundation that can evolve alongside the MVP.",
+                        "Building the project around a real household problem has also influenced the technical direction. Decisions around shared households, user attribution, and the relationship between shopping lists and inventory are being developed around actual usage rather than abstract requirements.",
+                        "As development progresses, this section will be updated to document what worked, what changed, and what I would approach differently based on what I learned."
+                    ]
                 }
             ]
         },
