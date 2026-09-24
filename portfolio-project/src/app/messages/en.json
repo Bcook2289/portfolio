@@ -298,7 +298,7 @@
             "title": "Sentient Content Management System",
             "role": "Software Engineer",
             "period": "2025-2026",
-            "description": "",
+            "description": "Sentient's Content Management System serves two primary roles: a landing page where fans can view new releases and announcements, and as a content management interface that allows non-technical band members to create and publish new release items.",
             "technologies":[
                 "TypeScript",
                 "Next.js",
@@ -314,42 +314,83 @@
                 {
                     "id": "context",
                     "title": "Context",
-                    "content": []
+                    "content": [
+                        "Sentient originally began as a static website intended to provide the band with a dedicated online presence for communicating new releases and announcements.",
+                        "After discussing the project's future with the band, I expanded the scope from a static site into a full-stack content management platform. The goal was to allow non-technical members to create and publish release content themselves while establishing a foundation that could later support additional functionality, including e-commerce.",
+                        "Development ultimately paused before the broader expansion was completed as the site's visual direction was reconsidered. The existing CMS work nevertheless provided the foundation for the content management functionality and full-stack architecture."
+                    ]
                 },
                 {
                     "id": "responsibilities",
                     "title": "Responsibilities",
-                    "content": []
+                    "content": [
+                        "Own the project's technical direction, development roadmap, and backlog.",
+                        "Plan and manage development through staging and incremental releases.",
+                        "Design and implement the application's frontend, backend, and content management functionality.",
+                        "Coordinate project direction through regular check-ins with the client while maintaining responsibility for day-to-day technical decisions and implementation."
+                    ]
                 },
                 {
                     "id": "technicalDirection",
                     "title": "Technical Direction",
-                    "content": []
+                    "content": [
+                        "The application was designed as a full-stack system with a clear separation between the public-facing Next.js frontend and a dedicated backend API service.",
+                        "The frontend communicates exclusively with the backend through RESTful API endpoints. It handles public release content, authenticated administrator workflows, and client-side route protection without directly accessing the database or storage layer.",
+                        "The backend was structured as a layered TypeScript and Express service, separating routing, authentication and authorization middleware, controllers, database operations, and storage integration.",
+                        "PostgreSQL provides the persistent data layer through Prisma, while Supabase Storage handles media assets. JWT-based authentication and role-based authorization protect administrative operations.",
+                        "This separation established clear client-server boundaries while providing a foundation that could support future functionality such as expanded content management and e-commerce."
+                    ]
                 },
                 {
                     "id": "challenges",
                     "title": "Challenges",
-                    "content": []
+                    "content": [
+                        "The project needed to bridge a gap between its original role as a static marketing site and the longer-term goal of becoming an e-commerce platform. A key challenge was determining how much infrastructure to introduce at the CMS stage without prematurely building functionality that was not yet required.",
+                        "Authentication and authorization introduced another area of complexity. While implementing JWT-based authentication and password hashing was ultimately straightforward, understanding the complete authentication flow across the frontend, backend middleware, protected routes, and HTTP-only cookies required developing a clearer mental model of how user identity was established and maintained across the system.",
+                        "The project also faced a non-technical constraint when its visual direction was reconsidered during development. Progress on the broader platform was paused while the redesign remained unresolved, limiting how far the CMS and planned e-commerce functionality could be taken."
+                    ]
                 },
                 {
                     "id": "decisions",
                     "title": "Key Decisions",
-                    "content": []
+                    "content": [
+                        "The project was expanded from a static site into a full-stack application so that non-technical band members could manage release content without requiring code changes.",
+                        "The frontend and backend were separated into independent applications, with the frontend communicating exclusively through a REST API rather than accessing the database or storage layer directly.",
+                        "A dedicated backend service was introduced to centralize authentication, authorization, business logic, database access, and media management. This established a foundation that could be extended as the project moved toward its longer-term e-commerce goals.",
+                        "PostgreSQL with Prisma was chosen for structured release data, while Supabase Storage was used for media assets. Separating structured application data from media storage kept those concerns independent within the backend architecture.",
+                        "JWT-based authentication with role-based authorization was implemented so administrative operations could be protected independently from the public-facing release content."
+                    ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
-                    "content": []
+                    "content": [
+                        "The frontend was implemented with Next.js and TypeScript, providing both the public release experience and authenticated administrative workflows. Tailwind CSS was used for responsive styling, with Framer Motion providing animated transitions.",
+                        "The backend was implemented as a TypeScript and Express REST API with separate routing, middleware, controller, and service layers. Prisma was used to manage the PostgreSQL data layer and provide typed database access.",
+                        "The content management workflow supports creating, updating, and deleting music and video releases through protected administrative endpoints. The frontend consumes these endpoints to retrieve and display release content.",
+                        "JWT-based authentication was implemented using HTTP-only cookies, with middleware responsible for authentication and administrator authorization. Public content and protected administrative operations were kept separate.",
+                        "Media management was implemented through Supabase Storage, including image uploads, deletion, and URL generation for assets used by release content."
+                    ]
                 },
                 {
                     "id": "production",
                     "title": "Production & Deployment",
-                    "content": []
+                    "content": [
+                        "The application was developed as a deployable full-stack system, with the frontend and backend maintained as separate applications and the backend providing the production API layer.",
+                        "The frontend was configured for deployment as a Next.js application, while the backend was structured as an independent Express service with PostgreSQL and Supabase Storage providing the persistent data and media infrastructure.",
+                        "The project reached a functional full-stack state with the core CMS, authentication, release management, and media workflows implemented. Broader production expansion, including the planned e-commerce functionality, was not completed after development was paused during a redesign of the site's visual direction."
+                    ]
                 },
                 {
                     "id": "Reflection",
                     "title": "Reflection",
-                    "content": []
+                    "content": [
+                        "Sentient was an important step in expanding my technical depth beyond third-party backend services. Implementing JWT-based authentication and password hashing gave me a deeper understanding of how authentication can be designed and managed within an application rather than delegated entirely to a managed service. The project also gave me an opportunity to design around practical infrastructure constraints, including Render's cold-start behavior. I particularly valued the fallback-data approach, where a lightweight dataset could populate the frontend while the application waited for the backend API to become available.",
+                        "The project also changed how I think about designing for future requirements. I initially structured the system with scalability and future e-commerce integration in mind, but I now recognize that some of those assumptions were too broad. Much of the eventual e-commerce functionality would likely depend on external services and APIs rather than requiring the CMS itself to become a complete commerce platform. In retrospect, I would define the future integration points more concretely before designing infrastructure around them.",
+                        "There are also several areas of the CMS itself that I would approach differently. The release management workflow was more restrictive than necessary, requiring every release to include a YouTube video, title, description, and image. A more flexible content model would have allowed different types of announcements without requiring every field. I would also consider features such as caching, richer content editing, email notifications, and more flexible site-design capabilities as the platform evolved.",
+                        "The project reinforced an equally important lesson about stakeholder management. I would involve the stakeholder much earlier in the development process and establish clearer agreement around the project's direction before investing heavily in implementation. Technical progress depends on stakeholder buy-in, and unresolved disagreements about product direction can ultimately become a larger constraint than the engineering itself. The MVP was completed and provided meaningful technical growth, particularly around authentication and application architecture, but the project also showed me where stronger planning, communication, and product definition would have produced a better overall result."
+
+                    ]
                 }
             ]
         },
