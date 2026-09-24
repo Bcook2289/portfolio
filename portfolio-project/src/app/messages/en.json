@@ -197,7 +197,7 @@
             "title": "Calm Anchor",
             "role": "Technical Lead / Software Engineer",
             "period": "2026-present",
-            "description": "",
+            "description": "Calm Anchor is a cross-platform mobile application designed to support parents using gentle parenting approaches. I joined the project as technical lead to establish a stable engineering foundation, guide development, and bring the application to production.",
             "technologies":[
                 "JavaScript",
                 "React",
@@ -213,42 +213,83 @@
                 {
                     "id": "context",
                     "title": "Context",
-                    "content": []
+                    "content": [
+                        "Calm Anchor is a cross-platform application designed around gentle parenting. The project had stalled during development before I was brought on as technical lead.",
+                        "My role was to establish a stable technical foundation, unblock development, and guide the application toward production readiness. I took responsibility for the technical direction and engineering work while the client retained ownership of the product concept and its content."
+                    ]
                 },
                 {
                     "id": "responsibilities",
                     "title": "Responsibilities",
-                    "content": []
+                    "content": [
+                        "Own the application's technical direction, architecture, and engineering workflow.",
+                        "Develop and maintain the application across the tech stack, including authentication, data management, and mobile functionality.",
+                        "Identify and resolve technical issues affecting application stability, development progress, and deployment readiness.",
+                        "Manage development tasks and priorities while coordinating technical decisions with the client.",
+                        "Prepare the application for production deployment, including testing, monitoring, and release requirements."
+                    ]
                 },
                 {
                     "id": "technicalDirection",
                     "title": "Technical Direction",
-                    "content": []
+                    "content": [
+                        "The application was structured as a cross-platform mobile application using React, Vite, and Capacitor, enabling a mobile-focused codebase while retaining a shared frontend architecture.",
+                        "Firebase was selected for authentication and application data infrastructure, providing managed backend services without requiring a dedicated backend to be developed and maintained as part of the MVP.",
+                        "The project was developed with production deployment in mind from the outset. Android deployment became the immediate target, with testing, monitoring, and release infrastructure incorporated into the development process rather than treated as a final step.",
+                        "Development was organized around establishing application stability and production readiness first, allowing subsequent feature work to build on a more reliable technical foundation."
+                    ]
                 },
                 {
                     "id": "challenges",
                     "title": "Challenges",
-                    "content": []
+                    "content": [
+                        "The initial application had been developed as a largely monolithic App.jsx file, making the codebase difficult to reason about and maintain. An early focus was restructuring the application into a more manageable architecture while troubleshooting stability issues introduced by the original implementation.",
+                        "An authentication and data-ownership issue caused purchases to be associated with an anonymous user ID rather than the authenticated account. This meant purchase data could become inaccessible after a user logged out. Resolving the issue required tracing the relationship between authentication state and database operations and ensuring data was consistently associated with the correct user.",
+                        "The project also required balancing the existing architecture with more maintainable and scalable patterns as development continued. In some cases, the existing state-window navigation model and application structure conflicted with more conventional React patterns, creating decisions around whether to refactor incrementally or replace portions of the architecture while continuing to deliver new product functionality.",
+                        "Android production deployment introduced an additional release constraint: Google Play requires a qualifying closed-testing period with 12 testers remaining opted in for 14 consecutive days before production access can be requested for certain new personal developer accounts. This created a practical testing and release-management requirement that had to be incorporated into the project's deployment plan."
+                    ]
                 },
                 {
                     "id": "decisions",
                     "title": "Key Decisions",
-                    "content": []
+                    "content": [
+                        "The existing React-based application was retained rather than immediately rewritten, allowing development to continue while architectural improvements were introduced incrementally.",
+                        "The application's navigation and state-management approach was identified as an area requiring architectural improvement. But rather than continuing to expand the existing state-window model indefinitely, the project direction is moving toward a more conventional React Router-based structure.",
+                        "Authentication and data ownership were treated as foundational concerns. User identity needed to be reliably established before application data could be considered trustworthy, particularly for purchase records.",
+                        "Production readiness was treated as part of engineering work rather than a final deployment task. Testing, monitoring, CI/CD, and mobile release requirements were incorporated into the development process as the application progressed.",
+                        "Product development decisions have been balanced against technical debt and architectural improvements, with changes prioritized according to their impact on stability, maintainability, and the client's planned functionality."
+                    ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
-                    "content": []
+                    "content": [
+                        "The project initially existed as a locally maintained application without a GitHub repository or established source-control workflow. I first established the development foundation by setting up the project locally, creating the repository, and bringing the existing application into a version-controlled development environment.",
+                        "With the existing codebase under source control, I could begin addressing the application's architectural and stability issues. The original implementation was concentrated entirely within App.jsx, requiring the application to be progressively restructured into a more maintainable component-based architecture while continuing feature development.",
+                        "Firebase Authentication was integrated into the application to establish persistent user identity and support user-specific application data. Authentication state was incorporated into the application's data flow so that actions such as recording purchases could be associated with the correct account.",
+                        "The application was packaged for mobile platforms using Capacitor, allowing the React application to be deployed as a native Android application while maintaining a shared codebase.",
+                        "Testing and reliability work was incorporated throughout development using Vitest for automated testing and Sentry for production error monitoring. GitHub Actions was also introduced to support the project's development and deployment workflow.",
+                        "RevenueCat was integrated to provide the foundation for subscription and entitlement management, allowing the application to support its planned free and paid tiers."
+                    ]
                 },
                 {
                     "id": "production",
                     "title": "Production & Deployment",
-                    "content": []
+                    "content": [
+                        "The application has progressed from a locally maintained codebase to an installable Android application undergoing closed testing. The deployment process required establishing the project's mobile build and release workflow alongside the application's development.",
+                        "Android release preparation has included configuring the application for Google Play distribution, producing test builds, and managing the closed-testing requirements needed before production access can be requested.",
+                        "The project is currently in the closed-testing stage. The production release process remains dependent on completing Google Play Store's required beta testing phase and resolving any issues identified during that process."
+                    ]
                 },
                 {
                     "id": "Reflection",
                     "title": "Reflection",
-                    "content": []
+                    "content": [
+                        "Calm Anchor significantly expanded my practical experience with CI/CD, automated testing, scripting, mobile development, APK builds, and the operational requirements involved in preparing an application for mobile distribution.",
+                        "The project also changed how I approach client work. I learned to distinguish between immediate project priorities and requested enhancements, particularly when new features or design changes could distract from stability and production readiness. I also learned that technical ownership does not mean taking ownership of the entire product. I could provide technical direction and recommendations while leaving product strategy and other non-technical responsibilities with the client.",
+                        "If I were starting the project again, I would establish CI/CD earlier and spend more time defining the application's long-term architecture before continuing feature development. At the same time, I would not wait for the architecture to be perfect before moving forward. Establishing source control first, improving the existing structure, stabilizing the application, and then continuing development allowed the project to progress without allowing architectural concerns to become a blocker.",
+                        "The project ultimately gave me experience across a much broader part of the software development lifecycle than I had previously worked with. I began with a locally maintained application and helped establish the engineering foundation around it, taking the project through source control, architectural improvements, testing, monitoring, mobile builds, and closed distribution testing. That progression has shaped how I think about technical ownership, delivery, and the balance between improving a system and continuing to move it forward."
+                    ]
                 }
             ]
         },
