@@ -399,15 +399,15 @@
             "title": "VitaeAggregate",
             "role": "Product Owner / Software Engineer",
             "period": "2024-2025",
-            "description": "",
+            "description": "VitaeAggregate was a three-person project designed to give job seekers a way to receive feedback on their resumes through social-media style interactions. Resumes were anonymized before being shared to reduce the risk of exposing users' personal information and ATS-friendly resumes could be downloaded for personal use.",
             "technologies":[
-                "Cypress", 
-                "Node.js", 
                 "Svelte.js", 
-                "Django", 
-                "PostgreSQL", 
                 "Python", 
+                "Django", 
+                "Node.js", 
+                "PostgreSQL", 
                 "TypeScript", 
+                "Cypress", 
                 "Pytest", 
                 "Docker", 
                 "Vercel"
@@ -416,42 +416,83 @@
                 {
                     "id": "context",
                     "title": "Context",
-                    "content": []
+                    "content": [
+                        "VitaeAggregate was a three-person project built around a common problem in the job search process: resumes are often evaluated by a limited number of people, making it difficult for job seekers to receive useful feedback before submitting an application.",
+                        "The project explored a social-media-style approach to resume feedback, allowing users to share anonymized resumes and receive feedback from other users.",
+                        "Anonymization was incorporated into the concept to reduce the risk of exposing personally identifiable information while allowing the resume itself to remain the focus of the feedback."
+                    ]
                 },
                 {
                     "id": "responsibilities",
                     "title": "Responsibilities",
-                    "content": []
+                    "content": [
+                        "Coordinate project development across a three-person team, managing priorities, development tasks, and communication between the frontend and the backend.",
+                        "Contribute to both frontend and backend development as a supporting developer, implementing smaller application features and assisting with development across the stack.",
+                        "Design and refine the application's user interface and overall visual direction.",
+                        "Implement user-facing features such as toast notifications while supporting the team with technical problem-solving and integration work.",
+                        "Balance project management responsibilities with hands-on development to keep the project moving towards MVP."
+                    ]
                 },
                 {
                     "id": "technicalDirection",
                     "title": "Technical Direction",
-                    "content": []
+                    "content": [
+                        "VitaeAggregate was structured as a web application with a Svelte frontend and a Django REST backend maintained within a single repository.",
+                        "The frontend was built with Svelte, TypeScript, and Tailwind CSS and was responsible for resume creation, editing, sharing, and user interaction.",
+                        "Django REST provided the backend API for managing resume data, comments, and user information, allowing the frontend and backend to remain separated by an API boundary while being developed within the same repository.",
+                        "Resume documents were represented as dynamic Svelte components based on user-provided content, with Puppeteer used to generate ATS-friendly PDF documents from the rendered resume.",
+                        "The application also incorporated social functionality around shared resumes, including comments and notifications, while using resume visibility controls to determine whether a resume could be shared with other users."
+                    ]
                 },
                 {
                     "id": "challenges",
                     "title": "Challenges",
-                    "content": []
+                    "content": [
+                        "One of the team's main challenges was balancing technical exploration with the project's delivery timeline. Some technical issues required deeper investigation than the project could accommodate, creating a risk that architectural work would consume time needed for the MVP. Managing this required prioritizing work based on its impact on the project's immediate goals and maintaining momentum toward deliverables.",
+                        "The project also required frequent scope adjustments based on weekly stakeholder feedback. Ideas that initially seemed feasible sometimes had to be significantly reduced or removed as the team clarified the project's goals and available development time. Maintaining a realistic scope while responding to stakeholder input became an important part of keeping the project on schedule.",
+                        "The team also had to learn and apply unfamiliar technologies during development. Django REST introduced a new backend framework and Svelte required the team to adapt existing React experience to a different component and reactivity model. Both required learning on the fly while continuing to develop the application.",
+                        "Python was initially selected with the intention of exploring AI functionality as part of the project. As the scope and timeline became clearer, the team determined that there was not enough time to pursue that direction and prioritized the core application instead."
+                    ]
                 },
                 {
                     "id": "decisions",
                     "title": "Key Decisions",
-                    "content": []
+                    "content": [
+                        "The team chose to maintain the frontend and backend as separate applications within a single repository, allowing development to remain organized while preserving a clear API boundary between the client and server.",
+                        "Svelte was chosen for the frontend, giving the team an opportunity to apply existing React experience to a different component and reactivity model while keeping the application focused on a modern, component-based architecture.",
+                        "Django REST was chosen for the backend to provide a structured framework for building the application's API and managing resume, user, and feedback data.",
+                        "Python was initially chosen with the intention of exploring AI functionality within the application. As the project scope became clearer, the team decided not to pursue an AI component so that development time could remain focused on the core MVP.",
+                        "The team adopted an iterative approach to scope, using regular stakeholder feedback to refine the product and reduce or change planned functionality when it no longer fit the available development time."
+                    ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
-                    "content": []
+                    "content": [
+                        "The frontend was implemented with Svelte, TypeScript, and Tailwind CSS, providing the interface for creating, editing, viewing, and sharing resumes.",
+                        "Resume content was represented through reusable Svelte components, allowing sections such as skills, professional experience, education, and links to be rendered dynamically based on user input.",
+                        "The Django REST backend provided API endpoints for managing resume data, user information, comments, and related application functionality.",
+                        "Puppeteer was integrated to generate ATS-friendly PDF resumes from the rendered resume components, allowing users to download their resumes directly from the application.",
+                        "Social functionality was implemented around shared resumes, including comments and notifications, while resume visibility was controlled through the application's sharing settings."
+                    ]
                 },
                 {
                     "id": "production",
                     "title": "Production & Deployment",
-                    "content": []
+                    "content": [
+                        "The application was deployed to Heroku as a production web application, allowing the team to make the MVP available for users.",
+                        "The deployment included both the Svelte frontend and Django REST backend, providing a hosted environment in which the complete application could be tested as an integrated system.",
+                        "Deployment and production testing also gave the team an opportunity to identify issues that were not apparent during local development and validate the application against the project's evolving requirements."
+                    ]
                 },
                 {
                     "id": "Reflection",
                     "title": "Reflection",
-                    "content": []
+                    "content": [
+                        "VitaeAggregate was successfully delivered within the given constraints, with the team completing the project in time for the final presentation on Demo Day.",
+                        "My primary contribution was keeping the project moving toward its deadline while coordinating development across the team and managing changes to scope. Although the project encountered technical and scope-related challenges, I was able to help prevent those issues from significantly disrupting the delivery timeline.",
+                        "Looking back, I would have liked to take on more hands-on engineering work during the project. At the same time, the experience showed me that project coordination and technical communication were areas where I was particularly effective. The balance between development and coordination helped me understand how I could contribute to an engineering team beyond writing code."
+                    ]
                 }
             ]
         }
