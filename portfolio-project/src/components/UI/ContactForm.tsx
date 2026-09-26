@@ -46,7 +46,7 @@ const ContactForm = () => {
         <section id="contact" className='min-h-screen px-6 py-20 sm:px-10 lg:px-16'>
             <div className='mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-6xl flex-col'>
                 {/* SECTION LABEL */}
-                <div className="mb-12 flex items-center gap-4">
+                <div className="mb-10 flex items-center gap-4">
                     <span className="font-jetbrains text-xs font-medium tracking-wider sm:text-sm">
                         03 / CONTACT
                     </span>

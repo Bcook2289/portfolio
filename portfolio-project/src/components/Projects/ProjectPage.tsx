@@ -7,8 +7,8 @@ type ProjectPageProps = {
 
 const ProjectPage = ({ project }: ProjectPageProps) => {
     return (
-        <main>
-            <header className="mx-auto max-w-6xl pt-16">
+        <main className="font-sora m-4 sm:m-8 sm:pb-8">
+            <header className="mx-auto mb-20 max-w-6xl pt-16">
                 <div className="mb-10 flex items-center gap-4">
                     <span className="font-jetbrains text-xs font-medium tracking-wider sm:text-sm">
                         01 / PROJECT
