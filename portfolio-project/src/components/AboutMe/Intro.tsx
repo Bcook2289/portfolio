@@ -31,11 +31,9 @@ const Intro = ({ pageFlag = "detailed" }: summaryProp) => {
   );
 
   const brief = (
-    <>
-      <p className="font-sora">
-        {t("shortDescription")}
-      </p>
-    </>
+    <p>
+      {t("shortDescription")}
+    </p>
   );
   return pageFlag === "brief" ? brief : detailed;
 };

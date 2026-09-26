@@ -8,126 +8,495 @@
         "roadmaps": "Roadmaps"
     },
     "hero": {
-        "title" : "Hello",
-        "subtitle" : "My name is Brandon",
-        "finaltitle" : " I'm a Full-Stack Developer",
+        "role" : "Full-Stack Software Engineer",
         "projectsButton" : "Projects",
         "contactMeButton" : "Contact Me",
         "description" : "I'm a Solutions Consultant and Full-Stack Developer with 5+ years of experience supporting SaaS platforms in the US and Japan. I specialize in bridging business needs and technical solutions through strong communication, project management, and hands-on development using React, Next.js, TypeScript, Tailwind CSS, and Python/Django. This site was built by me, and reflects my passion for building scalable, user-friendly web applications that combine client support experience with modern full-stack engineering."
     }, 
     "intro" : {
-        "shortDescription" : "I design and build API-driven web applications with a focus on clean architecture, authentication workflows, and scalable data models. My primary stack includes TypeScript, React (Next.js), Node.js, and PostgreSQL. With experience supporting SaaS platforms in both the US and Japan, I bring structured delivery, clear communication, and strong ownership to remote engineering teams.",
+        "shortDescription" : "Full-stack software engineer with 5+ years of experience working with enterprise SaaS and production software environments. My recent focus has been hands-on software development, building web and cross-platform applications while bridging technical and business needs.",
         "longDescriptionOne" : "I'm a detail-oriented Solutions Consultant and Full-Stack Developer with a background in client operations, collaborative technical delivery, and analytical problem-solving. I've spent over five years supporting SaaS platforms in the energy industry in both Japan and the US, helping to bridge the gap between technical teams and customer needs. I'm experienced with tools like React, Next.js, TypeScript, Tailwind CSS, as  well as Python/Django, and I've led projects across both Agile and Waterfall environments. My strengths include stakeholder communication, project coordination, backend service integration, and frontend UI/UX design.",
         "longDescriptionTwo" : "I'm also passionate about building clean, intuitive web experiences, and this site is one of them! I designed and developed it using TypeScript, Next.js, and Tailwind CSS. I love solving real-world problems where business and engineering meet, and I'm always looking to create tools that are scalable, user-friendly, and thoughtfully designed. With a foundation in technical consulting and hands-on dev experience, I bring a well-rounded, practical approach to every project I work on."
     },
     "about" : {
-        "scrollPrompt" : "scroll down for more!"
+        "scrollPrompt" : "scroll down for more!",
+        "timeline": [
+            {
+                "year": "2017",
+                "company": "ESG Global",
+                "role": "Client Operations Analyst",
+                "details": [
+                    "Enterprise SaaS",
+                    "Requirements Gathering",
+                    "JIRA",
+                    "Bug Triage",
+                    "Client-facing technical support"
+                ]
+            },
+            {
+                "year": "2021",
+                "company": "ESG Global",
+                "role": "Application Consultant (PMO)",
+                "details": [
+                    "Oracle SQL",
+                    "SOAP API testing",
+                    "XML data processing",
+                    "Requirements and UAT",
+                    "Release coordination",
+                    "Japan delivery"
+                ]
+            },
+            {
+                "year": "2023",
+                "company": "Code Chrysalis (Boot Camp)",
+                "role": "Software Engineering and Agile Methodologies",
+                "details": [
+                    "JavaScript",
+                    "React",
+                    "Algorithms",
+                    "Software Engineering Fundamentals"
+                ]
+            },
+            {
+                "year": "2023-2024",
+                "company": "VitaeAggregate",
+                "role": "Product Owner (PMO) / Full-stack Developer",
+                "details": [
+                    "MVP Deployment",
+                    "JavaScript",
+                    "SvelteKit",
+                    "Python",
+                    "Django",
+                    "PostgreSQL",
+                    "Project Delivery"
+                ]
+            },
+            {
+                "year": "2024-2025",
+                "company": "Sentient CMS",
+                "role": "Full-stack Developer",
+                "details": [
+                    "Next.js",
+                    "TypeScript",
+                    "Prisma",
+                    "Supabase / PostgreSQL"
+                ]
+            },
+            {
+                "year": "2025",
+                "company": "ESG Global",
+                "role": "Solutions Consultant",
+                "details": [
+                    "Client Onboarding",
+                    "Requirements gathering and configuration",
+                    "Go/No-go decisions",
+                    "UAT"
+                ]
+            },
+            {
+                "year": "2026-Today",
+                "company": "Calm Anchor",
+                "role": "Technical Lead / Software Engineer",
+                "details": [
+                    "React / Vite",
+                    "Capacitor",
+                    "Firebase",
+                    "Cross-platform Application Development",
+                    "Deployment and Production Readiness"
+                ]
+            }
+        ]
     },
-    "projects":[{
-        "title": "Hato",
-        "desc": "A social media app designed around flashcards",
-        "role": "Full-stack Engineer",
-        "keyPoints": [
-            "Frontend built utilizing Typescript, React, and CSS",
-            "Backend built utilizing Node.js",
-            "Developed as a fullstack developer among a group of 4 in an agile environment"
-        ],
-        "tech": [
-            "Express.js", 
-            "Node.js", 
-            "React.js", 
-            "Knex.js", 
-            "PostgreSQL", 
-            "JavaScript", 
-            "TypeScript"
-        ],
-        "image": "/project-captures/Hato.JPG",
-        "link": "https://github.com/hato-app"
+    "projects":{
+        "myVirtualFridge": {
+            "id": "myVirtualFridge",
+            "title": "MyVirtualFridge",
+            "role": "Technical Lead / Software Engineer",
+            "period": "2026-present",
+            "description": "MyVirtualFridge is designed as a home inventory management app. The app is designed around integrating your grocery list with your pantry or fridge. As users mark items off on their list, the item will be added to your virtual inventory for future consumption. MVP currently in production.",
+            "technologies":[
+                "TypeScript",
+                "React Native",
+                "Supabase",
+                "PostgreSQL",
+                "NativeWind",
+                "pnpm",
+                "Jest",
+                "Expo"
+            ],
+            "sections": [
+                {
+                    "id": "context",
+                    "title": "Context", 
+                    "content": [
+                        "MyVirtualFridge began with a simple problem at home: our family bought three heads of cabbage after forgetting that we had already bought the first two.",
+                        "That experience highlighted a broader problem with everyday food management. With daily life moving quickly, grocery purchases and existing food inventory can easily fall through the cracks.",
+                        "The project grew from a question: how could a food inventory system help people keep track of what they already have in their pantry or fridge without becoming intrusive or adding another chore to their daily routine?"
+                    ]
+                },
+                {
+                    "id": "responsibilities",
+                    "title": "Responsibilities",
+                    "content": [
+                        "I lead the project's engineering and technical direction while managing development through a phased roadmap rather than fixed sprint cycles.",
+                        "I maintain the project's GitHub issues, development plans, and roadmap while handling the application's engineering and implementation work."
+                    ]
+                },
+                {
+                    "id": "technicalDirection",
+                    "title": "Technical Direction",
+                    "content": [
+                        "MyVirtualFridge is being developed as a cross-platform mobile application using React Native with Expo and Expo Router, with NativeWind handling the styling.",
+                        "Supabase provides the current backend foundation, with Supabase Auth handling authentication and PostgreSQL providing the application's persistent data layer.",
+                        "Development is being organized around a four-phase, 16-epic roadmap managed through GitHub Projects. The application currently has its navigation shell, authentication flow, and initial database foundation in place, with development now focused on the core shopping-list functionality.",
+                        "The architecture is being developed incrementally alongside the MVP. Features such as household data, realtime functionality, server-side functions, AI inference, and subscription management are planned but are not yet treated as established parts of the production architecture."
+                    ]
+                },
+                {
+                    "id": "challenges",
+                    "title": "Challenges",
+                    "content": [
+                        "How should the application support multiple members interacting with the same shopping list, particularly when users may be performing actions at the same time?",
+                        "How should the transition from shopping list to inventory work as the application becomes more sophisticated, while keeping the relationship between purchased items and household inventory clear?",
+                        "How can the application help users maintain awareness of their food inventory without becoming another intrusive task in their daily routine?"
+                    ]
+                },
+                {
+                    "id": "decisions",
+                    "title": "Key Decisions",
+                    "content": [
+                        "React Native with Expo was chosen to support both iOS and Android from a single codebase while keeping access to native mobile capabilities available for future development.",
+                        "Supabase was chosen as the backend platform primarily for its low cost and existing familiarity. Using managed authentication and PostgreSQL allows the project to establish a functional backend without the infrastructure overhead of maintaining a custom backend.",
+                        "PostgreSQL was chosen as the application's primary data store to support the relational nature of users, households, shopping lists, and inventory while also providing an opportunity to deepen my experience with PostgreSQL.",
+                        "The data model was designed around households and household members rather than individual users alone. This allows multiple users to collaborate on shared shopping lists and inventory while maintaining information about which user performed an action.",
+                        "Authentication was implemented as the first development epic so that user identity and ownership relationships could be established before building the application's core data and functionality."
+                    ]
+                },
+                {
+                    "id": "production",
+                    "title": "Production & Deployment",
+                    "content": [
+                        "MyVirtualFridge is being developed with mobile store deployment in mind rather than as a development-only application.",
+                        "The current application is being built incrementally, with authentication, navigation, and the initial database foundation established before moving into the core shopping-list functionality.",
+                        "Production deployment and store submission are being treated as later phases of the project, allowing the application architecture and MVP functionality to develop before finalizing the release process."
+                    ]
+                },
+                {
+                    "id": "reflection",
+                    "title": "Reflection",
+                    "content": [
+                        "The project is still in active development, so there is not yet a finished product to evaluate. At this stage, the most valuable part of the process has been establishing a technical foundation that can evolve alongside the MVP.",
+                        "Building the project around a real household problem has also influenced the technical direction. Decisions around shared households, user attribution, and the relationship between shopping lists and inventory are being developed around actual usage rather than abstract requirements.",
+                        "As development progresses, this section will be updated to document what worked, what changed, and what I would approach differently based on what I learned."
+                    ]
+                }
+            ]
+        },
+        "calmAnchor": {
+            "id": "calmAnchor",
+            "title": "Calm Anchor",
+            "role": "Technical Lead / Software Engineer",
+            "period": "2026-present",
+            "description": "Calm Anchor is a cross-platform mobile application designed to support parents using gentle parenting approaches. I joined the project as technical lead to establish a stable engineering foundation, guide development, and bring the application to production.",
+            "technologies":[
+                "JavaScript",
+                "React",
+                "Capacitor",
+                "Vite",
+                "Vitest",
+                "Sentry",
+                "GitHub Actions",
+                "Firebase",
+                "RevenueCat"
+            ],
+            "sections": [
+                {
+                    "id": "context",
+                    "title": "Context",
+                    "content": [
+                        "Calm Anchor is a cross-platform application designed around gentle parenting. The project had stalled during development before I was brought on as technical lead.",
+                        "My role was to establish a stable technical foundation, unblock development, and guide the application toward production readiness. I took responsibility for the technical direction and engineering work while the client retained ownership of the product concept and its content."
+                    ]
+                },
+                {
+                    "id": "responsibilities",
+                    "title": "Responsibilities",
+                    "content": [
+                        "Own the application's technical direction, architecture, and engineering workflow.",
+                        "Develop and maintain the application across the tech stack, including authentication, data management, and mobile functionality.",
+                        "Identify and resolve technical issues affecting application stability, development progress, and deployment readiness.",
+                        "Manage development tasks and priorities while coordinating technical decisions with the client.",
+                        "Prepare the application for production deployment, including testing, monitoring, and release requirements."
+                    ]
+                },
+                {
+                    "id": "technicalDirection",
+                    "title": "Technical Direction",
+                    "content": [
+                        "The application was structured as a cross-platform mobile application using React, Vite, and Capacitor, enabling a mobile-focused codebase while retaining a shared frontend architecture.",
+                        "Firebase was selected for authentication and application data infrastructure, providing managed backend services without requiring a dedicated backend to be developed and maintained as part of the MVP.",
+                        "The project was developed with production deployment in mind from the outset. Android deployment became the immediate target, with testing, monitoring, and release infrastructure incorporated into the development process rather than treated as a final step.",
+                        "Development was organized around establishing application stability and production readiness first, allowing subsequent feature work to build on a more reliable technical foundation."
+                    ]
+                },
+                {
+                    "id": "challenges",
+                    "title": "Challenges",
+                    "content": [
+                        "The initial application had been developed as a largely monolithic App.jsx file, making the codebase difficult to reason about and maintain. An early focus was restructuring the application into a more manageable architecture while troubleshooting stability issues introduced by the original implementation.",
+                        "An authentication and data-ownership issue caused purchases to be associated with an anonymous user ID rather than the authenticated account. This meant purchase data could become inaccessible after a user logged out. Resolving the issue required tracing the relationship between authentication state and database operations and ensuring data was consistently associated with the correct user.",
+                        "The project also required balancing the existing architecture with more maintainable and scalable patterns as development continued. In some cases, the existing state-window navigation model and application structure conflicted with more conventional React patterns, creating decisions around whether to refactor incrementally or replace portions of the architecture while continuing to deliver new product functionality.",
+                        "Android production deployment introduced an additional release constraint: Google Play requires a qualifying closed-testing period with 12 testers remaining opted in for 14 consecutive days before production access can be requested for certain new personal developer accounts. This created a practical testing and release-management requirement that had to be incorporated into the project's deployment plan."
+                    ]
+                },
+                {
+                    "id": "decisions",
+                    "title": "Key Decisions",
+                    "content": [
+                        "The existing React-based application was retained rather than immediately rewritten, allowing development to continue while architectural improvements were introduced incrementally.",
+                        "The application's navigation and state-management approach was identified as an area requiring architectural improvement. But rather than continuing to expand the existing state-window model indefinitely, the project direction is moving toward a more conventional React Router-based structure.",
+                        "Authentication and data ownership were treated as foundational concerns. User identity needed to be reliably established before application data could be considered trustworthy, particularly for purchase records.",
+                        "Production readiness was treated as part of engineering work rather than a final deployment task. Testing, monitoring, CI/CD, and mobile release requirements were incorporated into the development process as the application progressed.",
+                        "Product development decisions have been balanced against technical debt and architectural improvements, with changes prioritized according to their impact on stability, maintainability, and the client's planned functionality."
+                    ]
+                },
+                {
+                    "id": "implementation",
+                    "title": "Implementation",
+                    "content": [
+                        "The project initially existed as a locally maintained application without a GitHub repository or established source-control workflow. I first established the development foundation by setting up the project locally, creating the repository, and bringing the existing application into a version-controlled development environment.",
+                        "With the existing codebase under source control, I could begin addressing the application's architectural and stability issues. The original implementation was concentrated entirely within App.jsx, requiring the application to be progressively restructured into a more maintainable component-based architecture while continuing feature development.",
+                        "Firebase Authentication was integrated into the application to establish persistent user identity and support user-specific application data. Authentication state was incorporated into the application's data flow so that actions such as recording purchases could be associated with the correct account.",
+                        "The application was packaged for mobile platforms using Capacitor, allowing the React application to be deployed as a native Android application while maintaining a shared codebase.",
+                        "Testing and reliability work was incorporated throughout development using Vitest for automated testing and Sentry for production error monitoring. GitHub Actions was also introduced to support the project's development and deployment workflow.",
+                        "RevenueCat was integrated to provide the foundation for subscription and entitlement management, allowing the application to support its planned free and paid tiers."
+                    ]
+                },
+                {
+                    "id": "production",
+                    "title": "Production & Deployment",
+                    "content": [
+                        "The application has progressed from a locally maintained codebase to an installable Android application undergoing closed testing. The deployment process required establishing the project's mobile build and release workflow alongside the application's development.",
+                        "Android release preparation has included configuring the application for Google Play distribution, producing test builds, and managing the closed-testing requirements needed before production access can be requested.",
+                        "The project is currently in the closed-testing stage. The production release process remains dependent on completing Google Play Store's required beta testing phase and resolving any issues identified during that process."
+                    ]
+                },
+                {
+                    "id": "Reflection",
+                    "title": "Reflection",
+                    "content": [
+                        "Calm Anchor significantly expanded my practical experience with CI/CD, automated testing, scripting, mobile development, APK builds, and the operational requirements involved in preparing an application for mobile distribution.",
+                        "The project also changed how I approach client work. I learned to distinguish between immediate project priorities and requested enhancements, particularly when new features or design changes could distract from stability and production readiness. I also learned that technical ownership does not mean taking ownership of the entire product. I could provide technical direction and recommendations while leaving product strategy and other non-technical responsibilities with the client.",
+                        "If I were starting the project again, I would establish CI/CD earlier and spend more time defining the application's long-term architecture before continuing feature development. At the same time, I would not wait for the architecture to be perfect before moving forward. Establishing source control first, improving the existing structure, stabilizing the application, and then continuing development allowed the project to progress without allowing architectural concerns to become a blocker.",
+                        "The project ultimately gave me experience across a much broader part of the software development lifecycle than I had previously worked with. I began with a locally maintained application and helped establish the engineering foundation around it, taking the project through source control, architectural improvements, testing, monitoring, mobile builds, and closed distribution testing. That progression has shaped how I think about technical ownership, delivery, and the balance between improving a system and continuing to move it forward."
+                    ]
+                }
+            ]
+        },
+        "cms": {
+            "id": "cms",
+            "title": "Sentient Content Management System",
+            "role": "Software Engineer",
+            "period": "2025-2026",
+            "description": "Sentient's Content Management System serves two primary roles: a landing page where fans can view new releases and announcements, and as a content management interface that allows non-technical band members to create and publish new release items.",
+            "technologies":[
+                "TypeScript",
+                "Next.js",
+                "Prisma",
+                "PostgreSQL",
+                "Supabase",
+                "Node.js",
+                "Tailwind",
+                "Vercel",
+                "Render"
+            ],
+            "sections": [
+                {
+                    "id": "context",
+                    "title": "Context",
+                    "content": [
+                        "Sentient originally began as a static website intended to provide the band with a dedicated online presence for communicating new releases and announcements.",
+                        "After discussing the project's future with the band, I expanded the scope from a static site into a full-stack content management platform. The goal was to allow non-technical members to create and publish release content themselves while establishing a foundation that could later support additional functionality, including e-commerce.",
+                        "Development ultimately paused before the broader expansion was completed as the site's visual direction was reconsidered. The existing CMS work nevertheless provided the foundation for the content management functionality and full-stack architecture."
+                    ]
+                },
+                {
+                    "id": "responsibilities",
+                    "title": "Responsibilities",
+                    "content": [
+                        "Own the project's technical direction, development roadmap, and backlog.",
+                        "Plan and manage development through staging and incremental releases.",
+                        "Design and implement the application's frontend, backend, and content management functionality.",
+                        "Coordinate project direction through regular check-ins with the client while maintaining responsibility for day-to-day technical decisions and implementation."
+                    ]
+                },
+                {
+                    "id": "technicalDirection",
+                    "title": "Technical Direction",
+                    "content": [
+                        "The application was designed as a full-stack system with a clear separation between the public-facing Next.js frontend and a dedicated backend API service.",
+                        "The frontend communicates exclusively with the backend through RESTful API endpoints. It handles public release content, authenticated administrator workflows, and client-side route protection without directly accessing the database or storage layer.",
+                        "The backend was structured as a layered TypeScript and Express service, separating routing, authentication and authorization middleware, controllers, database operations, and storage integration.",
+                        "PostgreSQL provides the persistent data layer through Prisma, while Supabase Storage handles media assets. JWT-based authentication and role-based authorization protect administrative operations.",
+                        "This separation established clear client-server boundaries while providing a foundation that could support future functionality such as expanded content management and e-commerce."
+                    ]
+                },
+                {
+                    "id": "challenges",
+                    "title": "Challenges",
+                    "content": [
+                        "The project needed to bridge a gap between its original role as a static marketing site and the longer-term goal of becoming an e-commerce platform. A key challenge was determining how much infrastructure to introduce at the CMS stage without prematurely building functionality that was not yet required.",
+                        "Authentication and authorization introduced another area of complexity. While implementing JWT-based authentication and password hashing was ultimately straightforward, understanding the complete authentication flow across the frontend, backend middleware, protected routes, and HTTP-only cookies required developing a clearer mental model of how user identity was established and maintained across the system.",
+                        "The project also faced a non-technical constraint when its visual direction was reconsidered during development. Progress on the broader platform was paused while the redesign remained unresolved, limiting how far the CMS and planned e-commerce functionality could be taken."
+                    ]
+                },
+                {
+                    "id": "decisions",
+                    "title": "Key Decisions",
+                    "content": [
+                        "The project was expanded from a static site into a full-stack application so that non-technical band members could manage release content without requiring code changes.",
+                        "The frontend and backend were separated into independent applications, with the frontend communicating exclusively through a REST API rather than accessing the database or storage layer directly.",
+                        "A dedicated backend service was introduced to centralize authentication, authorization, business logic, database access, and media management. This established a foundation that could be extended as the project moved toward its longer-term e-commerce goals.",
+                        "PostgreSQL with Prisma was chosen for structured release data, while Supabase Storage was used for media assets. Separating structured application data from media storage kept those concerns independent within the backend architecture.",
+                        "JWT-based authentication with role-based authorization was implemented so administrative operations could be protected independently from the public-facing release content."
+                    ]
+                },
+                {
+                    "id": "implementation",
+                    "title": "Implementation",
+                    "content": [
+                        "The frontend was implemented with Next.js and TypeScript, providing both the public release experience and authenticated administrative workflows. Tailwind CSS was used for responsive styling, with Framer Motion providing animated transitions.",
+                        "The backend was implemented as a TypeScript and Express REST API with separate routing, middleware, controller, and service layers. Prisma was used to manage the PostgreSQL data layer and provide typed database access.",
+                        "The content management workflow supports creating, updating, and deleting music and video releases through protected administrative endpoints. The frontend consumes these endpoints to retrieve and display release content.",
+                        "JWT-based authentication was implemented using HTTP-only cookies, with middleware responsible for authentication and administrator authorization. Public content and protected administrative operations were kept separate.",
+                        "Media management was implemented through Supabase Storage, including image uploads, deletion, and URL generation for assets used by release content."
+                    ]
+                },
+                {
+                    "id": "production",
+                    "title": "Production & Deployment",
+                    "content": [
+                        "The application was developed as a deployable full-stack system, with the frontend and backend maintained as separate applications and the backend providing the production API layer.",
+                        "The frontend was configured for deployment as a Next.js application, while the backend was structured as an independent Express service with PostgreSQL and Supabase Storage providing the persistent data and media infrastructure.",
+                        "The project reached a functional full-stack state with the core CMS, authentication, release management, and media workflows implemented. Broader production expansion, including the planned e-commerce functionality, was not completed after development was paused during a redesign of the site's visual direction."
+                    ]
+                },
+                {
+                    "id": "Reflection",
+                    "title": "Reflection",
+                    "content": [
+                        "Sentient was an important step in expanding my technical depth beyond third-party backend services. Implementing JWT-based authentication and password hashing gave me a deeper understanding of how authentication can be designed and managed within an application rather than delegated entirely to a managed service. The project also gave me an opportunity to design around practical infrastructure constraints, including Render's cold-start behavior. I particularly valued the fallback-data approach, where a lightweight dataset could populate the frontend while the application waited for the backend API to become available.",
+                        "The project also changed how I think about designing for future requirements. I initially structured the system with scalability and future e-commerce integration in mind, but I now recognize that some of those assumptions were too broad. Much of the eventual e-commerce functionality would likely depend on external services and APIs rather than requiring the CMS itself to become a complete commerce platform. In retrospect, I would define the future integration points more concretely before designing infrastructure around them.",
+                        "There are also several areas of the CMS itself that I would approach differently. The release management workflow was more restrictive than necessary, requiring every release to include a YouTube video, title, description, and image. A more flexible content model would have allowed different types of announcements without requiring every field. I would also consider features such as caching, richer content editing, email notifications, and more flexible site-design capabilities as the platform evolved.",
+                        "The project reinforced an equally important lesson about stakeholder management. I would involve the stakeholder much earlier in the development process and establish clearer agreement around the project's direction before investing heavily in implementation. Technical progress depends on stakeholder buy-in, and unresolved disagreements about product direction can ultimately become a larger constraint than the engineering itself. The MVP was completed and provided meaningful technical growth, particularly around authentication and application architecture, but the project also showed me where stronger planning, communication, and product definition would have produced a better overall result."
+
+                    ]
+                }
+            ]
+        },
+        "vitaeAggregate": {
+            "id": "vitaeAggregate",
+            "title": "VitaeAggregate",
+            "role": "Product Owner / Software Engineer",
+            "period": "2024-2025",
+            "description": "VitaeAggregate was a three-person project designed to give job seekers a way to receive feedback on their resumes through social-media style interactions. Resumes were anonymized before being shared to reduce the risk of exposing users' personal information and ATS-friendly resumes could be downloaded for personal use.",
+            "technologies":[
+                "Svelte.js", 
+                "Python", 
+                "Django", 
+                "Node.js", 
+                "PostgreSQL", 
+                "TypeScript", 
+                "Cypress", 
+                "Pytest", 
+                "Docker", 
+                "Vercel"
+            ],
+            "sections": [
+                {
+                    "id": "context",
+                    "title": "Context",
+                    "content": [
+                        "VitaeAggregate was a three-person project built around a common problem in the job search process: resumes are often evaluated by a limited number of people, making it difficult for job seekers to receive useful feedback before submitting an application.",
+                        "The project explored a social-media-style approach to resume feedback, allowing users to share anonymized resumes and receive feedback from other users.",
+                        "Anonymization was incorporated into the concept to reduce the risk of exposing personally identifiable information while allowing the resume itself to remain the focus of the feedback."
+                    ]
+                },
+                {
+                    "id": "responsibilities",
+                    "title": "Responsibilities",
+                    "content": [
+                        "Coordinate project development across a three-person team, managing priorities, development tasks, and communication between the frontend and the backend.",
+                        "Contribute to both frontend and backend development as a supporting developer, implementing smaller application features and assisting with development across the stack.",
+                        "Design and refine the application's user interface and overall visual direction.",
+                        "Implement user-facing features such as toast notifications while supporting the team with technical problem-solving and integration work.",
+                        "Balance project management responsibilities with hands-on development to keep the project moving towards MVP."
+                    ]
+                },
+                {
+                    "id": "technicalDirection",
+                    "title": "Technical Direction",
+                    "content": [
+                        "VitaeAggregate was structured as a web application with a Svelte frontend and a Django REST backend maintained within a single repository.",
+                        "The frontend was built with Svelte, TypeScript, and Tailwind CSS and was responsible for resume creation, editing, sharing, and user interaction.",
+                        "Django REST provided the backend API for managing resume data, comments, and user information, allowing the frontend and backend to remain separated by an API boundary while being developed within the same repository.",
+                        "Resume documents were represented as dynamic Svelte components based on user-provided content, with Puppeteer used to generate ATS-friendly PDF documents from the rendered resume.",
+                        "The application also incorporated social functionality around shared resumes, including comments and notifications, while using resume visibility controls to determine whether a resume could be shared with other users."
+                    ]
+                },
+                {
+                    "id": "challenges",
+                    "title": "Challenges",
+                    "content": [
+                        "One of the team's main challenges was balancing technical exploration with the project's delivery timeline. Some technical issues required deeper investigation than the project could accommodate, creating a risk that architectural work would consume time needed for the MVP. Managing this required prioritizing work based on its impact on the project's immediate goals and maintaining momentum toward deliverables.",
+                        "The project also required frequent scope adjustments based on weekly stakeholder feedback. Ideas that initially seemed feasible sometimes had to be significantly reduced or removed as the team clarified the project's goals and available development time. Maintaining a realistic scope while responding to stakeholder input became an important part of keeping the project on schedule.",
+                        "The team also had to learn and apply unfamiliar technologies during development. Django REST introduced a new backend framework and Svelte required the team to adapt existing React experience to a different component and reactivity model. Both required learning on the fly while continuing to develop the application.",
+                        "Python was initially selected with the intention of exploring AI functionality as part of the project. As the scope and timeline became clearer, the team determined that there was not enough time to pursue that direction and prioritized the core application instead."
+                    ]
+                },
+                {
+                    "id": "decisions",
+                    "title": "Key Decisions",
+                    "content": [
+                        "The team chose to maintain the frontend and backend as separate applications within a single repository, allowing development to remain organized while preserving a clear API boundary between the client and server.",
+                        "Svelte was chosen for the frontend, giving the team an opportunity to apply existing React experience to a different component and reactivity model while keeping the application focused on a modern, component-based architecture.",
+                        "Django REST was chosen for the backend to provide a structured framework for building the application's API and managing resume, user, and feedback data.",
+                        "Python was initially chosen with the intention of exploring AI functionality within the application. As the project scope became clearer, the team decided not to pursue an AI component so that development time could remain focused on the core MVP.",
+                        "The team adopted an iterative approach to scope, using regular stakeholder feedback to refine the product and reduce or change planned functionality when it no longer fit the available development time."
+                    ]
+                },
+                {
+                    "id": "implementation",
+                    "title": "Implementation",
+                    "content": [
+                        "The frontend was implemented with Svelte, TypeScript, and Tailwind CSS, providing the interface for creating, editing, viewing, and sharing resumes.",
+                        "Resume content was represented through reusable Svelte components, allowing sections such as skills, professional experience, education, and links to be rendered dynamically based on user input.",
+                        "The Django REST backend provided API endpoints for managing resume data, user information, comments, and related application functionality.",
+                        "Puppeteer was integrated to generate ATS-friendly PDF resumes from the rendered resume components, allowing users to download their resumes directly from the application.",
+                        "Social functionality was implemented around shared resumes, including comments and notifications, while resume visibility was controlled through the application's sharing settings."
+                    ]
+                },
+                {
+                    "id": "production",
+                    "title": "Production & Deployment",
+                    "content": [
+                        "The application was deployed to Heroku as a production web application, allowing the team to make the MVP available for users.",
+                        "The deployment included both the Svelte frontend and Django REST backend, providing a hosted environment in which the complete application could be tested as an integrated system.",
+                        "Deployment and production testing also gave the team an opportunity to identify issues that were not apparent during local development and validate the application against the project's evolving requirements."
+                    ]
+                },
+                {
+                    "id": "Reflection",
+                    "title": "Reflection",
+                    "content": [
+                        "VitaeAggregate was successfully delivered within the given constraints, with the team completing the project in time for the final presentation on Demo Day.",
+                        "My primary contribution was keeping the project moving toward its deadline while coordinating development across the team and managing changes to scope. Although the project encountered technical and scope-related challenges, I was able to help prevent those issues from significantly disrupting the delivery timeline.",
+                        "Looking back, I would have liked to take on more hands-on engineering work during the project. At the same time, the experience showed me that project coordination and technical communication were areas where I was particularly effective. The balance between development and coordination helped me understand how I could contribute to an engineering team beyond writing code."
+                    ]
+                }
+            ]
+        }
     },
-    {
-        "title": "Dokushojo",
-        "desc": "A Language Learning app focusing on listening comprehension",
-        "role": "Full-stack/Project Manager",
-        "keyPoints": [
-            "Frontend built utilizing TypeScript, React.js, Vite and Bootstrap.",
-            "Backend built utilizing Node.js, Knex.js and PostgreSQL, and Express.js.",
-            "Managed project backlog and maintained project schedule in a team of 4"
-        ],
-        "tech": [
-            "Express.js", 
-            "Node.js", 
-            "React.js", 
-            "Knex.js", 
-            "Bootstrap CSS", 
-            "PostgreSQL", 
-            "Vite", 
-            "TypeScript"
-        ],
-        "image": "/project-captures/DSJ.JPG",
-        "link": "https://github.com/Planet-DokuShojo/"
-    },
-    {
-        "title": "VitaeAggregate",
-        "desc": "A community app designed around building ATS friendly resumes",     
-        "role": "Full-stack/Project Manager",
-        "keyPoints": [
-            "Frontend built utilizing TypeScript, Svelte, Tailwind, Firebase for authentication, and Puppeteer.",
-            "Backend built utilizing Python, Django REST, and PostgreSQL.",
-            "Version control with Git and containerization with Docker",
-            "Managed project schedule, project backlog, and led daily standups in an agile development environment."
-        ],
-        "tech": [
-            "Cypress", 
-            "Node.js", 
-            "Svelte.js", 
-            "Django", 
-            "PostgreSQL", 
-            "Python", 
-            "TypeScript", 
-            "Pytest", 
-            "Docker", 
-            "Vercel"
-        ],
-        "image": "/project-captures/VitaeAggregate.JPG",
-        "link": "https://github.com/vitaeaggregate"
-    },
-    {
-        "title": "Landing Site",
-        "desc": "A responsive, mobile-first homepage built for a local musical act in the Tokyo area. ",
-        "role": "Front-end/Project Lead",
-        "keyPoints": [
-            "Built using Next.js, Typescript, and Tailwind",
-            "Deployed utilizing Vercel",
-            "Animations utilizing framer-motion"
-        ],
-        "tech": [
-            "Next.js", 
-            "Node.js", 
-            "Tailwind", 
-            "TypeScript", 
-            "Vercel"
-        ],
-        "image": "/project-captures/Bandpage.JPG",
-        "link": "https://github.com/sentient-band-site"
-    },
-    {
-        "title": "Portfolio Site",
-        "desc": "A portfolio showcasing my work",
-        "role": "Front-end/Project Lead",
-        "keyPoints": [
-            "Built using Next.js, Typescript, and Tailwind",
-            "Deployed utilizing Vercel"
-        ],
-        "tech": [
-            "Next.js", 
-            "Node.js", 
-            "Tailwind", 
-            "TypeScript", 
-            "Vercel"
-        ],
-        "image": "/project-captures/Portfolio.JPG",
-        "link": "https://github.com/Bcook2289/portfolio"
-    }],
     "experience" : [
     {
         "role": "Solutions Consultant",
@@ -198,8 +567,8 @@
         "Limited Business" : "Limited Business"
     },
     "themeSwitch" : {
-        "lightMode" : "☀️ Light Mode",
-        "darkMode" : "🌘 Dark Mode"
+        "lightMode" : "☼",
+        "darkMode" : "☾"
     },
     "sectionHeader": {
         "education": "Educational Background",
@@ -209,11 +578,55 @@
     },
      "contact": {
         "contactMe" : "Contact Me",
+        "question" : "Have a question, an opportunity, or just want to connect? Feel free to get in touch.",
         "emailAddress" : "Email Address",
         "message" : "Message",
         "send" : "Send",
         "sending" : "Sending",
         "thankYou": "Thank you!",
         "tryAgain": "Something went wrong, please try again."
-        } 
+    },
+    "buildAreas": {
+        "webApplications": "WEB APPLICATIONS",
+        "webApplicationsDescription": "Interfaces and systems built for real users.",
+        "webApplicationsDetails": "I build web applications across the frontend and backend, from interface development through APIs, data persistence, authentication, and deployment.",
+        "webApplicationsEvidence": [
+            "cms",
+            "myVirtualFridge"
+        ],
+
+        "crossPlatform": "CROSS-PLATFORM APPLICATIONS",
+        "crossPlatformDescription": "Applications designed beyond the browser.",
+        "crossPlatformDetails": "I develop applications that extend beyond traditional web environments, working across shared codebases, platform constraints, and mobile user experiences.",
+        "crossPlatformEvidence": [
+            "calmAnchor", 
+            "myVirtualFridge"
+        ],
+
+        "systemsAndArchitecture": "SYSTEMS & ARCHITECTURE",
+        "systemsAndArchitectureDescription": "Structured solutions designed to remain maintainable.",
+        "systemsAndArchitectureDetails": "I think about how application components fit together—from frontend state and APIs to databases, authentication, deployment, and the boundaries between them.",
+        "systemsAndArchitectureEvidence": [
+            "calmAnchor", 
+            "myVirtualFridge"
+        ],
+
+        "technicalDelivery": "TECHNICAL DELIVERY",
+        "technicalDeliveryDescription": "Turning ambiguous needs into practical solutions.",
+        "technicalDeliveryDetails": "I work between technical and business requirements, translating ambiguous needs into implementable solutions and helping move them from planning to delivery.",
+        "technicalDeliveryEvidence": [
+            "enterpriseSaaS", 
+            "technicalProjectDelivery", 
+            "softwareDevelopment"
+        ]
+    },
+    "evidence": {
+        "calmAnchor": "Calm Anchor",
+        "cms": "CMS Platform",
+        "myVirtualFridge": "MyVirtualFridge",
+        "enterpriseSaaS": "Enterprise SaaS",
+        "technicalProjectDelivery": "Technical Project Delivery",
+        "softwareDevelopment": "Software Development",
+        "vitaeAggregate": "VitaeAggregate"
+    } 
 }

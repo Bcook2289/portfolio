@@ -7,8 +7,9 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-.TypeAnimation::after {
-  content: none !important;
+.typing-role {
+  font-family: var(--font-jetbrains-mono);
+  letter-spacing: 0.04em;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
     @apply flex-grow flex items-center justify-center;
   }
   .nav-container {
-    @apply w-full p-4;
+    @apply fixed top-0 left-0 z-50 w-full px-6 py-4 sm:px-10 lg:px-16 bg-white dark:bg-black;
   }
   .list-container {
     @apply flex justify-center space-x-4 sm:space-x-8 font-bold text-xs sm:text-base md:text-lg;
@@ -32,13 +33,10 @@ body {
     @apply hover:text-gray-400 transition-colors duration-200;
   }
   .span-design {
-    @apply absolute left-0 right-0 -bottom-1 h-[2px] w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full;
+    @apply absolute left-0 right-0 -bottom-1 h-0.5 w-0 bg-black dark:bg-white transition-all duration-300 group-hover:w-full;
   }
   .div-container {
     @apply flex flex-col justify-between sm:justify-center items-center m-4;
-  }
-  .button-container {
-    @apply rounded px-2 py-2 border my-2 text-xs sm:text-sm font-bold transition-colors cursor-pointer;
   }
   .heading-primary {
     @apply text-lg sm:text-3xl md:text-4xl font-bold font-jetbrains;
