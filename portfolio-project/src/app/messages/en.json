@@ -107,8 +107,8 @@
             }
         ]
     },
-    "projects":[
-        {
+    "projects":{
+        "myVirtualFridge": {
             "id": "myVirtualFridge",
             "title": "MyVirtualFridge",
             "role": "Technical Lead / Software Engineer",
@@ -182,7 +182,7 @@
                     ]
                 },
                 {
-                    "id": "Reflection",
+                    "id": "reflection",
                     "title": "Reflection",
                     "content": [
                         "The project is still in active development, so there is not yet a finished product to evaluate. At this stage, the most valuable part of the process has been establishing a technical foundation that can evolve alongside the MVP.",
@@ -192,7 +192,7 @@
                 }
             ]
         },
-        {
+        "calmAnchor": {
             "id": "calmAnchor",
             "title": "Calm Anchor",
             "role": "Technical Lead / Software Engineer",
@@ -293,7 +293,7 @@
                 }
             ]
         },
-        {
+        "cms": {
             "id": "cms",
             "title": "Sentient Content Management System",
             "role": "Software Engineer",
@@ -394,7 +394,7 @@
                 }
             ]
         },
-        {
+        "vitaeAggregate": {
             "id": "vitaeAggregate",
             "title": "VitaeAggregate",
             "role": "Product Owner / Software Engineer",
@@ -496,7 +496,7 @@
                 }
             ]
         }
-    ],
+    },
     "experience" : [
     {
         "role": "Solutions Consultant",
