@@ -111,9 +111,9 @@
         "myVirtualFridge": {
             "id": "myVirtualFridge",
             "title": "MyVirtualFridge",
-            "role": "Technical Lead / Software Engineer",
-            "period": "2026-present",
-            "description": "MyVirtualFridge is designed as a home inventory management app. The app is designed around integrating your grocery list with your pantry or fridge. As users mark items off on their list, the item will be added to your virtual inventory for future consumption. MVP currently in production.",
+            "role": "テクニカルリード・ソフトウェアエンジニア",
+            "period": "2026年-現在",
+            "description": "MyVirtualFridgeは、家庭の食料品を管理するためのアプリケーションです。買い物リストとパントリーや冷蔵庫の在庫を連携させることを中心に設計しています。買い物リストから商品を購入済みにすると、その商品が仮想在庫に追加され、後から確認できるようになります。現在、MVPを開発中です。",
             "technologies":[
                 "TypeScript",
                 "React Native",
@@ -127,67 +127,67 @@
             "sections": [
                 {
                     "id": "context",
-                    "title": "Context", 
+                    "title": "背景", 
                     "content": [
-                        "MyVirtualFridge began with a simple problem at home: our family bought three heads of cabbage after forgetting that we had already bought the first two.",
-                        "That experience highlighted a broader problem with everyday food management. With daily life moving quickly, grocery purchases and existing food inventory can easily fall through the cracks.",
-                        "The project grew from a question: how could a food inventory system help people keep track of what they already have in their pantry or fridge without becoming intrusive or adding another chore to their daily routine?"
+                        "MyVirtualFridgeは、家庭で起きたシンプルな問題から始まりました。すでにキャベツを2玉買っていたことを忘れ、さらに3玉目を買ってしまったことがきっかけです。",
+                        "この経験から、日常的な食料管理にはより広い問題があることに気づきました。忙しい日々の中では、買った食料や家にある在庫を把握し続けることは簡単ではありません。",
+                        "そこで、パントリーや冷蔵庫に何があるのかを把握しながら、日常生活の中で負担になったり、新たな作業を増やしたりしない食料在庫管理システムを作れないか、という問いからこのプロジェクトが始まりました。"
                     ]
                 },
                 {
                     "id": "responsibilities",
-                    "title": "Responsibilities",
+                    "title": "担当業務",
                     "content": [
-                        "I lead the project's engineering and technical direction while managing development through a phased roadmap rather than fixed sprint cycles.",
-                        "I maintain the project's GitHub issues, development plans, and roadmap while handling the application's engineering and implementation work."
+                        "固定されたスプリントサイクルではなく、段階的なロードマップに沿って開発を進めながら、プロジェクトのエンジニアリングおよび技術方針を主導しています。",
+                        "GitHubのIssue、開発計画、ロードマップを管理しながら、アプリケーションの設計・実装を担当しています。"
                     ]
                 },
                 {
                     "id": "technicalDirection",
-                    "title": "Technical Direction",
+                    "title": "技術方針",
                     "content": [
-                        "MyVirtualFridge is being developed as a cross-platform mobile application using React Native with Expo and Expo Router, with NativeWind handling the styling.",
-                        "Supabase provides the current backend foundation, with Supabase Auth handling authentication and PostgreSQL providing the application's persistent data layer.",
-                        "Development is being organized around a four-phase, 16-epic roadmap managed through GitHub Projects. The application currently has its navigation shell, authentication flow, and initial database foundation in place, with development now focused on the core shopping-list functionality.",
-                        "The architecture is being developed incrementally alongside the MVP. Features such as household data, realtime functionality, server-side functions, AI inference, and subscription management are planned but are not yet treated as established parts of the production architecture."
+                        "MyVirtualFridgeは、React Native、Expo、Expo Routerを使用したクロスプラットフォームのモバイルアプリケーションとして開発しており、スタイリングにはNativeWindを使用しています。",
+                        "現在のバックエンド基盤にはSupabaseを採用し、認証にはSupabase Auth、永続的なデータの保存にはPostgreSQLを使用しています。",
+                        "開発は、GitHub Projectsで管理する4フェーズ・16エピックのロードマップに沿って進めています。現在はナビゲーション、認証フロー、初期データベース基盤が整っており、コアとなる買い物リスト機能の開発に取り組んでいます。",
+                        "アーキテクチャはMVPの開発と並行して段階的に構築しています。世帯データ、リアルタイム機能、サーバーサイド関数、AI推論、サブスクリプション管理などの機能は計画していますが、現時点では本番環境の確立されたアーキテクチャの一部とはしていません。"
                     ]
                 },
                 {
                     "id": "challenges",
-                    "title": "Challenges",
+                    "title": "課題",
                     "content": [
-                        "How should the application support multiple members interacting with the same shopping list, particularly when users may be performing actions at the same time?",
-                        "How should the transition from shopping list to inventory work as the application becomes more sophisticated, while keeping the relationship between purchased items and household inventory clear?",
-                        "How can the application help users maintain awareness of their food inventory without becoming another intrusive task in their daily routine?"
+                        "複数のユーザーが同じ買い物リストを操作する場合、特に複数のユーザーが同時に操作する可能性がある状況で、アプリケーションはどのように対応すべきか？",
+                        "アプリケーションが高度化していく中で、購入した商品と家庭の在庫との関係を明確に保ちながら、買い物リストから在庫へどのようにつなげていくべきか？",
+                        "日常生活の中で新たな負担となることなく、ユーザーが自宅の食料在庫を把握し続けられるようにするにはどうすればよいか？"
                     ]
                 },
                 {
                     "id": "decisions",
-                    "title": "Key Decisions",
+                    "title": "主な技術的判断",
                     "content": [
-                        "React Native with Expo was chosen to support both iOS and Android from a single codebase while keeping access to native mobile capabilities available for future development.",
-                        "Supabase was chosen as the backend platform primarily for its low cost and existing familiarity. Using managed authentication and PostgreSQL allows the project to establish a functional backend without the infrastructure overhead of maintaining a custom backend.",
-                        "PostgreSQL was chosen as the application's primary data store to support the relational nature of users, households, shopping lists, and inventory while also providing an opportunity to deepen my experience with PostgreSQL.",
-                        "The data model was designed around households and household members rather than individual users alone. This allows multiple users to collaborate on shared shopping lists and inventory while maintaining information about which user performed an action.",
-                        "Authentication was implemented as the first development epic so that user identity and ownership relationships could be established before building the application's core data and functionality."
+                        "単一のコードベースからiOSとAndroidの両方をサポートしつつ、将来的にネイティブのモバイル機能を利用できるよう、React NativeとExpoを採用しました。",
+                        "バックエンドには、主にコストの低さと既存の知識を理由としてSupabaseを採用しました。マネージド認証とPostgreSQLを利用することで、独自のバックエンドを維持するためのインフラ負担を抑えながら、実用的なバックエンドを構築できます。",
+                        "ユーザー、世帯、買い物リスト、在庫といったデータのリレーションを扱う必要があるため、主要なデータストアとしてPostgreSQLを採用しました。また、PostgreSQLの実践的な経験をさらに深めることも目的の一つでした。",
+                        "データモデルは、個々のユーザーだけではなく、世帯とそのメンバーを中心に設計しました。これにより、複数のユーザーが共有の買い物リストや在庫を共同で管理しながら、誰がどの操作を行ったのかも記録できます。",
+                        "ユーザーの認証情報とデータの所有関係をコア機能の構築前に確立できるよう、認証機能を最初の開発エピックとして実装しました。"
                     ]
                 },
                 {
                     "id": "production",
-                    "title": "Production & Deployment",
+                    "title": "本番環境・デプロイ",
                     "content": [
-                        "MyVirtualFridge is being developed with mobile store deployment in mind rather than as a development-only application.",
-                        "The current application is being built incrementally, with authentication, navigation, and the initial database foundation established before moving into the core shopping-list functionality.",
-                        "Production deployment and store submission are being treated as later phases of the project, allowing the application architecture and MVP functionality to develop before finalizing the release process."
+                        "MyVirtualFridgeは開発専用のアプリケーションではなく、将来的なモバイルストアへの公開を見据えて開発しています。",
+                        "現在は、認証、ナビゲーション、初期データベース基盤を整えた上で、コアとなる買い物リスト機能へ段階的に開発を進めています。",
+                        "本番環境へのデプロイとストアへの申請はプロジェクト後半のフェーズとして位置づけています。これにより、リリースプロセスを最終的に確定する前に、アーキテクチャとMVPの機能を十分に発展させられるようにしています。"
                     ]
                 },
                 {
                     "id": "reflection",
-                    "title": "Reflection",
+                    "title": "振り返り",
                     "content": [
-                        "The project is still in active development, so there is not yet a finished product to evaluate. At this stage, the most valuable part of the process has been establishing a technical foundation that can evolve alongside the MVP.",
-                        "Building the project around a real household problem has also influenced the technical direction. Decisions around shared households, user attribution, and the relationship between shopping lists and inventory are being developed around actual usage rather than abstract requirements.",
-                        "As development progresses, this section will be updated to document what worked, what changed, and what I would approach differently based on what I learned."
+                        "このプロジェクトは現在も開発中のため、完成したプロダクトとして評価できる段階にはまだありません。現時点で最も価値があったのは、MVPの成長に合わせて発展できる技術基盤を構築できたことです。",
+                        "実際の家庭内の問題を起点としてプロジェクトを進めたことも、技術方針に影響しています。共有世帯、ユーザーごとの操作履歴、買い物リストと在庫の関係といった設計上の判断を、抽象的な要件ではなく実際の利用シーンを想定しながら進めています。",
+                        "開発が進むにつれて、何がうまくいったのか、何が変わったのか、そして学んだことを踏まえて何を違う方法で進めるのかを、このセクションに追記していく予定です。"
                     ]
                 }
             ]
@@ -195,9 +195,9 @@
         "calmAnchor": {
             "id": "calmAnchor",
             "title": "Calm Anchor",
-            "role": "Technical Lead / Software Engineer",
-            "period": "2026-present",
-            "description": "Calm Anchor is a cross-platform mobile application designed to support parents using gentle parenting approaches. I joined the project as technical lead to establish a stable engineering foundation, guide development, and bring the application to production.",
+            "role": "テクニカルリード・ソフトウェアエンジニア",
+            "period": "2026年-現在",
+            "description": "Calm Anchorは、「ジェントル・ペアレンティング（子どもの気持ちを尊重する子育て）」の考え方を取り入れる保護者を支援するクロスプラットフォームのモバイルアプリです。テクニカルリードとして参画し、安定した開発基盤の構築、開発方針の策定、本番環境への導入に向けた対応を担当しています。",
             "technologies":[
                 "JavaScript",
                 "React",
@@ -212,83 +212,83 @@
             "sections": [
                 {
                     "id": "context",
-                    "title": "Context",
+                    "title": "背景",
                     "content": [
-                        "Calm Anchor is a cross-platform application designed around gentle parenting. The project had stalled during development before I was brought on as technical lead.",
-                        "My role was to establish a stable technical foundation, unblock development, and guide the application toward production readiness. I took responsibility for the technical direction and engineering work while the client retained ownership of the product concept and its content."
+                        "Calm Anchorは、ポジティブ・ペアレンティングの考え方を取り入れる保護者を支援するクロスプラットフォームアプリケーションです。私がテクニカルリードとして参画する前は、開発が停滞している状態でした。",
+                        "私の役割は、安定した技術基盤を構築し、開発上の問題を解消しながら、本番環境への導入に向けてプロジェクトを前進させることでした。技術方針とエンジニアリングを担当する一方、プロダクトのコンセプトやコンテンツについてはクライアントが引き続き責任を持っています。"
                     ]
                 },
                 {
                     "id": "responsibilities",
-                    "title": "Responsibilities",
+                    "title": "担当業務",
                     "content": [
-                        "Own the application's technical direction, architecture, and engineering workflow.",
-                        "Develop and maintain the application across the tech stack, including authentication, data management, and mobile functionality.",
-                        "Identify and resolve technical issues affecting application stability, development progress, and deployment readiness.",
-                        "Manage development tasks and priorities while coordinating technical decisions with the client.",
-                        "Prepare the application for production deployment, including testing, monitoring, and release requirements."
+                        "アプリケーションの技術方針、アーキテクチャ、開発ワークフローを主導しています。",
+                        "認証、データ管理、モバイル機能を含め、使用している技術スタック全体にわたるアプリケーションの開発・保守を担当しています。",
+                        "アプリケーションの安定性、開発の進行、本番環境への導入に影響する技術的な問題を特定し、解決しています。",
+                        "開発タスクと優先順位を管理しながら、クライアントと技術的な意思決定を調整しています。",
+                        "テスト、モニタリング、リリース要件への対応を含め、アプリケーションの本番環境へのデプロイに向けた準備を進めています。"
                     ]
                 },
                 {
                     "id": "technicalDirection",
-                    "title": "Technical Direction",
+                    "title": "技術方針",
                     "content": [
-                        "The application was structured as a cross-platform mobile application using React, Vite, and Capacitor, enabling a mobile-focused codebase while retaining a shared frontend architecture.",
-                        "Firebase was selected for authentication and application data infrastructure, providing managed backend services without requiring a dedicated backend to be developed and maintained as part of the MVP.",
-                        "The project was developed with production deployment in mind from the outset. Android deployment became the immediate target, with testing, monitoring, and release infrastructure incorporated into the development process rather than treated as a final step.",
-                        "Development was organized around establishing application stability and production readiness first, allowing subsequent feature work to build on a more reliable technical foundation."
+                        "React、Vite、Capacitorを使用したクロスプラットフォームのモバイルアプリケーションとして構成し、モバイル向けのコードベースを維持しながら、フロントエンドの共通アーキテクチャを実現しています。",
+                        "認証およびアプリケーションデータの基盤にはFirebaseを採用しています。MVPの段階では、専用のバックエンドを開発・維持することなく、マネージドなバックエンドサービスを利用できる構成としています。",
+                        "プロジェクトは当初から本番環境へのデプロイを見据えて開発しています。直近の目標をAndroidへのデプロイとし、テスト、モニタリング、リリースに必要な仕組みを最終工程としてではなく、開発プロセスの一部として組み込んでいます。",
+                        "開発では、まずアプリケーションの安定性と本番環境への対応を確立することを重視し、その上に後続の機能開発を積み重ねられる、より信頼性の高い技術基盤を構築しています。"
                     ]
                 },
                 {
                     "id": "challenges",
-                    "title": "Challenges",
+                    "title": "課題",
                     "content": [
-                        "The initial application had been developed as a largely monolithic App.jsx file, making the codebase difficult to reason about and maintain. An early focus was restructuring the application into a more manageable architecture while troubleshooting stability issues introduced by the original implementation.",
-                        "An authentication and data-ownership issue caused purchases to be associated with an anonymous user ID rather than the authenticated account. This meant purchase data could become inaccessible after a user logged out. Resolving the issue required tracing the relationship between authentication state and database operations and ensuring data was consistently associated with the correct user.",
-                        "The project also required balancing the existing architecture with more maintainable and scalable patterns as development continued. In some cases, the existing state-window navigation model and application structure conflicted with more conventional React patterns, creating decisions around whether to refactor incrementally or replace portions of the architecture while continuing to deliver new product functionality.",
-                        "Android production deployment introduced an additional release constraint: Google Play requires a qualifying closed-testing period with 12 testers remaining opted in for 14 consecutive days before production access can be requested for certain new personal developer accounts. This created a practical testing and release-management requirement that had to be incorporated into the project's deployment plan."
+                        "初期のアプリケーションは、ほぼ単一のApp.jsxファイルに実装されており、コードベースの理解や保守が難しい状態でした。初期段階では、元の実装に起因する安定性の問題に対応しながら、より管理しやすいアーキテクチャへ段階的に再構成することに取り組みました。",
+                        "認証とデータ所有権に関する問題により、購入データが認証済みアカウントではなく匿名ユーザーIDに紐付けられていました。そのため、ユーザーがログアウトすると購入データにアクセスできなくなる可能性がありました。この問題を解決するには、認証状態とデータベース操作の関係を追跡し、データが常に正しいユーザーに紐付けられるようにする必要がありました。",
+                        "開発を進める中では、既存のアーキテクチャと、より保守性・拡張性の高いパターンとのバランスを取る必要もありました。特に、既存のstate-windowによるナビゲーションモデルやアプリケーション構造が、一般的なReactのパターンと合わない部分があり、新しい機能を開発しながら段階的にリファクタリングするのか、アーキテクチャの一部を置き換えるのかを判断する必要がありました。",
+                        "Androidの本番環境へのデプロイでは、追加のリリース要件も発生しました。特定の新規個人開発者アカウントでは、本番アクセスを申請する前に、12人のテスターが14日間連続してオプトインした状態を維持するなど、Google Playのクローズドテスト要件を満たす必要があります。そのため、テストとリリース管理そのものをデプロイ計画に組み込む必要がありました。"
                     ]
                 },
                 {
                     "id": "decisions",
-                    "title": "Key Decisions",
+                    "title": "主な技術的判断",
                     "content": [
-                        "The existing React-based application was retained rather than immediately rewritten, allowing development to continue while architectural improvements were introduced incrementally.",
-                        "The application's navigation and state-management approach was identified as an area requiring architectural improvement. But rather than continuing to expand the existing state-window model indefinitely, the project direction is moving toward a more conventional React Router-based structure.",
-                        "Authentication and data ownership were treated as foundational concerns. User identity needed to be reliably established before application data could be considered trustworthy, particularly for purchase records.",
-                        "Production readiness was treated as part of engineering work rather than a final deployment task. Testing, monitoring, CI/CD, and mobile release requirements were incorporated into the development process as the application progressed.",
-                        "Product development decisions have been balanced against technical debt and architectural improvements, with changes prioritized according to their impact on stability, maintainability, and the client's planned functionality."
+                        "既存のReactベースのアプリケーションをすぐに全面的に書き直すのではなく、そのまま活用する方針としました。これにより、開発を継続しながら段階的にアーキテクチャを改善できるようにしました。",
+                        "アプリケーションのナビゲーションと状態管理の方式は、アーキテクチャ上の改善が必要な領域として位置づけました。既存のstate-windowモデルをそのまま拡張し続けるのではなく、より一般的なReact Routerベースの構成へ移行する方向で開発を進めています。",
+                        "認証とデータ所有権を基盤となる要素として扱いました。特に購入データについては、アプリケーションデータを信頼できるものとして扱う前提として、ユーザーのアイデンティティを確実に確立する必要がありました。",
+                        "本番環境への対応を最終的なデプロイ作業ではなく、エンジニアリングの一部として扱いました。テスト、モニタリング、CI/CD、モバイルのリリース要件を、開発の進行に合わせて組み込みました。",
+                        "プロダクト開発上の判断では、技術的負債やアーキテクチャの改善とのバランスを取り、安定性、保守性、クライアントが予定している機能への影響を基準として変更の優先順位を決めています。"
                     ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
                     "content": [
-                        "The project initially existed as a locally maintained application without a GitHub repository or established source-control workflow. I first established the development foundation by setting up the project locally, creating the repository, and bringing the existing application into a version-controlled development environment.",
-                        "With the existing codebase under source control, I could begin addressing the application's architectural and stability issues. The original implementation was concentrated entirely within App.jsx, requiring the application to be progressively restructured into a more maintainable component-based architecture while continuing feature development.",
-                        "Firebase Authentication was integrated into the application to establish persistent user identity and support user-specific application data. Authentication state was incorporated into the application's data flow so that actions such as recording purchases could be associated with the correct account.",
-                        "The application was packaged for mobile platforms using Capacitor, allowing the React application to be deployed as a native Android application while maintaining a shared codebase.",
-                        "Testing and reliability work was incorporated throughout development using Vitest for automated testing and Sentry for production error monitoring. GitHub Actions was also introduced to support the project's development and deployment workflow.",
-                        "RevenueCat was integrated to provide the foundation for subscription and entitlement management, allowing the application to support its planned free and paid tiers."
+                        "プロジェクトは当初、GitHubリポジトリや確立されたソース管理のワークフローがない状態で、ローカル環境のみで管理されていました。まず開発基盤を整えるため、ローカル環境を構築し、リポジトリを作成した上で、既存のアプリケーションをバージョン管理された開発環境へ移行しました。",
+                        "既存のコードベースをソース管理下に置いたことで、アプリケーションのアーキテクチャや安定性に関する問題へ取り組めるようになりました。元の実装はほぼすべてApp.jsxに集中していたため、機能開発を継続しながら、より保守しやすいコンポーネントベースのアーキテクチャへ段階的に再構成しました。",
+                        "Firebase Authenticationを導入し、永続的なユーザーIDの確立とユーザーごとのアプリケーションデータの管理を可能にしました。認証状態をアプリケーションのデータフローに組み込み、購入の記録などの操作を正しいアカウントに紐付けられるようにしました。",
+                        "Capacitorを使用してアプリケーションをモバイルプラットフォーム向けにパッケージ化し、共通のコードベースを維持しながらReactアプリケーションをネイティブAndroidアプリケーションとしてデプロイできる構成にしました。",
+                        "Vitestによる自動テストとSentryによる本番環境のエラーモニタリングを導入し、開発全体を通じてテストと信頼性の向上に取り組みました。また、開発およびデプロイのワークフローを支えるためにGitHub Actionsも導入しました。",
+                        "RevenueCatを導入し、サブスクリプションとエンタイトルメント管理の基盤を構築しました。これにより、予定している無料プランと有料プランに対応できる構成としています。"
                     ]
                 },
                 {
                     "id": "production",
-                    "title": "Production & Deployment",
+                    "title": "本番環境・デプロイ",
                     "content": [
-                        "The application has progressed from a locally maintained codebase to an installable Android application undergoing closed testing. The deployment process required establishing the project's mobile build and release workflow alongside the application's development.",
-                        "Android release preparation has included configuring the application for Google Play distribution, producing test builds, and managing the closed-testing requirements needed before production access can be requested.",
-                        "The project is currently in the closed-testing stage. The production release process remains dependent on completing Google Play Store's required beta testing phase and resolving any issues identified during that process."
+                        "アプリケーションは、ローカル環境でのみ管理されていたコードベースから、インストール可能なAndroidアプリケーションへと進展し、現在はクローズドテストを実施しています。デプロイに向けて、アプリケーション開発と並行してモバイル向けのビルドおよびリリースワークフローを整備しました。",
+                        "Androidのリリース準備では、Google Playで配布するためのアプリケーション設定、テストビルドの作成、本番アクセスを申請するために必要なクローズドテスト要件への対応を進めました。",
+                        "現在はクローズドテストの段階にあり、本番リリースのプロセスは、Google Play Storeが求めるベータテスト期間の完了と、その過程で確認された問題の解消にかかっています。"
                     ]
                 },
                 {
-                    "id": "Reflection",
-                    "title": "Reflection",
+                    "id": "reflection",
+                    "title": "振り返り",
                     "content": [
-                        "Calm Anchor significantly expanded my practical experience with CI/CD, automated testing, scripting, mobile development, APK builds, and the operational requirements involved in preparing an application for mobile distribution.",
-                        "The project also changed how I approach client work. I learned to distinguish between immediate project priorities and requested enhancements, particularly when new features or design changes could distract from stability and production readiness. I also learned that technical ownership does not mean taking ownership of the entire product. I could provide technical direction and recommendations while leaving product strategy and other non-technical responsibilities with the client.",
-                        "If I were starting the project again, I would establish CI/CD earlier and spend more time defining the application's long-term architecture before continuing feature development. At the same time, I would not wait for the architecture to be perfect before moving forward. Establishing source control first, improving the existing structure, stabilizing the application, and then continuing development allowed the project to progress without allowing architectural concerns to become a blocker.",
-                        "The project ultimately gave me experience across a much broader part of the software development lifecycle than I had previously worked with. I began with a locally maintained application and helped establish the engineering foundation around it, taking the project through source control, architectural improvements, testing, monitoring, mobile builds, and closed distribution testing. That progression has shaped how I think about technical ownership, delivery, and the balance between improving a system and continuing to move it forward."
+                        "Calm Anchorを通じて、CI/CD、自動テスト、スクリプティング、モバイル開発、APKのビルド、モバイルアプリケーションの配布準備に必要な運用面まで、実践的な経験を大きく広げることができました。",
+                        "このプロジェクトを通じて、クライアントワークに対する考え方も変わりました。特に、新機能やデザイン変更が安定性や本番環境への対応を妨げる可能性がある場合、目の前のプロジェクトの優先事項と追加要望を区別することを学びました。また、技術的な責任を担うことは、プロダクト全体の責任を負うこととは異なることも学びました。技術的な方向性や提案を示しながら、プロダクト戦略などの非技術的な領域についてはクライアントに委ねることができます。",
+                        "もし最初からやり直すのであれば、CI/CDをより早い段階で導入し、機能開発を続ける前にアプリケーションの長期的なアーキテクチャをより時間をかけて定義します。一方で、アーキテクチャが完全になるまで開発を止めることも避けます。まずソース管理を確立し、既存の構造を改善してアプリケーションを安定させ、その上で開発を継続することで、アーキテクチャ上の問題を開発の妨げにせずプロジェクトを前進させることができました。",
+                        "このプロジェクトを通じて、これまで経験してきた範囲を大きく超えて、ソフトウェア開発ライフサイクルのより広い領域を実践的に経験できました。ローカル環境で管理されていたアプリケーションから始め、ソース管理、アーキテクチャ改善、テスト、モニタリング、モバイルビルド、クローズド配布テストまで、アプリケーションを取り巻くエンジニアリング基盤を整えていきました。この経験を通じて、技術的な責任、デリバリー、そしてシステムを改善しながら開発を前進させることのバランスについての考え方が変わりました。"
                     ]
                 }
             ]
@@ -296,9 +296,9 @@
         "cms": {
             "id": "cms",
             "title": "Sentient Content Management System",
-            "role": "Software Engineer",
-            "period": "2025-2026",
-            "description": "Sentient's Content Management System serves two primary roles: a landing page where fans can view new releases and announcements, and as a content management interface that allows non-technical band members to create and publish new release items.",
+            "role": "ソフトウェアエンジニア",
+            "period": "2025年-2026年",
+            "description": "Sentientのコンテンツ管理システムは、ファンが新しいリリースやお知らせを確認できるランディングページと、技術的な知識を持たないメンバーが新しいコンテンツを作成・公開できる管理画面という2つの役割を持つシステムです。",
             "technologies":[
                 "TypeScript",
                 "Next.js",
@@ -313,83 +313,82 @@
             "sections": [
                 {
                     "id": "context",
-                    "title": "Context",
+                    "title": "背景",
                     "content": [
-                        "Sentient originally began as a static website intended to provide the band with a dedicated online presence for communicating new releases and announcements.",
-                        "After discussing the project's future with the band, I expanded the scope from a static site into a full-stack content management platform. The goal was to allow non-technical members to create and publish release content themselves while establishing a foundation that could later support additional functionality, including e-commerce.",
-                        "Development ultimately paused before the broader expansion was completed as the site's visual direction was reconsidered. The existing CMS work nevertheless provided the foundation for the content management functionality and full-stack architecture."
+                        "Sentientは当初、バンドのオンライン上での発信基盤として、新しいリリースや告知を掲載するための静的Webサイトとして始まりました。",
+                        "バンドとの今後の方向性について話し合った後、静的サイトからフルスタックのコンテンツ管理プラットフォームへとスコープを拡張しました。技術的な知識がないメンバーでも自分たちでリリース情報を作成・公開できるようにするとともに、将来的なEコマース機能などの追加にも対応できる基盤を構築することを目指しました。",
+                        "最終的には、サイトのビジュアル方針が見直されることになり、それに伴って開発は一時停止しました。ただし、それまでに構築したCMS機能とフルスタックアーキテクチャは、今後の拡張に向けた基盤として機能しています。"
                     ]
                 },
                 {
                     "id": "responsibilities",
-                    "title": "Responsibilities",
+                    "title": "担当業務",
                     "content": [
-                        "Own the project's technical direction, development roadmap, and backlog.",
-                        "Plan and manage development through staging and incremental releases.",
-                        "Design and implement the application's frontend, backend, and content management functionality.",
-                        "Coordinate project direction through regular check-ins with the client while maintaining responsibility for day-to-day technical decisions and implementation."
+                        "プロジェクトの技術方針、開発ロードマップ、バックログを管理しています。",
+                        "ステージング環境での検証と段階的なリリースを含め、開発の計画と進行を管理しています。",
+                        "フロントエンド、バックエンド、コンテンツ管理機能を含むアプリケーション全体の設計・実装を担当しています。",
+                        "クライアントとの定期的な確認を通じてプロジェクトの方向性を調整しながら、日々の技術的な判断と実装については主体的に担当しています。"
                     ]
                 },
                 {
                     "id": "technicalDirection",
-                    "title": "Technical Direction",
+                    "title": "技術方針",
                     "content": [
-                        "The application was designed as a full-stack system with a clear separation between the public-facing Next.js frontend and a dedicated backend API service.",
-                        "The frontend communicates exclusively with the backend through RESTful API endpoints. It handles public release content, authenticated administrator workflows, and client-side route protection without directly accessing the database or storage layer.",
-                        "The backend was structured as a layered TypeScript and Express service, separating routing, authentication and authorization middleware, controllers, database operations, and storage integration.",
-                        "PostgreSQL provides the persistent data layer through Prisma, while Supabase Storage handles media assets. JWT-based authentication and role-based authorization protect administrative operations.",
-                        "This separation established clear client-server boundaries while providing a foundation that could support future functionality such as expanded content management and e-commerce."
+                        "パブリック向けのNext.jsフロントエンドと専用のバックエンドAPIサービスを明確に分離したフルスタックシステムとして設計しました。",
+                        "フロントエンドはREST APIを介してのみバックエンドと通信する構成とし、公開されているリリースコンテンツ、認証済み管理者向けの操作、クライアント側のルート保護を担います。データベースやストレージへフロントエンドから直接アクセスすることはありません。",
+                        "バックエンドはTypeScriptとExpressによるレイヤードアーキテクチャとして構成し、ルーティング、認証・認可ミドルウェア、コントローラー、データベース操作、ストレージ連携を分離しています。",
+                        "永続データにはPrismaを介したPostgreSQLを使用し、メディアアセットにはSupabase Storageを使用しています。JWTベースの認証とロールベースの認可によって管理者向けの操作を保護しています。",
+                        "この分離によってクライアントとサーバーの責務を明確にし、将来的なコンテンツ管理機能の拡張やEコマースなどにも対応できる基盤を構築しました。"
                     ]
                 },
                 {
                     "id": "challenges",
-                    "title": "Challenges",
+                    "title": "課題",
                     "content": [
-                        "The project needed to bridge a gap between its original role as a static marketing site and the longer-term goal of becoming an e-commerce platform. A key challenge was determining how much infrastructure to introduce at the CMS stage without prematurely building functionality that was not yet required.",
-                        "Authentication and authorization introduced another area of complexity. While implementing JWT-based authentication and password hashing was ultimately straightforward, understanding the complete authentication flow across the frontend, backend middleware, protected routes, and HTTP-only cookies required developing a clearer mental model of how user identity was established and maintained across the system.",
-                        "The project also faced a non-technical constraint when its visual direction was reconsidered during development. Progress on the broader platform was paused while the redesign remained unresolved, limiting how far the CMS and planned e-commerce functionality could be taken."
+                        "プロジェクトでは、当初の静的なマーケティングサイトとしての役割と、将来的にEコマースプラットフォームへ発展させるという目標の両方に対応する必要がありました。CMSの段階で、まだ必要とされていない機能を先行して構築することなく、どこまでインフラを整備するべきかを判断することが課題となりました。",
+                        "認証と認可も複雑さのある領域でした。JWTベースの認証やパスワードのハッシュ化自体は実装できましたが、フロントエンド、バックエンドのミドルウェア、保護されたルート、HTTP-only Cookieをまたいで認証フロー全体を理解するには、システム内でユーザーのアイデンティティがどのように確立・維持されるのかを明確に理解する必要がありました。",
+                        "また、開発中にサイトのビジュアル方針が見直されたことによる、技術以外の制約もありました。再デザインの方向性が確定するまでプラットフォーム全体の開発が一時停止となり、CMSや計画していたEコマース機能をどこまで発展させられるかが制限されました。"
                     ]
                 },
                 {
                     "id": "decisions",
-                    "title": "Key Decisions",
+                    "title": "主な技術的判断",
                     "content": [
-                        "The project was expanded from a static site into a full-stack application so that non-technical band members could manage release content without requiring code changes.",
-                        "The frontend and backend were separated into independent applications, with the frontend communicating exclusively through a REST API rather than accessing the database or storage layer directly.",
-                        "A dedicated backend service was introduced to centralize authentication, authorization, business logic, database access, and media management. This established a foundation that could be extended as the project moved toward its longer-term e-commerce goals.",
-                        "PostgreSQL with Prisma was chosen for structured release data, while Supabase Storage was used for media assets. Separating structured application data from media storage kept those concerns independent within the backend architecture.",
-                        "JWT-based authentication with role-based authorization was implemented so administrative operations could be protected independently from the public-facing release content."
+                        "技術的な知識がないバンドメンバーでもコードを変更することなくリリース情報を管理できるよう、静的サイトからフルスタックアプリケーションへと拡張しました。",
+                        "フロントエンドとバックエンドを独立したアプリケーションとして分離し、フロントエンドからデータベースやストレージへ直接アクセスするのではなく、REST APIを介してのみ通信する構成としました。",
+                        "認証、認可、ビジネスロジック、データベースアクセス、メディア管理を集約する専用のバックエンドサービスを導入しました。これにより、将来的なEコマース機能への拡張にも対応できる基盤を構築しました。",
+                        "構造化されたリリースデータにはPostgreSQLとPrismaを、メディアアセットにはSupabase Storageを採用しました。構造化データとメディアストレージを分離することで、バックエンド内でそれぞれの責務を独立して管理できるようにしました。",
+                        "管理者向けの操作を保護するため、JWTベースの認証とロールベースの認可を実装しました。これにより、一般公開されるリリースコンテンツと管理者向けの操作を分離して保護しています。"
                     ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
                     "content": [
-                        "The frontend was implemented with Next.js and TypeScript, providing both the public release experience and authenticated administrative workflows. Tailwind CSS was used for responsive styling, with Framer Motion providing animated transitions.",
-                        "The backend was implemented as a TypeScript and Express REST API with separate routing, middleware, controller, and service layers. Prisma was used to manage the PostgreSQL data layer and provide typed database access.",
-                        "The content management workflow supports creating, updating, and deleting music and video releases through protected administrative endpoints. The frontend consumes these endpoints to retrieve and display release content.",
-                        "JWT-based authentication was implemented using HTTP-only cookies, with middleware responsible for authentication and administrator authorization. Public content and protected administrative operations were kept separate.",
-                        "Media management was implemented through Supabase Storage, including image uploads, deletion, and URL generation for assets used by release content."
+                        "フロントエンドはNext.jsとTypeScriptで実装し、公開向けのリリースページと認証済み管理者向けのワークフローの両方を提供しています。レスポンシブなスタイリングにはTailwind CSSを使用し、アニメーション付きのトランジションにはFramer Motionを使用しています。",
+                        "バックエンドはTypeScriptとExpressによるREST APIとして実装し、ルーティング、ミドルウェア、コントローラー、サービスの各レイヤーを分離しています。PostgreSQLのデータ層の管理にはPrismaを使用し、型安全なデータベースアクセスを実現しています。",
+                        "コンテンツ管理機能では、保護された管理者向けエンドポイントを通じて、音楽や動画のリリース情報を作成・更新・削除できます。フロントエンドはこれらのエンドポイントを利用して、リリースコンテンツを取得・表示します。",
+                        "JWTベースの認証にはHTTP-only Cookieを使用し、ミドルウェアによって認証と管理者権限の認可を行っています。一般公開されるコンテンツと、保護された管理者向け操作を分離しています。",
+                        "メディア管理にはSupabase Storageを使用し、リリースコンテンツに使用する画像のアップロード、削除、URL生成を実装しています。"
                     ]
                 },
                 {
                     "id": "production",
-                    "title": "Production & Deployment",
+                    "title": "本番環境・デプロイ",
                     "content": [
-                        "The application was developed as a deployable full-stack system, with the frontend and backend maintained as separate applications and the backend providing the production API layer.",
-                        "The frontend was configured for deployment as a Next.js application, while the backend was structured as an independent Express service with PostgreSQL and Supabase Storage providing the persistent data and media infrastructure.",
-                        "The project reached a functional full-stack state with the core CMS, authentication, release management, and media workflows implemented. Broader production expansion, including the planned e-commerce functionality, was not completed after development was paused during a redesign of the site's visual direction."
+                        "フロントエンドとバックエンドを独立したアプリケーションとして管理し、バックエンドが本番環境のAPIレイヤーを担う、デプロイ可能なフルスタックシステムとして開発しました。",
+                        "フロントエンドはNext.jsアプリケーションとしてデプロイできるよう構成し、バックエンドは独立したExpressサービスとして構築しました。PostgreSQLとSupabase Storageによって、永続データとメディアのインフラを提供しています。",
+                        "プロジェクトは、コアとなるCMS、認証、リリース管理、メディア管理機能を実装した機能的なフルスタックシステムの段階まで到達しました。ただし、サイトのビジュアル方針の見直しに伴って開発が一時停止したため、計画していたEコマース機能を含む、より広範な本番環境への拡張は完了していません。"
                     ]
                 },
                 {
-                    "id": "Reflection",
-                    "title": "Reflection",
+                    "id": "reflection",
+                    "title": "振り返り",
                     "content": [
-                        "Sentient was an important step in expanding my technical depth beyond third-party backend services. Implementing JWT-based authentication and password hashing gave me a deeper understanding of how authentication can be designed and managed within an application rather than delegated entirely to a managed service. The project also gave me an opportunity to design around practical infrastructure constraints, including Render's cold-start behavior. I particularly valued the fallback-data approach, where a lightweight dataset could populate the frontend while the application waited for the backend API to become available.",
-                        "The project also changed how I think about designing for future requirements. I initially structured the system with scalability and future e-commerce integration in mind, but I now recognize that some of those assumptions were too broad. Much of the eventual e-commerce functionality would likely depend on external services and APIs rather than requiring the CMS itself to become a complete commerce platform. In retrospect, I would define the future integration points more concretely before designing infrastructure around them.",
-                        "There are also several areas of the CMS itself that I would approach differently. The release management workflow was more restrictive than necessary, requiring every release to include a YouTube video, title, description, and image. A more flexible content model would have allowed different types of announcements without requiring every field. I would also consider features such as caching, richer content editing, email notifications, and more flexible site-design capabilities as the platform evolved.",
-                        "The project reinforced an equally important lesson about stakeholder management. I would involve the stakeholder much earlier in the development process and establish clearer agreement around the project's direction before investing heavily in implementation. Technical progress depends on stakeholder buy-in, and unresolved disagreements about product direction can ultimately become a larger constraint than the engineering itself. The MVP was completed and provided meaningful technical growth, particularly around authentication and application architecture, but the project also showed me where stronger planning, communication, and product definition would have produced a better overall result."
-
+                        "Sentientは、サードパーティのバックエンドサービスに依存した開発から、技術的な理解をさらに深める重要なステップとなりました。JWTベースの認証とパスワードのハッシュ化を実装したことで、認証をマネージドサービスに全面的に委ねるのではなく、アプリケーション内でどのように設計・管理できるのかについて、より深く理解できました。また、Renderのコールドスタートのような実際のインフラ上の制約を考慮して設計する機会にもなりました。特に、バックエンドAPIが利用可能になるまでの間、軽量なデータセットを使ってフロントエンドを表示できるフォールバックデータのアプローチは、実践的な経験となりました。",
+                        "このプロジェクトを通じて、将来的な要件を見据えた設計についての考え方も変わりました。当初はスケーラビリティと将来的なEコマース連携を考慮してシステムを構成しましたが、現在ではその前提の一部が広すぎたと考えています。実際のEコマース機能の多くは、CMS自体を完全なコマースプラットフォームへ発展させるのではなく、外部サービスやAPIに依存する可能性が高いからです。振り返ると、インフラを設計する前に、将来的に必要となる連携ポイントをより具体的に定義しておくべきでした。",
+                        "CMS自体についても、異なるアプローチを取れた部分があります。リリース管理のワークフローは必要以上に制約が多く、すべてのリリースにYouTube動画、タイトル、説明文、画像を必須としていました。より柔軟なコンテンツモデルであれば、すべての項目を必須とせず、異なる種類の告知にも対応できました。また、プラットフォームの発展に合わせて、キャッシュ、より高度なコンテンツ編集、メール通知、より柔軟なサイトデザイン機能なども検討できたと考えています。",
+                        "このプロジェクトでは、ステークホルダーとの連携についても重要な学びがありました。実装に大きく投資する前に、より早い段階からステークホルダーを開発プロセスに参加させ、プロジェクトの方向性について明確に合意しておくべきでした。技術的な進展にはステークホルダーの合意が重要であり、プロダクトの方向性について解決されていない意見の相違は、最終的にエンジニアリングそのものよりも大きな制約になる可能性があります。MVPは完成し、特に認証やアプリケーションアーキテクチャについて大きな技術的成長につながりましたが、同時に、より強固な計画、コミュニケーション、プロダクト定義によって、プロジェクト全体をさらに良い結果へ導けたことも学びました。"
                     ]
                 }
             ]
@@ -397,9 +396,9 @@
         "vitaeAggregate": {
             "id": "vitaeAggregate",
             "title": "VitaeAggregate",
-            "role": "Product Owner / Software Engineer",
-            "period": "2024-2025",
-            "description": "VitaeAggregate was a three-person project designed to give job seekers a way to receive feedback on their resumes through social-media style interactions. Resumes were anonymized before being shared to reduce the risk of exposing users' personal information and ATS-friendly resumes could be downloaded for personal use.",
+            "role": "プロダクトオーナー・ソフトウェアエンジニア",
+            "period": "2024年-2025年",
+            "description": "VitaeAggregateは、SNSのようなインタラクションを通じて、求職者が履歴書へのフィードバックを受けられるようにする3人チームのプロジェクトでした。個人情報が公開されるリスクを抑えるため、履歴書は匿名化した上で共有され、ATSに対応した履歴書をダウンロードできる機能も実装しました。",
             "technologies":[
                 "Svelte.js", 
                 "Python", 
@@ -415,83 +414,83 @@
             "sections": [
                 {
                     "id": "context",
-                    "title": "Context",
+                    "title": "背景",
                     "content": [
-                        "VitaeAggregate was a three-person project built around a common problem in the job search process: resumes are often evaluated by a limited number of people, making it difficult for job seekers to receive useful feedback before submitting an application.",
-                        "The project explored a social-media-style approach to resume feedback, allowing users to share anonymized resumes and receive feedback from other users.",
-                        "Anonymization was incorporated into the concept to reduce the risk of exposing personally identifiable information while allowing the resume itself to remain the focus of the feedback."
+                        "VitaeAggregateは、就職活動における身近な課題を起点として、3人のチームで開発したプロジェクトです。履歴書は限られた人数によって評価されることが多く、応募前に有益なフィードバックを得ることが難しいという問題に着目しました。",
+                        "そこで、ソーシャルメディアのような仕組みを履歴書のフィードバックに応用し、ユーザーが匿名化した履歴書を共有して、他のユーザーからフィードバックを受けられるサービスを検討しました。",
+                        "履歴書そのものをフィードバックの対象としながら、個人を特定できる情報が公開されるリスクを抑えるため、匿名化の仕組みもコンセプトに組み込みました。"
                     ]
                 },
                 {
                     "id": "responsibilities",
-                    "title": "Responsibilities",
+                    "title": "担当業務",
                     "content": [
-                        "Coordinate project development across a three-person team, managing priorities, development tasks, and communication between the frontend and the backend.",
-                        "Contribute to both frontend and backend development as a supporting developer, implementing smaller application features and assisting with development across the stack.",
-                        "Design and refine the application's user interface and overall visual direction.",
-                        "Implement user-facing features such as toast notifications while supporting the team with technical problem-solving and integration work.",
-                        "Balance project management responsibilities with hands-on development to keep the project moving towards MVP."
+                        "3人のチームでプロジェクト開発を調整し、優先順位、開発タスク、フロントエンドとバックエンド間のコミュニケーションを管理しました。",
+                        "サポート役の開発者としてフロントエンドとバックエンドの両方に携わり、小規模な機能の実装やフルスタックでの開発を支援しました。",
+                        "アプリケーションのユーザーインターフェースと全体的なビジュアル方針を設計・改善しました。",
+                        "Toast通知などのユーザー向け機能を実装するとともに、技術的な問題解決や統合においてチームを支援しました。",
+                        "プロジェクト管理と実装の両方を担いながら、MVPに向けてプロジェクトを前進させました。"
                     ]
                 },
                 {
                     "id": "technicalDirection",
-                    "title": "Technical Direction",
+                    "title": "技術方針",
                     "content": [
-                        "VitaeAggregate was structured as a web application with a Svelte frontend and a Django REST backend maintained within a single repository.",
-                        "The frontend was built with Svelte, TypeScript, and Tailwind CSS and was responsible for resume creation, editing, sharing, and user interaction.",
-                        "Django REST provided the backend API for managing resume data, comments, and user information, allowing the frontend and backend to remain separated by an API boundary while being developed within the same repository.",
-                        "Resume documents were represented as dynamic Svelte components based on user-provided content, with Puppeteer used to generate ATS-friendly PDF documents from the rendered resume.",
-                        "The application also incorporated social functionality around shared resumes, including comments and notifications, while using resume visibility controls to determine whether a resume could be shared with other users."
+                        "VitaeAggregateは、SvelteフロントエンドとDjango RESTバックエンドを単一のリポジトリ内で管理するWebアプリケーションとして構成しました。",
+                        "フロントエンドにはSvelte、TypeScript、Tailwind CSSを使用し、履歴書の作成、編集、共有、ユーザー操作を担当しています。",
+                        "Django RESTは、履歴書データ、コメント、ユーザー情報を管理するバックエンドAPIとして使用し、同一リポジトリ内で開発しながら、APIによってフロントエンドとバックエンドを分離しています。",
+                        "履歴書はユーザーが入力した内容をもとに動的なSvelteコンポーネントとして構成し、Puppeteerを使用してATSに対応したPDFを生成しています。",
+                        "共有された履歴書を中心としたソーシャル機能として、コメントや通知を実装するとともに、履歴書の公開範囲を設定できるようにしました。"
                     ]
                 },
                 {
                     "id": "challenges",
-                    "title": "Challenges",
+                    "title": "課題",
                     "content": [
-                        "One of the team's main challenges was balancing technical exploration with the project's delivery timeline. Some technical issues required deeper investigation than the project could accommodate, creating a risk that architectural work would consume time needed for the MVP. Managing this required prioritizing work based on its impact on the project's immediate goals and maintaining momentum toward deliverables.",
-                        "The project also required frequent scope adjustments based on weekly stakeholder feedback. Ideas that initially seemed feasible sometimes had to be significantly reduced or removed as the team clarified the project's goals and available development time. Maintaining a realistic scope while responding to stakeholder input became an important part of keeping the project on schedule.",
-                        "The team also had to learn and apply unfamiliar technologies during development. Django REST introduced a new backend framework and Svelte required the team to adapt existing React experience to a different component and reactivity model. Both required learning on the fly while continuing to develop the application.",
-                        "Python was initially selected with the intention of exploring AI functionality as part of the project. As the scope and timeline became clearer, the team determined that there was not enough time to pursue that direction and prioritized the core application instead."
+                        "チームの主な課題の一つは、技術的な検証とプロジェクトの開発期間とのバランスを取ることでした。一部の技術的な問題では、プロジェクトの期間内では十分に調査しきれないほど深い検証が必要となり、アーキテクチャ上の作業に時間を使いすぎてMVPに必要な開発が遅れるリスクがありました。そのため、当面の目標への影響度に基づいて作業の優先順位を決め、成果物に向けた開発の進行を維持する必要がありました。",
+                        "また、毎週のステークホルダーからのフィードバックに応じて、スコープを頻繁に調整する必要がありました。当初は実現可能に見えたアイデアでも、プロジェクトの目標や残された開発時間が明確になるにつれて、大幅に縮小したり削除したりする必要がありました。現実的なスコープを維持しながらステークホルダーの意見に対応することが、予定通りにプロジェクトを進める上で重要でした。",
+                        "開発中には、チームにとって馴染みのない技術を学びながら適用する必要もありました。Django RESTによって新しいバックエンドフレームワークを学ぶ一方、Svelteでは既存のReactの経験を異なるコンポーネントモデルとリアクティビティモデルに応用する必要がありました。いずれも開発を継続しながら、その場で学習していく必要がありました。",
+                        "Pythonは当初、プロジェクトの一部としてAI機能を検討することを目的に採用しました。しかし、スコープと開発期間が明確になるにつれて、その方向性を追求する時間はないと判断し、コアとなるアプリケーションの開発を優先しました。"
                     ]
                 },
                 {
                     "id": "decisions",
-                    "title": "Key Decisions",
+                    "title": "主な技術的判断",
                     "content": [
-                        "The team chose to maintain the frontend and backend as separate applications within a single repository, allowing development to remain organized while preserving a clear API boundary between the client and server.",
-                        "Svelte was chosen for the frontend, giving the team an opportunity to apply existing React experience to a different component and reactivity model while keeping the application focused on a modern, component-based architecture.",
-                        "Django REST was chosen for the backend to provide a structured framework for building the application's API and managing resume, user, and feedback data.",
-                        "Python was initially chosen with the intention of exploring AI functionality within the application. As the project scope became clearer, the team decided not to pursue an AI component so that development time could remain focused on the core MVP.",
-                        "The team adopted an iterative approach to scope, using regular stakeholder feedback to refine the product and reduce or change planned functionality when it no longer fit the available development time."
+                        "フロントエンドとバックエンドを単一のリポジトリ内で別々のアプリケーションとして管理し、開発を整理しながら、クライアントとサーバーの間には明確なAPI境界を維持する構成としました。",
+                        "フロントエンドにはSvelteを採用し、既存のReactの経験を異なるコンポーネントモデルとリアクティビティモデルに応用しながら、モダンなコンポーネントベースのアーキテクチャを維持できるようにしました。",
+                        "バックエンドにはDjango RESTを採用し、アプリケーションのAPIを構築するとともに、履歴書、ユーザー、フィードバックに関するデータを管理できる構造化されたフレームワークを導入しました。",
+                        "Pythonは当初、アプリケーション内でAI機能を検討することを目的に採用しました。プロジェクトのスコープが明確になるにつれて、MVPのコア機能に開発時間を集中させるため、AI機能は実装しない方針としました。",
+                        "定期的なステークホルダーからのフィードバックをもとにプロダクトを改善し、利用可能な開発時間に合わなくなった機能については、縮小または変更するという反復的なスコープ管理を行いました。"
                     ]
                 },
                 {
                     "id": "implementation",
                     "title": "Implementation",
                     "content": [
-                        "The frontend was implemented with Svelte, TypeScript, and Tailwind CSS, providing the interface for creating, editing, viewing, and sharing resumes.",
-                        "Resume content was represented through reusable Svelte components, allowing sections such as skills, professional experience, education, and links to be rendered dynamically based on user input.",
-                        "The Django REST backend provided API endpoints for managing resume data, user information, comments, and related application functionality.",
-                        "Puppeteer was integrated to generate ATS-friendly PDF resumes from the rendered resume components, allowing users to download their resumes directly from the application.",
-                        "Social functionality was implemented around shared resumes, including comments and notifications, while resume visibility was controlled through the application's sharing settings."
+                        "フロントエンドはSvelte、TypeScript、Tailwind CSSで実装し、履歴書の作成、編集、閲覧、共有のためのユーザーインターフェースを構築しました。",
+                        "履歴書の内容は再利用可能なSvelteコンポーネントとして構成し、スキル、職務経験、学歴、リンクなどの各セクションをユーザーの入力に応じて動的に表示できるようにしました。",
+                        "Django RESTによるバックエンドでは、履歴書データ、ユーザー情報、コメント、その他のアプリケーション機能を管理するAPIエンドポイントを実装しました。",
+                        "Puppeteerを統合し、レンダリングされた履歴書コンポーネントからATSに対応したPDF履歴書を生成できるようにしました。ユーザーはアプリケーションから直接履歴書をダウンロードできます。",
+                        "共有された履歴書を中心としたソーシャル機能として、コメントや通知を実装し、履歴書の公開範囲はアプリケーションの共有設定によって管理しました。"
                     ]
                 },
                 {
                     "id": "production",
-                    "title": "Production & Deployment",
+                    "title": "本番環境・デプロイ",
                     "content": [
-                        "The application was deployed to Heroku as a production web application, allowing the team to make the MVP available for users.",
-                        "The deployment included both the Svelte frontend and Django REST backend, providing a hosted environment in which the complete application could be tested as an integrated system.",
-                        "Deployment and production testing also gave the team an opportunity to identify issues that were not apparent during local development and validate the application against the project's evolving requirements."
+                        "アプリケーションはHerokuに本番Webアプリケーションとしてデプロイし、チームがMVPをユーザーに提供できる状態にしました。",
+                        "デプロイ環境にはSvelteフロントエンドとDjango RESTバックエンドの両方を含め、統合されたアプリケーションとして全体をテストできる環境を構築しました。",
+                        "デプロイと本番環境でのテストを通じて、ローカル開発では発見できなかった問題を特定し、変化するプロジェクト要件に対してアプリケーションを検証する機会も得られました。"
                     ]
                 },
                 {
-                    "id": "Reflection",
-                    "title": "Reflection",
+                    "id": "reflection",
+                    "title": "振り返り",
                     "content": [
-                        "VitaeAggregate was successfully delivered within the given constraints, with the team completing the project in time for the final presentation on Demo Day.",
-                        "My primary contribution was keeping the project moving toward its deadline while coordinating development across the team and managing changes to scope. Although the project encountered technical and scope-related challenges, I was able to help prevent those issues from significantly disrupting the delivery timeline.",
-                        "Looking back, I would have liked to take on more hands-on engineering work during the project. At the same time, the experience showed me that project coordination and technical communication were areas where I was particularly effective. The balance between development and coordination helped me understand how I could contribute to an engineering team beyond writing code."
+                        "VitaeAggregateは与えられた制約の中で無事に完成し、Demo Dayの最終プレゼンテーションに間に合う形でプロジェクトを完了しました。",
+                        "私の主な貢献は、チーム内の開発を調整し、スコープの変更を管理しながら、プロジェクトを期限に向けて前進させることでした。技術面とスコープ面の両方で課題が発生しましたが、それらが納期に大きな影響を与えないよう、プロジェクトの進行を支援することができました。",
+                        "振り返ると、プロジェクトではより多くの実装作業を担当したかったと感じています。一方で、この経験を通じて、プロジェクトの調整や技術的なコミュニケーションが自分にとって特に力を発揮できる領域であることも分かりました。開発と調整の両方を経験したことで、コードを書くこと以外にもエンジニアリングチームに貢献できる方法を理解することができました。"
                     ]
                 }
             ]
@@ -503,9 +502,9 @@
             "company": "ESG Global",
             "date": "2025/01 - 現在",
             "keyPoints": [
-            "複数の厳格なテスト期限を管理し、新規エネルギー市場へのクライアント導入とオンボーディングを円滑に実施",
-            "クライアントとユーティリティ間の効果的な通信を確保するため、ファイル転送、データフロー、データベースの整合性を管理",
-            "業務ルールが最新であることを確認するため、市場要件を監視・管理"
+                "複数の厳格なテスト期限を管理し、新規エネルギー市場へのクライアント導入とオンボーディングを円滑に実施",
+                "クライアントとユーティリティ間の効果的な通信を確保するため、ファイル転送、データフロー、データベースの整合性を管理",
+                "業務ルールが最新であることを確認するため、市場要件を監視・管理"
             ]
         },
         {
@@ -513,12 +512,12 @@
             "company": "ESG Global",
             "date": "2021/10 - 2023/07",
             "keyPoints": [
-            "日本チームにおける技術課題の窓口として活動し、全ての社内システムに対する技術的知見を深め、組織内の各レベルと良好な関係を維持",
-            "運用プロセスの一環として定期的なAPIテストを実施し、サーバーの健全性を管理、SQLを用いたデータベースクエリと分析を実施してアプリケーションの安定性を確保",
-            "アジャイル環境でのクロスファンクショナルチーム間のコミュニケーションを橋渡しし、円滑な協力と情報共有を促進",
-            "日本市場向け新リリースのユーザー受け入れテスト（UAT）を主導し、クライアントによるスムーズな導入を確保",
-            "複数プロジェクトのテストプロセスをリードし、PMOチームにシステム機能や手順に関する有益な知見を提供",
-            "PMOチームと協力してバックログの整理やJIRAの優先順位付けを行い、効率的なプロジェクト管理に貢献"
+                "日本チームにおける技術課題の窓口として活動し、全ての社内システムに対する技術的知見を深め、組織内の各レベルと良好な関係を維持",
+                "運用プロセスの一環として定期的なAPIテストを実施し、サーバーの健全性を管理、SQLを用いたデータベースクエリと分析を実施してアプリケーションの安定性を確保",
+                "アジャイル環境でのクロスファンクショナルチーム間のコミュニケーションを橋渡しし、円滑な協力と情報共有を促進",
+                "日本市場向け新リリースのユーザー受け入れテスト（UAT）を主導し、クライアントによるスムーズな導入を確保",
+                "複数プロジェクトのテストプロセスをリードし、PMOチームにシステム機能や手順に関する有益な知見を提供",
+                "PMOチームと協力してバックログの整理やJIRAの優先順位付けを行い、効率的なプロジェクト管理に貢献"
             ]
         },
         {
@@ -526,10 +525,10 @@
             "company": "ESG Global",
             "date": "2018/08 - 2021/09",
             "keyPoints": [
-            "日本のクライアントとの強固な関係を築き、主要な窓口として対応",
-            "チームリーダーとしてメンバーのソフトウェア課題解決や対応に関する指導・トレーニングを実施",
-            "プラットフォーム利用に関するベストプラクティスをクライアントに助言し、指導資料を作成・共有",
-            "PMOおよびSDチームと協力して早期要件収集を行い、クライアントのニーズを反映"
+                "日本のクライアントとの強固な関係を築き、主要な窓口として対応",
+                "チームリーダーとしてメンバーのソフトウェア課題解決や対応に関する指導・トレーニングを実施",
+                "プラットフォーム利用に関するベストプラクティスをクライアントに助言し、指導資料を作成・共有",
+                "PMOおよびSDチームと協力して早期要件収集を行い、クライアントのニーズを反映"
             ]
         }],
     "education": [
@@ -580,7 +579,7 @@
     },
     "contact": {
         "contactMe" : "お問い合わせ",
-        "question" : "Have a question, an opportunity, or just want to connect? Feel free to get in touch.",
+        "question": "ご質問やお仕事のご相談、または何かつながりを作りたいという方も、お気軽にご連絡ください。",
         "emailAddress" : "メールアドレス",
         "message" : "メッセージ",
         "send" : "送信",
@@ -589,33 +588,33 @@
         "tryAgain": "エラーが発生しました、もう一度お試しください。"
     },
     "buildAreas": {
-        "webApplications": "WEB APPLICATIONS",
-        "webApplicationsDescription": "Interfaces and systems built for real users.",
-        "webApplicationsDetails": "I build web applications across the frontend and backend, from interface development through APIs, data persistence, authentication, and deployment.",
+        "webApplications": "WEBアプリケーション",
+        "webApplicationsDescription": "実際のユーザーが使うインターフェースとシステム。",
+        "webApplicationsDetails": "フロントエンドのインターフェース開発から、API、データ永続化、認証、デプロイまで、Webアプリケーションをフルスタックで開発しています。",
         "webApplicationsEvidence": [
             "cms",
             "myVirtualFridge"
         ],
 
-        "crossPlatform": "CROSS-PLATFORM APPLICATIONS",
-        "crossPlatformDescription": "Applications designed beyond the browser.",
-        "crossPlatformDetails": "I develop applications that extend beyond traditional web environments, working across shared codebases, platform constraints, and mobile user experiences.",
+        "crossPlatform": "クロスプラットフォームアプリケーション",
+        "crossPlatformDescription": "ブラウザの枠を超えて設計するアプリケーション。",
+        "crossPlatformDetails": "共通のコードベース、各プラットフォームの制約、モバイルでのユーザー体験を考慮しながら、Web以外の環境にも対応するアプリケーションを開発しています。",
         "crossPlatformEvidence": [
             "calmAnchor", 
             "myVirtualFridge"
         ],
 
-        "systemsAndArchitecture": "SYSTEMS & ARCHITECTURE",
-        "systemsAndArchitectureDescription": "Structured solutions designed to remain maintainable.",
-        "systemsAndArchitectureDetails": "I think about how application components fit together—from frontend state and APIs to databases, authentication, deployment, and the boundaries between them.",
+        "systemsAndArchitecture": "システム・アーキテクチャ",
+        "systemsAndArchitectureDescription": "長期的な保守性を考えた構造的なソリューション。",
+        "systemsAndArchitectureDetails": "フロントエンドの状態管理やAPIから、データベース、認証、デプロイ、それぞれの境界まで、アプリケーションの各コンポーネントがどのようにつながるかを考えて設計しています。",
         "systemsAndArchitectureEvidence": [
             "calmAnchor", 
             "myVirtualFridge"
         ],
 
-        "technicalDelivery": "TECHNICAL DELIVERY",
-        "technicalDeliveryDescription": "Turning ambiguous needs into practical solutions.",
-        "technicalDeliveryDetails": "I work between technical and business requirements, translating ambiguous needs into implementable solutions and helping move them from planning to delivery.",
+        "technicalDelivery": "テクニカルデリバリー",
+        "technicalDeliveryDescription": "曖昧なニーズを実用的なソリューションへ。",
+        "technicalDeliveryDetails": "技術要件とビジネス要件の間に立ち、曖昧なニーズを実装可能なソリューションへ落とし込み、計画から実際のデリバリーまでつなげます。",
         "technicalDeliveryEvidence": [
             "enterpriseSaaS", 
             "technicalProjectDelivery", 
